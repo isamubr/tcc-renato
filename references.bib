@@ -1,0 +1,3632 @@
+% This file was created with JabRef 2.6b2.
+% Encoding: Cp1252
+
+@ARTICLE{S.Abedi2005,
+  author = {S. Abedi, S. Vadgama},
+  title = {A genetic approach for downlink packet scheduling in HSDPA system},
+  journal = {Soft Computer},
+  year = {2005},
+  volume = {9},
+  pages = {116-127},
+  crossref = {Abedi2005},
+  owner = {bazzo},
+  review = {De Juliano Bazzo:
+	
+	- Artigo sugere um algoritmo de scheduling baseado em algoritmos genéticos
+	que leva em conta fairness, tput, delay e QoS.
+	
+	- Artigos anteriores exploravam a técnica de scheduling baseada em
+	Max C/I e RR (Round Robin).
+	
+	- A análise de desempenho foi feita com os seguintes cenários:
+	
+	 - Sem fast fading e shadowing. Somente path loss.
+	
+	 - Com path loss, fading e shadowing.
+	
+	- O tipo de tráfego considerado foi WWW.
+	
+	Conclusão: Artigo interessante para quem deseja utilizar algum algoritmo
+	genético para análise de métricas L1 e L2.
+	
+	
+	
+	Glossário:
+	
+	- Node B = Base Station
+	
+	- TTI: Transmission Time Interval
+	
+	- HGPS: Hybrid Genetic Packet Scheduler},
+  timestamp = {2009.07.27}
+}
+
+@ARTICLE{UmarToseef2008,
+  author = {Umar Toseef, Asanga Udugama, Carmelita Goerg, Changpeng Fan, Frank
+	Pittmann},
+  title = {Realization of multiple access interface management and flow mobility
+	in IPv6},
+  journal = {Proceedings of the 1st international conference on MOBILe Wireless
+	MiddleWARE, Operating Systems, and Applications},
+  year = {2008},
+  crossref = {Umar2008},
+  file = {:Umar2008.pdf:PDF},
+  owner = {bazzo},
+  review = {De Juliano Bazzo (bazzo):
+	
+	Objetivo do trabalho: analisar o uso de múltiplas interfaces (wired
+	and wireless) simultaneamente através de algoritmos inteligentes
+	de seleção.
+	
+	Parâmetros analisados: preferências do usuário.
+	
+	Projeto: ScaleNet (is the interworking between 3GPP and non-3GPP networks)
+	
+	Trabalhos no IETF para gerenciar múltiplas interfaces de rede no contexto
+	de IPv6. Tarefa é referenciada como MCoA (Multiple care-of address)
+	na terminologia IPv6.
+	
+	Flow Management: é o termo utilizado para gerencial múltiplos fluxos
+	por múltiplas interfaces.
+	
+	O gerenciamento de fluxo não é uma idéia nova porém existem propostas
+	recentes de criar suporte a esse tipo de serviço no padrão IPv6.
+	
+	O cenário de teste foi com um computador e duas interfaces de rede
+	(ethernet e WLAN).
+	
+	
+	Conclusão: Artigo simples e bem interessante. Ele descreve as premissas
+	de flow management no contexto de IPv6 e em seguida realiza testes
+	com uma máquina Linux com fluxos TCP e UDP, cenários de queda e etc.},
+  timestamp = {2009.07.28}
+}
+
+@STANDARD{3GPP43.064,
+  title = {{General Packet Radio Service (GPRS); Overall description of the
+	GPRS radio interface; Stage 2}},
+  institution = {{3rd Generation Partnership Project (3GPP)}},
+  author = {3GPP},
+  type = {TS},
+  number = {{43.064}},
+  revision = {8.3.0},
+  month = sep,
+  year = {2009},
+  url = {http://www.3gpp.org/ftp/Specs/html-info/43064.htm},
+  days = {23},
+  owner = {lida},
+  timestamp = {2009.12.18}
+}
+
+@TECHREPORT{3GPP_TSGRAN_R2022359,
+  author = {3GPP},
+  title = {{I}ntroduction of {N}on {HS-DSCH} {P}ower {M}easurement},
+  institution = {3$^{rd}$ Generation Partnership Project},
+  year = {2002},
+  number = {TSG-RAN WG3 meeting 33/R2-022359},
+  address = {Sophia Antipolis, France},
+  month = november
+}
+
+@INPROCEEDINGS{tech_WINNER_ALEXIOU_2005,
+  author = {ALEXIOU, A. et al.},
+  title = {Projeto WINNER, D2.7 vers. 1.0, Assessment of Advanced Beamforming
+	and MIMO Technologies},
+  booktitle = {Internal Document},
+  year = {2005},
+  owner = {rdomingo},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{Anand2008,
+  author = {Anand, S. V.},
+  title = {Qos based handover layer for a multi-RAT mobile terminal in UMTS
+	and Wi-MAX networks},
+  booktitle = {Proc. 3rd International Conference on Communication Systems Software
+	and Middleware and Workshops COMSWARE 2008},
+  year = {2008},
+  pages = {472--479},
+  month = jan # { 6--10,},
+  doi = {10.1109/COMSWA.2008.4554460},
+  keywords = {UMTS, WIMAX, multi-RAT, Handover, loose coupled, interworking, QoS},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- Propostade uma arquitetura de software para interoperabilidade entre
+	WIMAX e UMTS
+	
+	- Proposta de um handover baseado nas preferencias do usuário e características
+	da aplicação
+	
+	- Considera o IMS como uma perspectiva
+	
+	- Traz um mapeamento entre as classes de serviço do UMTS e do WIMAX
+	
+	- Descreve os user cases de forma direta na seção X.A e X.B, contudo,
+	avalia em um cenário muito controlado e considerando poucos aspectos
+	das redes envolvidas
+	
+	- Para a prova de conceito ele assume dois casos bastenate controlados
+	onde um terminal faz hadovers entre UMTS-WIMAX e WIMAX-UMTS.
+	
+	- Simulação com OPNET
+	
+	- Avalia o impacto do Handover no t-put para dois serviços: CBR e
+	VBR
+	
+	- modela a MAC do sistema WIMAX baseado no DOCSIS
+	
+	- Aponta como trabalhos futuros a adequaÇão do framework proposto
+	para o Rel.8 do 3GPP (LTE/SAE), o qual prevê conexão simultanea para
+	as redes GPRS, WLAN, CDMA, LTE.},
+  timestamp = {2009.07.23}
+}
+
+@ARTICLE{Paper:Arnold88,
+  author = {H. W. Arnold and D. C. Cox and R. R. Murray},
+  title = {Macroscopic diversity performance measured in the 800-{M}Hz portable
+	radio communications environment},
+  journal = {IEEE Transactions Antennas and Propagation},
+  year = {1988},
+  volume = {36},
+  pages = {277-280},
+  month = {Feb.},
+  owner = {souzadej},
+  timestamp = {2009.07.15}
+}
+
+@INPROCEEDINGS{Avila2008,
+  author = {Avila, F.R. and Barreto, A.N.},
+  title = {Non-intrusive speech quality estimation for {GSM} system using narrowband
+	and wideband {AMR} codec},
+  booktitle = {Wireless Communication Systems, 2008, IEEE International Symposium
+	on, ISWCS '08},
+  year = {2008},
+  pages = {173--177},
+  month = {October},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@INPROCEEDINGS{Barreto2007,
+  author = {Barreto, A. N. and Garcia, L. G. U. and Souza, E.},
+  title = {GERAN Evolution for Increased Speech Capacity},
+  booktitle = {Proc. VTC2007-Spring Vehicular Technology Conference IEEE 65th},
+  year = {2007},
+  pages = {1287--1291},
+  abstract = {In order to accommodate the growing traffic demand in GSM cellular
+	networks, several features are continuously being developed to improve
+	the voice capacity of GSM/EDGE Radio Access network (GERAN). In this
+	paper we investigate the capacity of a GSM network considering the
+	use of some of these features, namely, interference rejection combining
+	(IRC), single-antenna interference cancelation (SAIC), sourceadaptive
+	AMR (SA-AMR), dynamic frequency and channel allocation (DFCA), and
+	8-PSK voice channels. These techniques have been previously investigated
+	individually in the literature, but here we focus on the system-level
+	impact of the interactions among them. We show that the proper combination
+	of these features increases the spectral efficiency of speech channels
+	in GERAN.},
+  doi = {10.1109/VETECS.2007.270},
+  file = {:Barreto2007.pdf:PDF},
+  issn = {1550-2252},
+  keywords = {cellular radio, channel allocation, frequency allocation, interference
+	suppression, phase shift keying, radio access networks, wireless
+	channels, 8-PSK voice channels, GERAN evolution, GSM cellular networks,
+	GSM-EDGE radio access network, channel allocation, dynamic frequency
+	allocation, increased speech capacity, interference rejection combining,
+	single-antenna interference cancellation, source-adaptive AMR},
+  owner = {edgsouza},
+  timestamp = {2009.06.29}
+}
+
+@INPROCEEDINGS{Begain2002,
+  author = {Begain, K. and Rozsa, G. I. and Pfening, A. and Telek, M.},
+  title = {Performance analysis of GSM networks with intelligent underlay-overlay},
+  booktitle = {Proc. Seventh International Symposium on Computers and Communications
+	ISCC 2002},
+  year = {2002},
+  pages = {135--141},
+  month = jul # { 1--4,},
+  doi = {10.1109/ISCC.2002.1021669},
+  file = {:Begain2004.pdf:PDF},
+  owner = {bazzo},
+  review = {De Juliano Bazzo (bazzo):
+	
+	- Ótima Introdução, fácil compreensão e direto ao ponto.
+	
+	- Critério de handover foi só baseado em C/I
+	
+	- Foi analisado com diferentes razões de cobertura entre super e regular
+	layers e também diferentes velocidades dos móveis.
+	
+	- Foram apresentados gráficos de como percentual de chamadas perdida
+	e de utilização.
+	
+	Conclusão: em geral, os resultados apresentados nos gráficos não foram
+	surpreendentes porém, é importante verificar a preocupação pela razão
+	de cobertura e as diferetes velocidades.},
+  timestamp = {2009.08.11}
+}
+
+@ARTICLE{paper_bettstetter2001,
+  author = {Bettstetter, Christian},
+  title = {Mobility modeling in wireless networks: categorization, smooth movement,
+	and border effects},
+  journal = {SIGMOBILE Mob. Comput. Commun. Rev.},
+  year = {2001},
+  volume = {5},
+  pages = {55--66},
+  number = {3},
+  address = {New York, NY, USA},
+  doi = {http://doi.acm.org/10.1145/584051.584056},
+  issn = {1559-1662},
+  owner = {souzadej},
+  publisher = {ACM},
+  timestamp = {2009.07.14}
+}
+
+@INPROCEEDINGS{Blomgren2007,
+  author = {Blomgren, M. and Hultell, J. and Rui Cai and Tao Cai},
+  title = {Distributed Demand-Aware Access Selection in Wireless Multi-Cell
+	Data Networks},
+  booktitle = {Proc. IEEE 18th International Symposium on Personal, Indoor and Mobile
+	Radio Communications PIMRC 2007},
+  year = {2007},
+  pages = {1--5},
+  month = sep # { 3--7,},
+  doi = {10.1109/PIMRC.2007.4394697},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- Traz como novidade a inclusão da carga das celulas candidatas no
+	algoritmo de seleçao de acesso. Não explora cenários com hot spot
+	e faz a formulação do AS de maneira distribuída e market-based method.
+	Divide o problema NP-hard em sub-problemas mais simples (slecionar
+	melhor AP para UM usuário).
+	
+	- Testa vários critérios, entre eles: Max rate, Max SIR, Max RSS
+	
+	- testa também o market-based selection: users are buyers and APs
+	are Sellers.
+	
+	- introdução corrobora o conceito MA como alternativa principal para
+	4G (A common understanding from these studies is that future wireless
+	networks will be composed of both short-range (high rate) and long-range
+	cellular (low rate) technologies.)},
+  timestamp = {2009.07.09}
+}
+
+@ARTICLE{Blum2003,
+  author = {Blum, R.S.},
+  title = {MIMO capacity with interference},
+  journal = {IEEE Journal on Selected Areas in Communications},
+  year = {2003},
+  volume = {21},
+  pages = { 793-801},
+  number = {5},
+  month = {June},
+  abstract = {System capacity is considered for a group of interfering users employing
+	single-user detection and multiple transmit and receive antennas
+	for flat Rayleigh-fading channels with independent fading coefficients
+	for each path. The focus is on the case where there is no channel
+	state information at the transmitter, but channel state information
+	is assumed at the receiver. It is shown that the optimum signaling
+	is sometimes different from cases where the users do not interfere
+	with each other. In particular, the optimum signaling will sometimes
+	put all power into a single transmitting antenna, rather than divide
+	power equally between independent streams from the different antennas.
+	If the interference is either sufficiently weak or sufficiently strong,
+	we show that either the optimum interference-free approach, which
+	puts equal power into each antenna, or the approach that puts all
+	power into a single antenna is optimum and we show how to find the
+	regions where each approach is best.},
+  doi = {10.1109/JSAC.2003.810345},
+  file = {:Blum2003.pdf:PDF},
+  issn = {0733-8716},
+  keywords = { MIMO systems, Rayleigh channels, antenna arrays, antenna theory,
+	radiofrequency interference, telecommunication signalling MIMO capacity,
+	channel state information, fading coefficients, flat Rayleigh-fading
+	channels, interference, interfering users, multiple transmit antennas,
+	optimum signaling, receive antennas, single-user detection, space-time
+	coding, system capacity},
+  owner = {edgsouza},
+  timestamp = {2009.07.02}
+}
+
+@ARTICLE{Blum2002,
+  author = {Blum, R.S. and Winters, J.H. and Sollenberger, N.R.},
+  title = {On the capacity of cellular systems with MIMO},
+  journal = {Communications Letters, IEEE},
+  year = {2002},
+  volume = {6},
+  pages = {242-244},
+  number = {6},
+  month = {Jun},
+  abstract = {It is shown that the mutual information of a single, isolated, multiple
+	transmit and receive antenna array link is maximized by transmitting
+	the maximum number of independent data streams for a flat Rayleigh
+	fading channel with independent fading coefficients for each path.
+	However, if such links mutually interfere, in some cases the overall
+	system mutual information can be increased by transmitting fewer
+	streams},
+  doi = {10.1109/LCOMM.2002.1010868},
+  issn = {1089-7798},
+  keywords = {MIMO systems, Rayleigh channels, antenna arrays, cellular radio, channel
+	capacity, cochannel interference, radio links, receiving antennas,
+	transmitting antennasMIMO, cellular systems capacity, cochannel interference,
+	flat Rayleigh fading channel, independent data streams, independent
+	fading coefficients, isolated antenna array link, multiple receive
+	antenna array link, multiple transmit antenna array link, mutual
+	information},
+  owner = {edgsouza},
+  timestamp = {2009.07.06}
+}
+
+@PHDTHESIS{tese_plamen1999,
+  author = {Plamen I. Bratanov},
+  title = {User Mobility Modeling in Cellular Communications Networks},
+  school = {Vienna University of Tecnology},
+  year = {1999},
+  owner = {souzadej},
+  timestamp = {2009.07.14}
+}
+
+@INPROCEEDINGS{Caire2008,
+  author = {Caire, G. and Ramprashad, S. A. and Papadopoulos, H. C. and Pepin,
+	C. and Sundberg, C.-E. W.},
+  title = {Multiuser MIMO downlink with limited inter-cell cooperation: Approximate
+	interference alignment in time, frequency and space},
+  booktitle = {Proc. 46th Annual Allerton Conference on Communication, Control,
+	and Computing},
+  year = {2008},
+  pages = {730--737},
+  abstract = {We consider a realistic albeit simplified scenario for wireless cellular
+	systems of the next generation (4G and beyond), where MIMO-OFDM,
+	opportunistic scheduling, channel state information at the transmitter
+	and limited base-station cooperation are envisaged. We propose two
+	strategies with limited base-station cooperation that can be easily
+	implemented with today's technology and achieve an approximate form
+	of inter-cell interference alignment. The first strategy consists
+	of imposing a ldquopower maskrdquo in frequency such that adjacent
+	cooperative clusters of base stations generate different interference
+	levels in different frequency subchannels. The second strategy consists
+	of switching between different cooperative clusters such that no
+	user is in a permanently disadvantaged location.We compare single-user
+	and multiuser MIMO systems in terms of average throughput as a function
+	of the user location.},
+  doi = {10.1109/ALLERTON.2008.4797630},
+  file = {:Caire2008.pdf:PDF},
+  keywords = {4G mobile communication, MIMO communication, OFDM modulation, cellular
+	radio, multiuser channels, radiofrequency interference, scheduling,
+	telecommunication switching, 4G communication, MIMO-OFDM system,
+	adjacent cooperative clusters, channel state information at the transmitter,
+	cooperative clusters, frequency subchannels, interference alignment,
+	limited base-station cooperation, limited intercell cooperation,
+	multiple-input multiple-output system, multiuser MIMO downlink, opportunistic
+	scheduling, orthogonal frequency division multiplexing, power mask,
+	single-user MIMO systems, switching, wireless cellular systems},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@INPROCEEDINGS{juan2000,
+  author = {Juan-Carlos Cano and Pietro Manzoni},
+  title = {A Performance Comparison of Energy Consumption for Mobile Ad Hoc
+	Network Routing Protocols},
+  booktitle = {MASCOTS '00: Proceedings of the 8th International Symposium on Modeling,
+	Analysis and Simulation of Computer and Telecommunication Systems},
+  year = {2000},
+  pages = {57},
+  address = {Washington, DC, USA},
+  publisher = {IEEE Computer Society},
+  isbn = {0-7695-0728-X},
+  owner = {souzadej}
+}
+
+@INPROCEEDINGS{Cao2001,
+  author = {Cao, Jin and Cleveland, William S. and Lin, Dong and Sun, Don X.},
+  title = {On the nonstationarity of Internet traffic},
+  booktitle = {SIGMETRICS '01: Proceedings of the 2001 ACM SIGMETRICS international
+	conference on Measurement and modeling of computer systems},
+  year = {2001},
+  pages = {102--112},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  owner = {souzadej},
+  timestamp = {2010.03.20}
+}
+
+@PHDTHESIS{phd_cardieri2000,
+  author = {Paulo Cardieri},
+  title = {Resource Allocation and Adaptive Antennas in Cellular Communications},
+  school = {Virginia Tech},
+  year = {2000},
+  owner = {souzadej},
+  timestamp = {2009.07.14}
+}
+
+@PHDTHESIS{phd_macelo2006,
+  author = {Marcelo Menezes de Carvalho},
+  title = {Analytical Modeling Of Medium Access Control Protocols In Wireless
+	Networks},
+  school = {University of California},
+  year = {2006},
+  owner = {souzadej}
+}
+
+@ARTICLE{Catreux2001,
+  author = {Catreux, S. and Driessen, P.F. and Greenstein, L.J.},
+  title = {Attainable throughput of an interference-limited multiple-input multiple-output
+	(MIMO) cellular system},
+  journal = {IEEE Transactions on Communications},
+  year = {2001},
+  volume = {49},
+  pages = {1307-1311},
+  number = {8},
+  month = {Aug},
+  abstract = {We investigate the high spectral efficiency capabilities of a cellular
+	data system that combines the following: 1) multiple transmit signals,
+	each using a separately adaptive modulation; 2) adaptive array processing
+	at the receiver; and 3) aggressive frequency reuse (reuse in every
+	cell). We focus on the link capacity between one user and its serving
+	base station, for both uncoded and ideally coded transmissions. System
+	performance is measured in terms of average data throughput, where
+	the average is over user location, shadow fading, and fast fading.
+	We normalize this average by the total bandwidth, call it the mean
+	spectral efficiency, and show why this metric is a useful representation
+	of system capability. We then quantify it, using simulations, to
+	characterize multiple-input multiple-output systems performance for
+	a wide variety of channel conditions and system design options},
+  doi = {10.1109/26.939839},
+  file = {:Catreux2001.pdf:PDF},
+  issn = {0090-6778},
+  keywords = {MIMO systems, adaptive antenna arrays, adaptive modulation, adaptive
+	signal processing, antenna theory, array signal processing, cellular
+	radio, data communication, fading, frequency allocation, radiofrequency
+	interferenceMIMO cellular system, adaptive array processing, adaptive
+	modulation, aggressive frequency reuse, attainable throughput, bandwidth,
+	base station, cellular data system, channel conditions, fast fading,
+	ideally coded transmission, interference-limited multiple-input multiple-output
+	cellular system, link capacity, mean spectral efficiency, multiple
+	transmit signals, receiver, shadow fading, spectral efficiency capabilities,
+	system design options, system performance, uncoded transmission,
+	user location},
+  owner = {edgsouza},
+  timestamp = {2009.07.02}
+}
+
+@INPROCEEDINGS{Catreux2000,
+  author = {Catreux, S. and Driessen, P.F. and Greenstein, L.J.},
+  title = {Simulation results for an interference-limited multiple input multiple
+	output cellular system},
+  booktitle = {IEEE Global Telecommunications Conference, GLOBECOM '00},
+  year = {2000},
+  volume = {2},
+  pages = {1094-1096},
+  abstract = {We describe a simulation study of a cellular system using multiple-input
+	multiple-output (MIMO) antenna techniques along with adaptive modulation
+	and aggressive frequency reuse. We show, for the case of 3 transmit
+	and 3 receive antennas, how much MIMO systems outperform systems
+	with receive-diversity-only when noise dominates. When co-channel
+	interference from surrounding cells dominates, the differences shrink,
+	as do the absolute numbers. We quantify these reductions for the
+	specific cases studied, and discuss further areas of research},
+  doi = {10.1109/GLOCOM.2000.891306},
+  file = {:Catreux2000.pdf:PDF},
+  keywords = {MIMO systems, adaptive modulation, antenna arrays, array signal processing,
+	cellular radio, cochannel interference, digital radio, digital simulation,
+	frequency allocation, interference suppression, receiving antennas,
+	transmitting antennasMIMO antenna techniques, adaptive modulation,
+	array processing, co-channel interference, digital cellular radio,
+	frequency reuse, interference-limited MIMO cellular system, multiple-input
+	multiple-output system, noise, ordered successive interference cancellation,
+	receive antennas, receive diversity, research, simulation results,
+	transmit antennas},
+  owner = {edgsouza},
+  timestamp = {2009.07.02}
+}
+
+@INPROCEEDINGS{Cavalcanti2006,
+  author = {F. R. P. Cavalcanti and Vicente. A. de Sousa Jr, and R. A. de O.
+	Neto, and F. de S. Chaves},
+  title = {Impact of intelligent access selection algorithms in cooperative
+	wireless networks},
+  booktitle = {Proc. International Telecommunications Symposium},
+  year = {2006},
+  pages = {620--625},
+  month = sep # { 3--6,},
+  doi = {10.1109/ITS.2006.4433348},
+  owner = {souzadej},
+  timestamp = {2009.07.09}
+}
+
+@ARTICLE{Celebi2007,
+  author = {Celebi, H. and Arslan, H.},
+  title = {Utilization of Location Information in Cognitive Wireless Networks},
+  journal = IEEE_M_WC,
+  year = {2007},
+  volume = {14},
+  pages = {6--13},
+  number = {4},
+  month = aug,
+  doi = {10.1109/MWC.2007.4300977},
+  owner = {bazzo},
+  timestamp = {2009.07.24}
+}
+
+@INPROCEEDINGS{Chan2005,
+  author = {Ho Chan and Pingyi Fan and Zhigang Cao},
+  title = {A utility-based network selection scheme for multiple services in
+	heterogeneous networks},
+  booktitle = {Proc. International Conference on Wireless Networks, Communications
+	and Mobile Computing},
+  year = {2005},
+  volume = {2},
+  pages = {1175--1180},
+  month = jun # { 13--16,},
+  doi = {10.1109/WIRLES.2005.1549578},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- Artigo propoe um algoritmo de AS baseado em utility e pricing. Não
+	tem muita relação com o tipo de formulação que foi feito no meu trabalho.
+	Só deu uma lida rápida no artigo.},
+  timestamp = {2009.07.09}
+}
+
+@ARTICLE{ChaohongSong2008,
+  author = {Chaohong Song, Qiang Luo, and Feng Shi},
+  title = {Indoor Access Points Location Optimization Using Differential Evolution},
+  journal = {International Conference on Computer Science and Software Engineering},
+  year = {2008},
+  file = {:APLocationDifferentialEvolution.pdf:PDF},
+  owner = {bazzo},
+  review = {De Juliano Bazzo [bazzo]:
+	
+	- O objetivo é analisar a melhor disposição dos APs utilizando a técnica
+	de evolução diferencial.
+	
+	- Paper não propõe um método de descoberta de APs.
+	
+	- São utilizados os fingerprints.
+	
+	- Evolução diferencial é uma técnica de GA.
+	
+	- Aplicando a técnica de evolução diferencial no positionamento de
+	APs, há uma melhora considerável na precisão de localização. Não
+	é comparado com nenhuma técnica anterior então a melhora é dada subjetivamente.
+	
+	- É analisado a utilização de um número variado de AP (3 a 8) na técnica.
+	
+	- Não foi utilizado um ambiente real. Efeitos de multipath e shadowing
+	não foram considerados.
+	
+	- Ambiente muito controlado.
+	
+	- Paper é interessante porém mostra que o estudo está em fase bem
+	inicial.
+	
+	- Interessante para ser aprofundado em um mestrado, por exemplo.},
+  timestamp = {2010.02.19}
+}
+
+@ARTICLE{Tuan2009,
+  author = {Tuan-Che Chen and Jyh-Cheng Chen and Ying-Yu Chen},
+  title = {Maximizing Unavailability Interval for Energy Saving in IEEE 802.16e
+	Wireless MANs},
+  journal = {IEEE Transactions on Mobile Computing},
+  year = {2009},
+  volume = {8},
+  pages = {475 -487},
+  number = {4},
+  month = {april}
+}
+
+@INPROCEEDINGS{Xiang2009,
+  author = {Xiang Chen and Zesong Fei and Jingming Kuang and Keke Liu and Meng
+	Zheng},
+  title = {{GERAN} Evolution: Multi-User Reusing One Slot to Improve Capacity},
+  booktitle = {Communications and Mobile Computing, 2009. CMC '09. WRI International
+	Conference on},
+  year = {2009},
+  volume = {1},
+  pages = {219--223},
+  month = {Jan.},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@ARTICLE{Chen2002,
+  author = {Chen, Y. \& Kobayashi, H.},
+  title = {Signal Strength Based Indoor Geolocation},
+  journal = {Proceedings of the IEEE International Conference on Communications},
+  year = {2002},
+  file = {:RSS.pdf:PDF},
+  owner = {bazzo},
+  review = {De Juliano Bazzo (bazzo):
+	
+	- Trabalho propõe investigar modelos matemático de propagação de sinal
+	em ambiente indoor e seu erro quando aplicado em geolocalização.
+	
+	- Foram avaliados os seguintes métodos: linear, linear compensado
+	e regressão múltiplas.
+	
+	- Simulações são analisadas com 1 até 5 APs.
+	
+	Conclusões: Artigo curto (4 páginas) e direto. Importante se fossemos
+	realizar alguma simulação de ambiente indoor aplicado em geolocalização.},
+  timestamp = {2010.02.19}
+}
+
+@INPROCEEDINGS{Chiurtu2001,
+  author = {Chiurtu, N. and Rimoldi, B. and Telatar, E.},
+  title = {On the capacity of multi-antenna Gaussian channels},
+  booktitle = {Proc. IEEE International Symposium on Information Theory},
+  year = {2001},
+  pages = {53--},
+  abstract = {In this paper we investigate the use of multi-antennas at both ends
+	of a point-to-point communication system over the additive Gaussian
+	channel},
+  doi = {10.1109/ISIT.2001.935916},
+  file = {:Chiurtu2001.pdf:PDF},
+  keywords = {Gaussian channels, Gaussian noise, channel capacity, matrix algebra,
+	optimisation, receiving antennas, transmitting antennas, additive
+	Gaussian channel, bandwidth, channel transfer matrix, flat waveform
+	channel, joint optimization, multi-antenna Gaussian channel capacity,
+	pessimistic capacity, point-to-point communication system, receive
+	antennas, received vector, transmit antennas, transmitted vector,
+	zero-mean complex circular symmetric Gaussian noise},
+  owner = {edgsouza},
+  timestamp = {2009.06.29}
+}
+
+@ARTICLE{Hyun2007,
+  author = {Hyun-Ho Choi and Jung-Ryun Lee and Dong-Ho Cho},
+  title = {Hybrid Power Saving Mechanism for VoIP Services with Silence Suppression
+	in IEEE 802.16e Systems},
+  journal = {IEEE Communications Letters},
+  year = {2007},
+  volume = {11},
+  pages = {455 -457},
+  number = {5},
+  month = {may},
+  owner = {souzadej}
+}
+
+@ARTICLE{Claudio2010,
+  author = {Claudio Cicconetti and Luciano Lenzini and Enzo Mingozzi and Carlo
+	Vallati},
+  title = {Reducing Power Consumption with QoS Constraints in IEEE 802.16e Wireless
+	Networks},
+  journal = {IEEE Transactions on Mobile Computing},
+  year = {2010},
+  volume = {99},
+  publisher = {IEEE Computer Society}
+}
+
+@INPROCEEDINGS{dmuzic2009,
+  author = {D. Muzic, D.Opatic},
+  title = {Capabilities and Impacts of EDGE Evolution
+	
+	toward Seamless Wireless Networks},
+  booktitle = {MIPRO 2009},
+  year = {2009},
+  owner = {lida},
+  timestamp = {2009.11.13}
+}
+
+@PHDTHESIS{phd_jean2004,
+  author = {Jean-Pierre Ebert},
+  title = {Energy-efficient Communication in Ad Hoc Wireless Local Area Networks},
+  school = {University of Berlin},
+  year = {2004},
+  owner = {souzadej}
+}
+
+@INPROCEEDINGS{Mustafa2007,
+  author = {Mustafa Ergen and Pravin Varaiya},
+  title = {Decomposition of Energy Consumption in IEEE 802.11},
+  booktitle = {IEEE International Conference on Communications, 2007. ICC'07.},
+  year = {2007},
+  pages = {403-408},
+  month = {24-28}
+}
+
+@TECHREPORT{umts_3003,
+  author = {ETSI},
+  title = {Selection Procedures for the Choice of Radio Transmission Technologies
+	of the UMTS - UMTS 30.03},
+  institution = {Universal Mobile Telecommunications System (UMTS)},
+  year = {1998},
+  owner = {souzadej},
+  timestamp = {2009.07.14}
+}
+
+@TECHREPORT{Feeney99,
+  author = {Laura Marie Feeney},
+  title = {Investigating the Energy Consumption of an IEEE 802.11 Network Interface},
+  institution = {In Technical Report SICS T99},
+  year = {1999},
+  owner = {souzadej}
+}
+
+@ARTICLE{Foschini1998,
+  author = {G. J. Foschini and M. J. Gans},
+  title = {On limits of wireless communications in a fading environment when
+	using multiple antennas},
+  journal = {Wireless Personal Communications},
+  year = {1998},
+  volume = {6},
+  pages = {311--335},
+  file = {:Foschini1998.pdf:PDF},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@ARTICLE{Foschini2006,
+  author = {Foschini, G. J. and Karakayali, K. and Valenzuela, R. A.},
+  title = {Coordinating multiple antenna cellular networks to achieve enormous
+	spectral efficiency},
+  journal = {IEE Proceedings-Communications},
+  year = {2006},
+  volume = {153},
+  pages = {548--555},
+  number = {4},
+  file = {:Foschini2006.pdf:PDF},
+  issn = {1350-2425},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@INPROCEEDINGS{paper_Frederiksen2002,
+  author = {Frederiksen, F. and Kolding, T. E. },
+  title = {Performance and modeling of WCDMA/HSDPA transmission/H-ARQ schemes},
+  booktitle = {Proc. VTC 2002-Fall Vehicular Technology Conference 2002 IEEE 56th},
+  year = {2002},
+  volume = {1},
+  pages = {472--476},
+  month = sep # { 24--28,},
+  doi = {10.1109/VETECF.2002.1040388},
+  owner = {rdomingo},
+  timestamp = {2009.07.15}
+}
+
+@ARTICLE{GarethAbrey2007,
+  author = {Gareth Abrey, Neco Ventura},
+  title = {Evaluation of Multiple Interface Functionality and Flow Mobility},
+  journal = {SATNAC 2007},
+  year = {2007},
+  owner = {bazzo},
+  review = {De Juliano Bazzo (bazzo):
+	
+	- Artigo mostra as vantagens de se utilizar múltiplos fluxos em ambientes
+	de múltiplas interfaces.
+	
+	- Artigo cita novamente que o gerenciamento de múltiplos fluxos no
+	IPv6 ainda é um problema a ser explorado.
+	
+	- O gerenciamento de mobilidade acontece na camada de aplicação.
+	
+	- Artigo propoe uma nova forma de gerenciar múltiplos fluxos, inclusive
+	avaliando handover.
+	
+	Conclusões: Artigo interessante mas com muitos detalhes de implementação.
+	Não está tão claro (quanto poderia ser) no início do paper o objetivo
+	do que se deseja testar. A conclusão enumera de forma mais clara
+	os resultados dos testes e poderia ser o primeiro capítulo a ser
+	lido nesse paper.},
+  timestamp = {2009.07.28}
+}
+
+@INPROCEEDINGS{paper_Gobriel04,
+  author = {Sameh Gobriel and Rami Melhem and Daniel Mossé},
+  title = {A Unified Interference/Collision Analysis for Power-Aware Adhoc Networks},
+  booktitle = {IEEE Infocom},
+  year = {2004},
+  owner = {souzadej}
+}
+
+@ARTICLE{Goldsmith2003,
+  author = {Goldsmith, A. and Jafar, S. A. and Jindal, N. and Vishwanath, S.},
+  title = {Capacity limits of MIMO channels},
+  journal = {IEEE Journal on Selected Areas in Communications},
+  year = {2003},
+  volume = {21},
+  pages = {684--702},
+  number = {5},
+  doi = {10.1109/JSAC.2003.810294},
+  file = {:Goldsmith2003.pdf:PDF},
+  issn = {0733-8716},
+  keywords = {MIMO systems, antenna arrays, broadcast channels, cellular radio,
+	channel capacity, fading channels, multi-access systems, multiuser
+	channels, noise, receiving antennas, time-varying channels, transmitting
+	antennas, MIMO cellular, SNR, Shannon capacity, achievable rate region,
+	antenna array, base station cooperation, broadcast channel, capacity
+	gain, capacity limits, capacity region, channel information, channel
+	signal-to-noise ratio, correlation models, dirty-paper region, duality
+	transformation, fading, multicell MIMO channels, multiple antennas,
+	multiple-access channels, multiple-input multiple-output channels,
+	multiuser MIMO channels, open problems, receiver, single-user MIMO
+	channels, time-varying channel model, transmitter},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@ARTICLE{Goldsmith2009,
+  author = {Goldsmith, A. and Jafar, S. A. and Maric, I. and Srinivasa, S.},
+  title = {Breaking Spectrum Gridlock With Cognitive Radios: An Information
+	Theoretic Perspective},
+  journal = {Proceedings of the IEEE},
+  year = {2009},
+  volume = {97},
+  pages = {894-914},
+  number = {5},
+  month = {May },
+  abstract = {Cognitive radios hold tremendous promise for increasing spectral efficiency
+	in wireless systems. This paper surveys the fundamental capacity
+	limits and associated transmission techniques for different wireless
+	network design paradigms based on this promising technology. These
+	paradigms are unified by the definition of a cognitive radio as an
+	intelligent wireless communication device that exploits side information
+	about its environment to improve spectrum utilization. This side
+	information typically comprises knowledge about the activity, channels,
+	codebooks, and/or messages of other nodes with which the cognitive
+	node shares the spectrum. Based on the nature of the available side
+	information as well as a priori rules about spectrum usage, cognitive
+	radio systems seek to underlay, overlay, or interweave the cognitive
+	radios' signals with the transmissions of noncognitive nodes. We
+	provide a comprehensive summary of the known capacity characterizations
+	in terms of upper and lower bounds for each of these three approaches.
+	The increase in system degrees of freedom obtained through cognitive
+	radios is also illuminated. This information-theoretic survey provides
+	guidelines for the spectral efficiency gains possible through cognitive
+	radios, as well as practical design ideas to mitigate the coexistence
+	challenges in today's crowded spectrum.},
+  doi = {10.1109/JPROC.2009.2015717},
+  file = {:Jafar2009.pdf:PDF},
+  issn = {0018-9219},
+  keywords = {cognitive radio a priori rules, cognitive radios, degree of freedom,
+	information theoretic perspective, intelligent wireless communication
+	device, spectrum gridlock, spectrum utilization, wireless network
+	design},
+  owner = {edgsouza},
+  timestamp = {2009.07.06}
+}
+
+@ARTICLE{paper_Goodman1991,
+  author = {Goodman, D. J. and Wei, S. X.},
+  title = {Efficiency of packet reservation multiple access},
+  journal = {IEEE Transactions on Vehicular Technology},
+  year = {1991},
+  volume = {40},
+  pages = {170--176},
+  number = {1},
+  month = feb,
+  doi = {10.1109/25.69985},
+  owner = {souzadej},
+  part = {2},
+  timestamp = {2009.07.15}
+}
+
+@INPROCEEDINGS{Greenhalgh04,
+  author = {A Greenhalgh and S Hailes},
+  title = {Don't Listen, Talk: A comparative study of transmit and receive power
+	for low power radios},
+  booktitle = {In London Communications Symposium, University College London},
+  year = {2004},
+  pages = {269-272},
+  owner = {souzadej}
+}
+
+@TECHREPORT{IEEE_Std_P802_16e_D2,
+  author = {IEEE 802.16 Broadband Wireless Access Working Group},
+  title = {Draft Amendment to IEEE Standard for Local and metropolitan area
+	networks, Part 16: Air Interface for Broadband Wireless Access Systems,
+	Amendment for Physical and Medium Access Control Layers for Combined
+	Fixed and Mobile Operation in Licensed Bands},
+  year = {2004},
+  journal = {IEEE-SA}
+}
+
+@INPROCEEDINGS{paper_lei2006,
+  author = {Lei Guo and Xiaoning Ding and Haining Wang and Qun Li and Songqing
+	Chen and Xiaodong Zhang},
+  title = {Exploiting Idle Communication Power to Improve Wireless Network Performance
+	and Energy Efficiency},
+  booktitle = {25th IEEE International Conference on Computer Communications. Proceedings
+	- INFOCOM 2006},
+  year = {2006},
+  pages = {1-12},
+  month = {april}
+}
+
+@ARTICLE{Han2009,
+  author = {Dongsu Han and David G. Andersen and Michael Kaminsky and Konstantina
+	Papagiannaki and Srinivasan Seshan},
+  title = {Access Point Localization using Local Signal Strength Gradient},
+  journal = {Passive \& Active Measurement (PAM)},
+  year = {2009},
+  file = {:Gradient_pam09-localization.pdf:PDF},
+  owner = {bazzo},
+  review = {De Juliano Bazzo (bazzo):
+	
+	<taken from my presentation>
+	
+	War-driving like measurement.
+	
+	Tested algorithms: centroid, weighted centroid, trilateration, cone-fit
+	and gradient.
+	
+	Experiment environment: one AP inside an apartment.
+	
+	Gradient achieves a median AP localization error of 33 meters and
+	reduces the maximum error by 33% compared to the second best, weighted
+	centroid approach.
+	
+	
+	<adicionais em pt>
+	
+	- Medidas foram coletadas por war-driving onde o autor dirigia um
+	carro e coletava as medidas das ruas ao redor do apartamento onde
+	encontra-se o AP.
+	
+	- Medidas não foram coletadas dentro do apartamento.
+	
+	- Distância entre a rua e o AP é de 20m.
+	
+	- Ambiente é menos hostil do que um shopping por exemplo.
+	
+	
+	Conclusão: Artigo interessante que mostra a comparação do método do
+	gradiente com outros (veja acima). Medidas foram coletadas numa distância
+	de 20m do AP o que mostra que o algoritmo de gradiente teve um desempenho
+	melhor que os outros métodos. Ambiente não tem muito efeito de shadowing
+	e multipath.},
+  timestamp = {2010.02.19}
+}
+
+@INPROCEEDINGS{Kwanghun2006,
+  author = {Kwanghun Han and Sunghyun Choi},
+  title = {Performance Analysis of Sleep Mode Operation in IEEE 802.16e Mobile
+	Broadband Wireless Access Systems},
+  booktitle = {IEEE 63rd Vehicular Technology Conference, VTC 2006-Spring},
+  year = {2006},
+  volume = {3},
+  pages = {1141 -1145},
+  month = {7-10}
+}
+
+@ARTICLE{Haykin2009a,
+  author = {Haykin, S. and Setoodeh, P.},
+  title = {Robust Transmit Power Control for Cognitive Radio},
+  journal = {Proceedings of the IEEE},
+  year = {2009},
+  volume = {97},
+  pages = {915-939},
+  number = {5},
+  month = {May },
+  abstract = {A cognitive radio network is a multiuser system, in which different
+	users compete for limited resources in an opportunistic manner, interacting
+	with each other for access to the available resources. The fact that
+	both users and spectrum holes (i.e., unused spectrum subbands) can
+	come and go makes a cognitive radio network a highly dynamic and
+	challenging wireless environment. Therefore, finding robust resource-allocation
+	algorithms, which are capable of achieving reasonably good solutions
+	fast enough in order to guarantee an acceptable level of performance
+	under worst case interference conditions, is crucial in such environment.
+	The focus of this paper is the transmit-power control in cognitive
+	radio networks, considering a noncooperative framework. Moreover,
+	tools from control theory are used to study both the equilibrium
+	and transient behaviors of the network under dynamically varying
+	conditions.},
+  doi = {10.1109/JPROC.2009.2015718},
+  file = {:Haykin2009a.pdf:PDF},
+  issn = {0018-9219},
+  keywords = {cognitive radio, power control, resource allocation, robust control,
+	telecommunication controlcognitive radio network, control theory,
+	interference conditions, multiuser system, robust resource-allocation
+	algorithms, robust transmit power control, spectrum holes, transient
+	behaviors},
+  owner = {edgsouza},
+  timestamp = {2009.07.06}
+}
+
+@ARTICLE{Haykin2009,
+  author = {Haykin, S. and Thomson, D.J. and Reed, J.H.},
+  title = {Spectrum Sensing for Cognitive Radio},
+  journal = {Proceedings of the IEEE},
+  year = {2009},
+  volume = {97},
+  pages = {849-877},
+  number = {5},
+  month = {May },
+  abstract = {Spectrum sensing is the very task upon which the entire operation
+	of cognitive radio rests. For cognitive radio to fulfill the potential
+	it offers to solve the spectrum underutilization problem and do so
+	in a reliable and computationally feasible manner, we require a spectrum
+	sensor that detects spectrum holes (i.e., underutilized subbands
+	of the radio spectrum), provides high spectral-resolution capability,
+	estimates the average power in each subband of the spectrum, and
+	identifies the unknown directions of interfering signals. Cyclostationarity
+	is another desirable property that could be used for signal detection
+	and classification. The multitaper method (MTM) for nonparametric
+	spectral estimation accomplishes these tasks accurately, effectively,
+	robustly, and in a computationally feasible manner. The objectives
+	of this paper are to present: 1) tutorial exposition of the MTM,
+	which is expandable to perform space-time processing and time-frequency
+	analysis; 2) cyclostationarity, viewed from the Loeve and Fourier
+	perspectives; and 3) experimental results, using Advanced Television
+	Systems Committee digital television and generic land mobile radio
+	signals, followed by a discussion of the effects of Rayleigh fading.},
+  doi = {10.1109/JPROC.2009.2015711},
+  file = {:Haykin2009.pdf:PDF},
+  issn = {0018-9219},
+  keywords = {Rayleigh channels, cognitive radio, signal classification, signal
+	detection, telecommunication network reliabilityAdvanced Television
+	Systems Committee digital television, Rayleigh fading, cognitive
+	radio, cyclostationarity, generic land mobile radio signals, high
+	spectral-resolution capability, nonparametric spectral estimation,
+	signal classification, signal detection, space-time processing, spectrum
+	sensing, spectrum underutilization problem, time-frequency analysis},
+  owner = {edgsouza},
+  timestamp = {2009.07.06}
+}
+
+@INPROCEEDINGS{Ming2006,
+  author = {Ming-Ju Ho and Mostafa, A.},
+  title = {{AMR} Call Quality Measurement Based on {ITU-T P.862.1} {PESQ-LQO}},
+  booktitle = {Vehicular Technology Conference, 2006. VTC2006-Fall. IEEE 64th},
+  year = {2006},
+  pages = {1 -- 5},
+  month = {Sept.},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@INPROCEEDINGS{Hollos2007,
+  author = {Hollos, D. and Poyhonen, P. and Strandberg, O. and Aguero, R. and
+	Pentikousis, K. and Blume, O.},
+  title = {A Study of Handover Strategies for Mobile Multiaccess Ambient Networks},
+  booktitle = {Proc. 16th IST Mobile and Wireless Communications Summit},
+  year = {2007},
+  pages = {1--5},
+  month = jul # { 1--5,},
+  doi = {10.1109/ISTMWC.2007.4299272},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- Trabalho similar ao que eu propus com o GAP. Ele compara alguns
+	algoritmos de vertical handover para uma rede MA composta de 3G/UMTS
+	e WLAN. Ele faz a comparação dos seguintes algotimos:
+	
+	1.Formulacao que ele chama de algortimo ótimo (o nosso GAP resolvido
+	por programação linear);
+	
+	2.Terminal centric strategy: The terminal prefers stronger signals
+	and tries to minimize the number of HOs performed. (terminal faz
+	a decisão final)
+	
+	3.Network centric strategy: The network prefers accesses selection
+	so that the load is balanced amont the BSs and RATs; i.e. lower loaded
+	accesses are preferred over high loaded ones. (rede faz a decisão
+	final, mas usa )
+	
+	4. Legacy strategy: rede toma decisão mas não faz cheque de capcidade
+	em cada rede.
+	
+	As ultima três estratégia são aplicadas da forma SASP.
+	
+	- Ele disserta e dá um exemplo sobre um ponto importante (bullets
+	na pagina 2) do problema de AS e VHO: As this scenario illustrates,
+	we face the problem of creating a decision framework where (i) different
+	objectives lead to different decisions; (ii) the information has
+	to be kept distributed among the deciding participants (iii) the
+	available information depends on the location of deciding participants
+	and, thus, no deciding participant can maintain a complete view;
+	(iv) information from different deciding participants changes at
+	different time scales.
+	
+	- Ele tem uma seção bem parecida com o que porpomos fazer na seção
+	Introduction do livro. A seção é chamda de “Definitions and Working
+	Assumptions” e define termos como: multi-RAT, cell-based service,
+	cell load, etc.
+	
+	- Algum texto e ideas podem ser aproveitados, principalmente porque
+	o artigo propõe alguns algoritmos parecidos com os que a gente propôs,
+	podemos usar alguma coisa da introdução dele.
+	
+	- Comenta que o IEE 802.21 e o IETF’s MIPSHOP está trabalhando na
+	padronização de rede heterogêneas desenvolvendo end-to-end signalling
+	schemes.},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{Holma07,
+  author = {Holma, H. and Ahonpaa, T. and Prieur, E.},
+  title = {{UMTS900} Co-Existence with {GSM900}},
+  booktitle = {Vehicular Technology Conference, 2007. VTC2007-Spring. IEEE 65th},
+  year = {2007},
+  pages = {778 -- 782},
+  month = {April},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@INPROCEEDINGS{Huang2008,
+  author = {Huang, Chiachi and Jafar, S. A.},
+  title = {Degrees of freedom of the MIMO interference channel with cooperation
+	and cognition},
+  booktitle = {Proc. IEEE International Symposium on Information Theory ISIT 2008},
+  year = {2008},
+  pages = {1348--1352},
+  abstract = {In this paper, we explore the benefits, in the sense of total (sum
+	rate) degrees of freedom (DOF), of cooperation and cognitive message
+	sharing for a two-user multiple-input-multiple-output (MIMO) Gaussian
+	interference channel with M1, M2 antennas at transmitters and N1,
+	N2 antennas at receivers. For the case of cooperation (including
+	cooperation at transmitters only, at receivers only, and at transmitters
+	as well as receivers), the DOF is min{M1 + M2,N1 + N2, max(M1,N2),
+	max(M2,N1)}, which is the same as the DOF of the channel without
+	cooperation. For the case of cognitive message sharing, the DOF is
+	min{M1+ M2,N1+N2, (1-1T2)((1-1R2)max(M1,N2)+1R2(M1+N2))+ 1T2(M1 +
+	M2), (1 - 1T1)((1 - 1R1)max(M2,N1) + R1(M2 + N1)) + 1T1(M1 + M2)}
+	where Ti = 1 (0) when transmitter i is (is not) a cognitive transmitter
+	and Ri is defined in the same fashion. Our results show that while
+	both techniques may increase the sum rate capacity of the MIMO interference
+	channel, only cognitive message sharing can increase the DOF. We
+	also find that it may be more beneficial for a user to have a cognitive
+	transmitter than to have a cognitive receiver.},
+  doi = {10.1109/ISIT.2008.4595207},
+  file = {:Huang2008.pdf:PDF},
+  keywords = {Gaussian channels, MIMO communication, antenna arrays, radiofrequency
+	interference, MIMO interference channel, cognitive message sharing,
+	cognitive transmitter, receivers antennas, total sum rate degrees
+	of freedom, transmitters antennas, two-user multiple-input-multiple-output
+	Gaussian interference channel},
+  owner = {edgsouza},
+  timestamp = {2009.06.29}
+}
+
+@INPROCEEDINGS{Huang2008a,
+  author = {Huang, H. and Trivellato, M.},
+  title = {Performance of multiuser MIMO and network coordination in downlink
+	cellular networks},
+  booktitle = {Proc. 6th International Symposium on Modeling and Optimization in
+	Mobile, Ad Hoc, and Wireless Networks and Workshops WiOPT 2008},
+  year = {2008},
+  pages = {85--90},
+  abstract = {We consider a wireless network with multiple cells where base stations
+	with multiple antennas transmit to multiple users, each with multiple
+	antennas. Using single-user (SU) MIMO as a baseline, we evaluate
+	the system throughput performance of multiuser (MU) MIMO with generalized
+	zero-forcing beamforming under a multiuser proportional fair scheduling
+	metric. We consider network MIMO extensions of this technique by
+	coordinating transmission among clusters of spatially distributed
+	bases. By significantly mitigating intercell interference, network
+	MIMO provides a tradeoff between improved performance and increased
+	backhaul complexity that depends on the coordination cluster size.
+	We describe a general technique for simulating cellular networks
+	that is applicable to next-generation packet-based cellular standards,
+	and we evaluate the performance of MU and network MIMO in heavily
+	loaded networks. Compared to the SU MIMO baseline, median system
+	throughput can be doubled by coordinating MU MIMO transmission among
+	clusters of 3 adjacent cells.},
+  doi = {10.1109/WIOPT.2008.4586045},
+  file = {:Huang2008a.pdf:PDF},
+  keywords = {MIMO communication, antenna arrays, array signal processing, cellular
+	radio, base stations, cellular networks, generalized zero-forcing
+	beamforming, intercell interference, multiple input-multiple output
+	system, multiuser MIMO transmission},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@ARTICLE{Huang2009,
+  author = {Huang, H. and Trivellato, M. and Hottinen, A. and Shafi, M. and Smith,
+	P. J. and Valenzuela, R.},
+  title = {Increasing Downlink Cellular Throughput with Limited Network MIMO
+	Coordination},
+  journal = {IEEE Transactions on Wireless Communications},
+  year = {2009},
+  volume = {8},
+  pages = {2983--2989},
+  number = {6},
+  abstract = {Single-user, multiuser, and network MIMO performance is evaluated
+	for downlink cellular networks with 12 antennas per site, sectorization,
+	universal frequency reuse, scheduled packet-data, and a dense population
+	of stationary users. Compared to a single-user MIMO baseline system
+	with 3 sectors per site, network MIMO coordination is found to increase
+	throughput by a factor of 1.8 with intra-site coordination among
+	antennas belonging to the same cell site. Intra-site coordination
+	performs almost as well as a highly sectorized system with 12 sectors
+	per site. Increasing the coordination cluster size from 1 to 7 sites
+	increases the throughput gain factor to 2.5.},
+  doi = {10.1109/TWC.2009.080179},
+  file = {:Huang2009.pdf:PDF},
+  issn = {1536-1276},
+  keywords = {MIMO, capacity, broadcast channel, multiuser systems, simulations,
+	cellular networks},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@INPROCEEDINGS{Ivanov2008,
+  author = {Ivanov, K. and Ball, C.F. and Mullner, R. and Winkler, H.},
+  title = {Paving the path for high data rates by GERAN evolution EDGE2 with
+	dual-carrier},
+  booktitle = {Personal, Indoor and Mobile Radio Communications, 2008. PIMRC 2008.
+	IEEE 19th International Symposium on},
+  year = {2008},
+  pages = {1-6},
+  month = {Sept.},
+  abstract = {The introduction of the upcoming GERAN evolution feature package in
+	current GSM/EDGE deployments offers operators significant boost in
+	network capacity and mobile data users UMTS/HSPA like high speed
+	packet data services along with competitive latency. Intelligent
+	radio resource management supports novel dual-carrier capable mobile
+	stations by dynamic configuration of GPRS/EDGE packet data channels
+	(PDCHs) on multiple non-BCCH carriers. In addition the currently
+	standardized EDGE2 level B (EDGE2-B) concept provides enhanced PDCH
+	data rates up to 118.4 kbps per timeslot. In this paper system level
+	simulation results for the end-to-end performance of GERAN over TCP/IP
+	are presented assuming conventional 4 timeslots up to future potential
+	14 timeslots capable EDGE and EDGE2-B mobiles showing up to 800 /
+	1600 kbps peak data rates. FTP-application throughput has been investigated
+	with respect to both download file size and important TCP settings
+	such as e.g. receiver window size. The GERAN dual-carrier performance
+	has been evaluated for EDGE and EDGE2-B both under ideal radio conditions
+	and in regular hexagonal cellular deployments depending on system
+	load, exemplifying FTP 500 kbyte download with 8 timeslots capable
+	mobiles. At medium system load EDGE2-B compared to EDGE reveals about
+	100% capacity gain and more than 60% gain in mean user throughput.},
+  doi = {10.1109/PIMRC.2008.4699659},
+  keywords = {3G mobile communication, channel capacity, mobility management (mobile
+	radio), transport protocolsFTP-application throughput, GERAN evolution
+	EDGE2, GERAN evolution feature package, GSM-EDGE deployments, TCP/IP,
+	UMTS-HSPA, capacity gain, download file size, hexagonal cellular
+	deployments, high data rates, high speed packet data services, intelligent
+	radio resource management, mobile data users, network capacity, packet
+	data channels, peak data rates, system level simulation}
+}
+
+@ARTICLE{Jafar2008,
+  author = {Jafar, S. A. and Shamai, S.},
+  title = {Degrees of Freedom Region of the MIMO X Channel},
+  journal = {IEEE Transactions on Information Theory},
+  year = {2008},
+  volume = {54},
+  pages = {151--170},
+  number = {1},
+  abstract = {We provide achievability as well as converse results for the degrees
+	of freedom region of a multiple-input multiple-output (MIMO) X channel,
+	i.e., a system with two transmitters, two receivers, each equipped
+	with multiple antennas, where independent messages need to be conveyed
+	over fixed channels from each transmitter to each receiver. The inner
+	and outer bounds on the degrees of freedom region are tight whenever
+	integer degrees of freedom are optimal for each message. With M =
+	1 antennas at each node, we find that the total (sum rate) degrees
+	of freedom are bounded above and below as 1 les eta*x les 4/3. If
+	M > 1 and channel matrices are nondegenerate then the precise degrees
+	of freedom eta*x = (4/3)M. Thus, the MIMO X channel has noninteger
+	degrees of freedom when M is not a multiple of 3. Simple zero forcing
+	without dirty paper encoding or successive decoding, suffices to
+	achieve the (4/3)M degrees of freedom. If the channels vary with
+	time/frequency then the channel with single antennas (M = 1) at all
+	nodes has exactly 4/3 degrees of freedom. The key idea for the achievability
+	of the degrees of freedom is interference alignment-i.e., signal
+	spaces are aligned at receivers where they constitute interference
+	while they are separable at receivers where they are desired. We
+	also explore the increase in degrees of freedom when some of the
+	messages are made available to a transmitter or receiver in the manner
+	of cognitive radio.},
+  doi = {10.1109/TIT.2007.911262},
+  file = {:Jafar2008.pdf:PDF},
+  issn = {0018-9448},
+  keywords = {MIMO communication, antenna arrays, channel coding, cognitive radio,
+	wireless channels, MIMO X channel matrix, cognitive radio, interference
+	alignment, multiple antenna, simple zero forcing, successive decoding,
+	Capacity, cognitive radio, degrees of freedom, dirty paper coding,
+	interference alignment, multiple-input multiple-output (MIMO), zero
+	forcing},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@BOOK{book_jakes1974,
+  title = {Microwave mobile communications},
+  publisher = {John Wiley and Sons},
+  year = {1974},
+  editor = {John Wiley and Sons},
+  author = {W. C. Jakes},
+  owner = {souzadej},
+  timestamp = {2009.07.15}
+}
+
+@TECHREPORT{JinCao2002,
+  author = {Jin Cao, William S. Cleveland, Dong Lin, and Don X. Sun},
+  title = {The Effect of Statistical Multiplexing on the Long Range Dependence
+	of Internet Packet Traffic},
+  institution = {Bell Labs},
+  year = {2002},
+  owner = {souzadej},
+  timestamp = {2010.03.20},
+  url = {http://stat.bell-labs.com/InternetTraffic/webpapers.html}
+}
+
+@INPROCEEDINGS{Jin2008,
+  author = {Fanchun Jin and Hyeong-Ah Choi and Jae-Hoon Kim and JungKyo Sohn
+	and Hyeong In Choi},
+  title = {Common radio resource management for access selection in multi-access
+	networks},
+  booktitle = {Proc. IEEE Radio and Wireless Symposium},
+  year = {2008},
+  pages = {643--646},
+  month = jan # { 22--24,},
+  doi = {10.1109/RWS.2008.4463574},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- Propoe algoritmos de AS e VHO em uma rede MA composta de um sistema
+	CDMA 1x, um EvDO, um WDCMA-alone e outro WCDMA/HSDPA. Os algoritmos
+	se baseam em policy e utility functions considerando a operação de
+	serviços de voz e dados.
+	
+	- Testa dois algoritmos: network-based (network the final decision)
+	e MS-based (MS makes the final decision)
+	
+	- traz uma introdução genérica sobre Multi-RAT, com destaque para
+	a seção “Related Work”, a qual se referencia vários projetos na área;
+	
+	- Classifica a arquitetura de multi-access em duas categorias: IP
+	level integration (loose) e radio Access network integration (tight)
+	
+	- Traz uma descrição sucinta sobre a interação entre as entidades
+	de RRM e CRRM
+	
+	- Aponta duas referencias para o problema de AS solucionado por Bin-packing
+	
+	- Aponta uma refrencia de interworking entre WIMAX e 3G
+	
+	- Aponta três referencias para arquitetura baseado em IP based [3-5]
+	e quatro para radio acess integration [6-9]},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{Jing2007,
+  author = {Jing, Sheng and Tse, David N. C. and Soriaga, Joseph B. and Hou,
+	Jilei and Smee, John E. and Padovani, Roberto},
+  title = {Downlink Macro-Diversity in Cellular Networks},
+  booktitle = {Proc. IEEE International Symposium on Information Theory ISIT 2007},
+  year = {2007},
+  pages = {1--5},
+  abstract = {In this paper, we study the potential benefit of base-station (BS)
+	cooperation for downlink transmission in a modified Wyner-type multicell
+	model. Besides the Dirty-Paper-Coding (DPC) precoder, we also analyze
+	several linear precoding schemes, including co-phasing, zero-forcing
+	(ZF) and MMSE precoders. For the nonfading case, analytical sum rate
+	expression is obtained for each scheme. In networks of a large number
+	N of cells, a high signal-to-noise-ratio (SNR) asymptotic gap is
+	shown between the sum rate performances of DPC and ZF precoders.
+	Moreover, the MMSE precoder sum rate expression in large networks
+	indicates different behaviors of MMSE precoder in different SNR regimes:
+	in the SNR >> N2 regime, it coincides with the ZF precoder, while,
+	in the SNR << N2 regime, it coincides with the co-phasing precoder.
+	For the Rayleigh fading case, Monte-Carlo simulations demonstrate
+	the effectiveness of linear precoding schemes with the proposed user
+	selection criterion.},
+  doi = {10.1109/ISIT.2007.4557076},
+  file = {:Jing2007.pdf:PDF},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@INPROCEEDINGS{Johansson2007,
+  author = {Johansson, K. and Zander, J. and Furuskar, A. },
+  title = {Cost Efficient Deployment of Heterogeneous Wireless Access Networks},
+  booktitle = {Proc. VTC2007-Spring Vehicular Technology Conference IEEE 65th},
+  year = {2007},
+  pages = {3200--3204},
+  month = apr # { 22--25,},
+  doi = {10.1109/VETECS.2007.655},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- Artigo que analisa com mais detalhes o custo da rede multi-acesso
+	(cost efficient combinations, macro, micro e pico BSs).
+	
+	- bom related works que pode ser usado em trabalhos futuros. Ele aponta
+	referencias para: artigos relacionados a analise de desempenho do
+	potno de vista da rede e planejamento de rede. Inclusive ele aponta
+	três artigos que já introduzem e analisam o problema de custo de
+	uma rede multi-acesso.},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{Jorguseski2007,
+  author = {Jorguseski, L. and Litjens, R. and Chen Zhiyi and Nikookar, H.},
+  title = {Radio Access Selection in Multi-Radio Access Systems},
+  booktitle = {Proc. 14th IEEE Symposium on Communications and Vehicular Technology
+	in the Benelux},
+  year = {2007},
+  pages = {1--5},
+  month = nov # { 15--15,},
+  doi = {10.1109/SCVT.2007.4436230},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- Testa algortimos de AS para rede MA WLAN/UMTS. Encontra melhoras
+	de 50% a 100% dependendo do caso
+	
+	- Os algoritmos propostos são: radio consumption- and SINR- based
+	(shannon formula-based)
+	
+	- Usa nomenclatura similar ao que usei para o SASP},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{Jovicic2006,
+  author = {Jovicic, A. and Viswanath, P.},
+  title = {Cognitive Radio: An Information-Theoretic Perspective},
+  booktitle = {Information Theory, 2006 IEEE International Symposium on},
+  year = {2006},
+  pages = {2413-2417},
+  month = {July},
+  abstract = {Cognitive radios have been proposed as a means to implement efficient
+	reuse of the licensed spectrum. The key feature of a cognitive radio
+	is its ability to recognize the primary (licensed) user and adapt
+	its communication strategy to minimize the interference that it generates.
+	We consider a communication scenario in which the primary and the
+	cognitive user wish to communicate to different receivers, subject
+	to mutual interference. Modeling the cognitive radio as a transmitter
+	with side-information about the primary transmission, we characterize
+	the largest rate at which the cognitive radio can reliably communicate
+	under the constraint that (i) no interference is created for the
+	primary user, and (ii) the primary encoder-decoder pair is oblivious
+	to the presence of the cognitive radio},
+  doi = {10.1109/ISIT.2006.262021},
+  file = {:Jovicic2006.pdf:PDF},
+  keywords = {decoding, encoding, radio receivers, radio transmitters, radiofrequency
+	interferencecognitive radio, information-theoretic perspective, interference,
+	primary encoder-decoder pair, receivers, transmitter},
+  owner = {edgsouza},
+  timestamp = {2009.07.06}
+}
+
+@ARTICLE{Juang2009,
+  author = {Biing Hwang Juang and Li, G.Y. and Jun Ma},
+  title = {Signal Processing in Cognitive Radio},
+  journal = {Proceedings of the IEEE},
+  year = {2009},
+  volume = {97},
+  pages = {805-823},
+  number = {5},
+  month = {May },
+  abstract = {Cognitive radio allows for usage of licensed frequency bands by unlicensed
+	users. However, these unlicensed (cognitive) users need to monitor
+	the spectrum continuously to avoid possible interference with the
+	licensed (primary) users. Apart from this, cognitive radio is expected
+	to learn from its surroundings and perform functions that best serve
+	its users. Such an adaptive technology naturally presents unique
+	signal-processing challenges. In this paper, we describe the fundamental
+	signal-processing aspects involved in developing a fully functional
+	cognitive radio network, including spectrum sensing and spectrum
+	sculpting.},
+  doi = {10.1109/JPROC.2009.2015707},
+  file = {:Juang2009.pdf:PDF},
+  issn = {0018-9219},
+  keywords = {cognitive radio, interference suppression, matched filters, signal
+	detectioncognitive radio network, interference suppression, matched
+	filter detection, signal processing},
+  owner = {edgsouza},
+  timestamp = {2009.07.06}
+}
+
+@ARTICLE{Karakayali2006a,
+  author = {Karakayali, M. K. and Foschini, G. J. and Valenzuela, R. A.},
+  title = {Network coordination for spectrally efficient communications in cellular
+	systems},
+  journal = {IEEE Wireless Communications Magazine},
+  year = {2006},
+  volume = {13},
+  pages = {56--61},
+  number = {4},
+  doi = {10.1109/MWC.2006.1678166},
+  file = {:Karakayali2006a.pdf:PDF},
+  issn = {1536-1284},
+  keywords = {antenna arrays, cellular radio, radio links, radiofrequency interference,
+	base antennas, cellular downlink systems, multiple antennas, network
+	antenna array, network coordination, out-of-cell interference, signal-to-noise
+	ratio},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@INPROCEEDINGS{Karakayali2006,
+  author = {Karakayali, M. K. and Foschini, G. J. and Valenzuela, R. A. and Yates,
+	R. D.},
+  title = {On the Maximum Common Rate Achievable in a Coordinated Network},
+  booktitle = {Proc. IEEE International Conference on Communications ICC '06},
+  year = {2006},
+  volume = {9},
+  pages = {4333--4338},
+  doi = {10.1109/ICC.2006.255762},
+  file = {:Karakayali2006.pdf:PDF},
+  issn = {8164-9547},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@INPROCEEDINGS{IRC,
+  author = {Karlsson, J. and Heinegard, J.},
+  title = {Interference rejection combining for {GSM}},
+  booktitle = {Universal Personal Communications, 1996. Record., 1996 5th IEEE International
+	Conference on},
+  year = {1996},
+  volume = {1},
+  pages = {433--437 vol.1},
+  month = {Sep-2 Oct},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@ARTICLE{Kasch2009,
+  author = {Kasch, W. and Ward, J. and Andrusenko, J.},
+  title = {Wireless network modeling and simulation tools for designers and
+	developers - [Modeling and simulation: a practical guide for network
+	designers and developers]},
+  journal = {IEEE Communications Magazine},
+  year = {2009},
+  volume = {47},
+  pages = {120--127},
+  number = {3},
+  month = mar,
+  doi = {10.1109/MCOM.2009.4804397},
+  file = {:Kasch2009.pdf:PDF},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- Artigo survey muito interessante sobre modelagem e simulação de
+	redes sem-fio
+	
+	- Classifica as modelagens e simuladores em três frentes: software-oriented,
+	hardware-oriented e híbrido
+	
+	- Começa falando sobre simulaçoes de enlace, o que ele chama de PHY-layer
+	e waveform. Traz bons exemplos de simuladores comercias (incluindo
+	uma tabela com links)
+	
+	- Traz uma tabela com vários exemplos de simuladores de canal real,
+	mais adequado para caracterizar a transmissão real pelo canal radio-móvel
+	
+	- Pula diretamente para os simuladores de rede e traz uma lista vasta
+	de exemplos.
+	
+	- Traz um comparativo entre os simuladores comerciais e os open source
+	ou in-house built
+	
+	- Fala um pouco sobre simulações distribuidas e mostra uma tabela
+	com alguns simuladores comerciais com essa capacidade.
+	
+	- Traz o conceito de federated simulation model
+	
+	- Traz uma seçao sobre geraçao de forma de onda. Alguns desafios e
+	mitigaçao
+	
+	- Ele não traz a divisão entre system-level e link-level simulations
+	e, consequentemente, não fala sobre interface link-to-system},
+  timestamp = {2009.07.23}
+}
+
+@INPROCEEDINGS{paper_kim2006,
+  author = {Kim, M. and Kotz, D. and Kim, S.},
+  title = {Extracting a Mobility Model from Real User Traces},
+  booktitle = {INFOCOM 2006. 25th IEEE International Conference on Computer Communications.
+	Proceedings},
+  year = {2006},
+  pages = {1-13},
+  month = {April },
+  doi = {10.1109/INFOCOM.2006.173},
+  issn = {0743-166X},
+  owner = {souzadej},
+  timestamp = {2009.07.14}
+}
+
+@ARTICLE{Min2008,
+  author = {Min-Gon Kim and JungYul Choi and Minho Kang},
+  title = {Adaptive power saving mechanism considering the request period of
+	each initiation of awakening in the IEEE 802.16e system},
+  journal = {IEEE Communications Letters},
+  year = {2008},
+  volume = {12},
+  pages = {106 -108},
+  number = {2},
+  month = {february},
+  owner = {souzadej}
+}
+
+@BOOK{book_kleinrock_75,
+  title = {Queueing Systems. Volume 1: Theory},
+  publisher = {Wiley-Interscience},
+  year = {1975},
+  author = {Leonard Kleinrock},
+  edition = {1},
+  month = {January},
+  howpublished = {Hardcover},
+  isbn = {0471491101},
+  keywords = {queueing, systems},
+  owner = {souzadej},
+  timestamp = {2009.07.15}
+}
+
+@ARTICLE{Lang2008,
+  author = {Tanja Lang and Geoff Fellows and John Louis},
+  title = {The Impact of Packet Type on Signal Strength in WLANs},
+  year = {2008},
+  comment = {IEEE Computer Society},
+  file = {:ImpactofPackType.pdf:PDF},
+  owner = {bazzo},
+  timestamp = {2010.02.19}
+}
+
+@INPROCEEDINGS{Emaluenle04,
+  author = {Emanuele Lattanzi and Andrea Acquaviva and Alessandro Bogliolo},
+  title = {Run-Time Software Monitor of the Power Consumption of Wireless Network
+	Interface Cards},
+  booktitle = {PATMOS},
+  year = {2004},
+  pages = {352-361},
+  owner = {souzadej}
+}
+
+@INPROCEEDINGS{Lee2006,
+  author = {Lee, Juyul and Jindal, N.},
+  title = {Symmetric Capacity of MIMO Downlink Channels},
+  booktitle = {Proc. IEEE International Symposium on Information Theory},
+  year = {2006},
+  pages = {1031--1035},
+  abstract = {This paper studies the symmetric capacity of the MIMO downlink channel,
+	which is defined to be the maximum rate that can be allocated to
+	every receiver in the system. The symmetric capacity represents absolute
+	fairness and is an important metric for slowly fading channels in
+	which users have symmetric rate demands. An efficient and provably
+	convergent algorithm for computing the symmetric capacity is proposed,
+	and it is shown that a simple modification of the algorithm can be
+	used to compute the minimum power required to meet given downlink
+	rate demands. In addition, the difference between the symmetric and
+	sum capacity, termed the fairness penalty, is studied. Exact analytical
+	results for the fairness penalty at high SNR are provided for the
+	2 user downlink channel, and numerical results are given for channels
+	with more users.},
+  doi = {10.1109/ISIT.2006.261884},
+  file = {:Lee2006.pdf:PDF},
+  keywords = {MIMO systems, channel capacity, fading channels, radio links, MIMO
+	downlink channels, SNR, channel symmetric capacity, fading channels,
+	receiver, sum capacity},
+  owner = {edgsouza},
+  timestamp = {2009.06.29}
+}
+
+@MASTERSTHESIS{master_carlos2004,
+  author = {Carlos Hércales M. Lima},
+  title = {Gerência de Recursos de Rádio para Sistema WCDMA},
+  school = {Universidade Federal do Ceará, UFC},
+  year = {2004},
+  owner = {souzadej},
+  timestamp = {2009.07.14}
+}
+
+@INPROCEEDINGS{Chia2008,
+  author = {Chia-Yen Lin and Hsi-Lu Chao},
+  title = {Energy-saving scheduling in IEEE 802.16e networks},
+  booktitle = {33rd IEEE Conference on Local Computer Networks, LCN2008.},
+  year = {2008},
+  pages = {130-135},
+  month = {14-17},
+  owner = {souzadej}
+}
+
+@ARTICLE{M.Kim2006,
+  author = {M. Kim, J. Fielding, and D. Kotz},
+  title = {Risks of Using AP Locations Discovered through War Driving},
+  journal = {Proc. Pervasive, Springer},
+  year = {2006},
+  file = {:RiskOfUsing_minkyong-pervasive06-v20060503.pdf:PDF},
+  owner = {bazzo},
+  review = {De Juliano Bazzo (bazzo):
+	
+	<taken from my presentation>
+	
+	- War-driving and war-walking like measurement.
+	
+	- Tested algorithms: centroid, weighted centroid and particle filters
+	(based on Bayes’ theory).
+	
+	- Experiment environment: campus area with more than 500 APs.
+	
+	- Weighted centroid had the best performance.
+	
+	- Mean error for indoor: 31.6 to 40.8m
+	
+	- Using actual AP position, user location improves 70% for indoor
+	position.
+	
+	
+	<adicionais em pt>
+	
+	- Avalia o impacto do erro na estimativa dos APs na localização do
+	usuário.
+	
+	- Para o experimento do artigo, o erro médio do AP foi de 32 metros.
+	
+	- Fingerprints foram coletados outdoor e indoor.
+	
+	- Utilizando a posição real do AP, a localização do usuário melhorou
+	em 70% para indoor e 59% para outdoor.
+	
+	
+	Conclusão: Artigo muito interessante que mostra o quanto é sensivel
+	a localização dos usuários para um erro no posicionamento dos APs.},
+  timestamp = {2010.02.19}
+}
+
+@MASTERSTHESIS{master_tarcisio2004,
+  author = {Tarcisio Ferreira Maciel},
+  title = {Avaliação de Desempenho de Técnicas de Controle e Atribuição de Potência
+	para Aumento de Capacidade e Qualidade de Serviço na Rede GSM/EDGE},
+  school = {Universidade Federal do Ceará, UFC},
+  year = {2004},
+  owner = {souzadej},
+  timestamp = {2009.07.14}
+}
+
+@ARTICLE{Maddah-Ali2008,
+  author = {Maddah-Ali, M. A. and Motahari, A. S. and Khandani, A. K.},
+  title = {Communication Over MIMO X Channels: Interference Alignment, Decomposition,
+	and Performance Analysis},
+  journal = {IEEE Transactions on Information Theory},
+  year = {2008},
+  volume = {54},
+  pages = {3457--3470},
+  number = {8},
+  abstract = {In a multiple-antenna system with two transmitters and two receivers,
+	a scenario of data communication, known as the X channel, is studied
+	in which each receiver receives data from both transmitters. In this
+	scenario, it is assumed that each transmitter is unaware of the other
+	transmitter's data (noncooperative scenario). This system can be
+	considered as a combination of two broadcast channels (from the transmitters'
+	points of view) and two multiple-access channels (from the receivers'
+	points of view). Taking advantage of both perspectives, two signaling
+	schemes for such a scenario are developed. In these schemes, some
+	linear filters are employed at the transmitters and at the receivers
+	which decompose the system into either two noninterfering multiple-antenna
+	broadcast subchannels or two noninterfering multiple-antenna multiple-access
+	subchannels. The main objective in the design of the filters is to
+	exploit the structure of the channel matrices to achieve the highest
+	multiplexing gain (MG). It is shown that the proposed noncooperative
+	signaling schemes outperform other known noncooperative schemes in
+	terms of the achievable MG. In particular, it is shown that in some
+	specific cases, the achieved MG is the same as the MG of the system
+	if full cooperation is provided either between the transmitters or
+	between the receivers. In the second part of the paper, it is shown
+	that by using mixed design schemes, rather than decomposition schemes,
+	and taking the statistical properties of the interference terms into
+	account, the power offset of the system can be improved. The power
+	offset represents the horizontal shift in the curve of the sum-rate
+	versus the total power in decibels.},
+  doi = {10.1109/TIT.2008.926460},
+  file = {:Maddah-Ali2008.pdf:PDF},
+  issn = {0018-9448},
+  keywords = {MIMO communication, antenna arrays, data communication, MIMO X channels,
+	broadcast channels, channel matrices, data communication, decomposition,
+	erative schemes, interference alignment, linear filters, mixed design
+	schemes, multiple-antenna broadcast subchannels, multiple-antenna
+	system, multiplexing gain, noninterfering multiple-antenna multiple-
+	access subchannels, performance analysis, Degrees of freedom, MIMO
+	X channels, interference alignment, interference channels, multiple-antenna
+	systems, multiple-input multiple- output (MIMO) multiuser systems,
+	multiplexing gain, noncooperative communication, power offset, space-division
+	multiple access},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@ARTICLE{Mamou2005,
+  author = {Youssev Mamou},
+  title = {Access Selection in a Two-Hop Integrated Cellular/WLAN Systems},
+  year = {2005},
+  month = {November},
+  note = {Master's Degree Project},
+  comment = {School: Royal Institute of Technology},
+  owner = {bazzo},
+  review = {De Juliano Bazzo (bazzo):
+	
+	Tese muito simplista. No caso do LB, se uma célula estiver sobrecarregada
+	e não for possível mover usuários para as células vizinhas então
+	o usuário é desconectado. Em um ambiente real, a satisfação do sistema
+	pode cair bastante.
+	
+	Em termos gerais e não em ordem de impacto nos resultados:
+	
+	Não foi feito nenhuma análise dos efeitos do ping-pong, não há distinção
+	de tipos de usuários (BE, VoIP e etc.), não é levado em conta o valor
+	instantâneo das amostras, o sistema WLAN foi modelado como sendo
+	TDMA, poderia ter sido feito uma análise em termos de delay médio
+	uma vez que o HO entre sistemas WLAN demoram em média 3s, como seria
+	o comportamento para usuários mais rápidos e etc.},
+  timestamp = {2009.08.04}
+}
+
+@INPROCEEDINGS{Margi2007,
+  author = {Cintia B. Margi and Katia Obraczka and Roberto M},
+  title = {Characterizing system level energy consumption in mobile computing
+	platforms},
+  booktitle = {2005 International Conference on Wireless Networks, Communications
+	and Mobile Computing},
+  year = {2005},
+  volume = {2},
+  pages = {1142-1147},
+  owner = {souzadej}
+}
+
+@STANDARD{3GPPGP072033,
+  title = {WID: "Multi-User Reusing-One-Slot (MUROS)"},
+  organization = {3GPP},
+  author = {China Mobile and Ericsson and Nokia Siemens Networks and Nokia and
+	Nortel Networks and NXP and Qualcomm and Telecom Italia and Vodafone},
+  howpublished = {GERAN 36},
+  month = {November},
+  year = {2007},
+  owner = {lida},
+  timestamp = {2010.01.18}
+}
+
+@INPROCEEDINGS{SAIC,
+  author = {Moisio, M. and Aschan, K.},
+  title = {The effect of single-antenna interference cancellation on GPRS performance},
+  booktitle = {Wireless Communication Systems, 2004. 1st International Symposium
+	on},
+  year = {2004},
+  pages = {1--5},
+  month = {Sept.},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@INPROCEEDINGS{KolioAMR-WB,
+  author = {R. Mullner and C. F. Ball and K. Ivanov and H. Winkler and R. Perl
+	and K. Kremnitzer},
+  title = {Exploiting {AMR-WB} Audio Bandwidth Extension for Quality and Capacity
+	Increase},
+  booktitle = {Mobile and Wireless Communications Summit 2007, IEEE, 16th IST},
+  year = {2007},
+  pages = {1--7},
+  month = {July},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@ARTICLE{Nasser2006,
+  author = {Nasser, N. and Hasswa, A. and Hassanein, H.},
+  title = {Handoffs in fourth generation heterogeneous networks},
+  journal = {IEEE Communications Magazine},
+  year = {2006},
+  volume = {44},
+  pages = {96--103},
+  number = {10},
+  month = oct,
+  doi = {10.1109/MCOM.2006.1710420},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- O artigo tem caráter de overview, mas propõe uma métrica para VHO
+	baseada nos seuintes paramentros da rede: cost, security, Power consumption,
+	network condition e network performance.
+	
+	- Introdução direciona bem o conceito 4G para a junção de várias redes.
+	A seção “Seamless Handover” indica mais uma vez essa tendência.
+	
+	- Traz uma classificação dos tipos de handovers baseados nos seguintes
+	fatores: Network types
+	
+	Involved, Frequencies Engaged, Number of Connections involved, Administrative
+	domains involved, Necessity of handoff e User control allowance
+	
+	- Indica que o proative handover será uma das features radicais do
+	4G.
+	
+	- Disserta sobre a questão da métrica que deve ser usada no VHO. Faz
+	uma comparação com a métrcia do horizontal HO.
+	
+	- Disserta sobre três temas importantes: “Desirable Handoff features”,
+	“Handoff Process” e “VHO decision function”
+	
+	- Fala sobre o problema de interferência do WLAN, o que muitas vezes
+	não vi em artigos da área.
+	
+	- Tem um inglês rebuscado com palavras e setenças mais elaboradas.
+	
+	
+	- Contudo, os resultados são bem fracos e pode-se classificar o paper
+	mais com survey do que que como de contribuição inédita.},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{Ng2007,
+  author = {Ng, Boon Loong and Evans, Jamie and Hanly, Stephen},
+  title = {Distributed Downlink Beamforming in Cellular Networks},
+  booktitle = {Proc. IEEE International Symposium on Information Theory ISIT 2007},
+  year = {2007},
+  pages = {6--10},
+  doi = {10.1109/ISIT.2007.4557195},
+  file = {:Ng2007.pdf:PDF},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@ARTICLE{Ng2008,
+  author = {Ng, Boon Loong and Evans, J. S. and Hanly, S. V. and Aktas, D.},
+  title = {Distributed Downlink Beamforming With Cooperative Base Stations},
+  journal = {IEEE Transactions on Information Theory},
+  year = {2008},
+  volume = {54},
+  pages = {5491--5499},
+  number = {12},
+  doi = {10.1109/TIT.2008.2006426},
+  file = {:Ng2008.pdf:PDF},
+  issn = {0018-9448},
+  keywords = {Kalman filters, array signal processing, cellular radio, diversity
+	reception, graph theory, mean square error methods, smoothing methods,
+	2D cellular networks, Kalman smoothing framework, LMMSE estimation
+	problem, cooperative base stations, distributed downlink beamforming,
+	factor graph, local message passing, macrodiversity transmit beamforming,
+	multicell processing, sum-product algorithm, virtual linear mean
+	square error, Cooperative base stations, Kalman smoothing, distributed
+	algorithm, downlink beamforming, linear mean square error (LMMSE),
+	localized interference, message passing, multicell processing, multiple-input&#x2013,
+	multiple-output (MIMO), sum&#x2013, product algorithm},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@ARTICLE{Ojala2006,
+  author = {Ojala, P. and Lakaniemi, A. and Lepanaho, H. and Jokimies, M},
+  title = {The adaptive multirate wideband speech codec: system characteristics,
+	quality advances, and deployment strategies},
+  journal = {IEEE Communications Magazine},
+  year = {2006},
+  volume = {44},
+  pages = {59 -- 65},
+  number = {5},
+  month = {May},
+  owner = {rapaiva},
+  timestamp = {2010.01.28}
+}
+
+@INPROCEEDINGS{Ormond2006,
+  author = {Ormond, O. and Murphy, J. and Muntean, G.-M. },
+  title = {Utility-based Intelligent Network Selection in Beyond 3G Systems},
+  booktitle = {Proc. IEEE International Conference on Communications},
+  year = {2006},
+  volume = {4},
+  pages = {1831--1836},
+  month = jun,
+  doi = {10.1109/ICC.2006.254986},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- Propõe algoritmos de AS baseado no conceito micro-economico de utilidade
+	e user-oriented decision making, incluindo fatores como custo, satisfação
+	do usuário e Customer Surplus (related to monetary value).
+	
+	- Introducao explora mais a convergencia de serviço como um gerador
+	de demanda do as carateristicas completares da rede imporem a condição
+	da rede MA.
+	
+	- Não li o artigo todo, pois achei que só servirá para nos referenciaroms
+	como um artigo que leva em consiraçao o custo monetário na tomada
+	de decisão do AS.},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{paper_Hammalainen1997,
+  author = {Hammalainen S. Slanina P. and Hartman M. and Lappetelainen A. and
+	Holma H. and Salonaho O.},
+  title = {A novel interface between link and system level simulations},
+  booktitle = {Proc. ACTS Mobile Telecommunication},
+  year = {1997},
+  pages = {599--604},
+  month = Oct # { 22--24,},
+  owner = {rdomingo},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{HRxDFR2010,
+  author = {Paiva, R. C. D. and Vieira, R. D. and Jarvela, R. and Iida, R. and
+	Tavares, F. and S{\"{a}}ily, M},
+  title = {Improving the Speech Quality with OSC: Double Full-rate Performance
+	Assessment},
+  booktitle = {Vehicular Technology Conference, 2010. VTC2010-Fall. IEEE 72nd},
+  year = {2010},
+  owner = {rafapaiv},
+  timestamp = {2010.05.05}
+}
+
+@INPROCEEDINGS{Perez-Romero2006a,
+  author = {Perez-Romero, J. and Salient, O. },
+  title = {Loose and Tight Interworking between Vertical and Horizontal Handovers
+	in Multi-RAT Scenarios},
+  booktitle = {Proc. IEEE Mediterranean Electrotechnical Conference MELECON 2006},
+  year = {2006},
+  pages = {579--582},
+  month = may # { 16--19,},
+  doi = {10.1109/MELCON.2006.1653167},
+  owner = {souzadej},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{Puttonen2008d,
+  author = {Puttonen, J. and Henttonen, T. and Kolehmainen, N. and Aschan, K.
+	and Moisio, M. and Kela, P.},
+  title = {Voice-Over-IP Performance in UTRA Long Term Evolution Downlink},
+  booktitle = {Proc. IEEE Vehicular Technology Conference VTC Spring 2008},
+  year = {2008},
+  pages = {2502--2506},
+  month = may # { 11--14,},
+  __markedentry = {[bazzo]},
+  doi = {10.1109/VETECS.2008.551},
+  file = {:Puttonen2008VoIP.pdf:PDF},
+  owner = {bazzo},
+  review = {De Juliano Bazzo (bazzo):
+	
+	- Paper que utilizar o simulador FREAC para realizar estudo de capacidade
+	para VoIP.
+	
+	- O paper é bem direto, sem muita enrolação e equações desnecessários
+	como visto em muitos artigos
+	
+	- Analisa diferentes velocidades, bandas, com OLLA e sem e também
+	com bundling e sem.
+	
+	- Como resultado, eles mostram que o delay tem pouco impacto na capacidade
+	VoIP, i.e., aumentando o threshold do delay, não aumenta a capacidade
+	do VoIP.
+	
+	- Packet bundling e a utlizacão de LA consegue um grande ganho na
+	capacidade VoIP.
+	
+	- Talvez uma pequena falha do paper foi a apresentação dos resultados,
+	Fig. 2 e 3 que estão um pouco confusas e na Fig. 1 que poderia apresentar
+	o ganho de capacidade por MHz.},
+  timestamp = {2009.10.06}
+}
+
+@ARTICLE{R.KumarK.2006,
+  author = {R. Kumar K., V. Apte, and Y. Powar.},
+  title = {Improving the accuracy of wireless lan based location determi- nation
+	systems using kalman filter and multiple observers.},
+  journal = {Wireless Communications and Networking Conference},
+  year = {2006},
+  file = {:Kalman.pdf:PDF},
+  owner = {bazzo},
+  review = {De Juliano Bazzo [bazzo]:
+	
+	- O objetivo é analisar o posicionamento de usuários utilizando APs
+	WLAN.
+	
+	- Algoritmo utiliza os filtros de Kalman na fase de pré-processamento
+	das amostras para remover o ruído das leituras de RSSI.
+	
+	- Um método Bayesiana proposto por Mustafa Youssef e Ashok Agrawala
+	para localização
+	
+	- Os ambientes de estudo são:
+	
+	 - Um hall de 18m de diâmetro e 4 APS 802.11b e com 78 leituras.
+	
+	 - 4 andares, 31 APs e 30 localizações de leitura.
+	
+	- Canais de radio interferem entre si.
+	
+	- A localização é feita baseando-se em múltiplos APs (Observers).
+	
+	- A utlização dos filtros de Kalman mostram uma melhora na precisão
+	da localização. 90% das estimativas tem um erro menor que 2,5m.
+	
+	- Paper é bem escrito e leva em conta um ambiente real.},
+  timestamp = {2010.02.19}
+}
+
+@ARTICLE{Michele97,
+  author = {Michele Zorzi end Ramesh R. Rao},
+  title = {Energy-constrained error control for wireless channels},
+  journal = {Personal Communications, IEEE},
+  year = {1997},
+  volume = {4},
+  pages = {27-33},
+  number = {6},
+  month = {dec}
+}
+
+@BOOK{book_Rappaport2001,
+  title = {Wireless Communications: Principles and Practice (2nd Edition)},
+  publisher = {{Prentice Hall PTR}},
+  year = {2001},
+  author = {Rappaport, Theodore S. and Rappaport, Theodore},
+  month = {December},
+  howpublished = {Hardcover},
+  isbn = {0130422320},
+  owner = {souzadej},
+  timestamp = {2009.07.15}
+}
+
+@INPROCEEDINGS{paper_Ratasuk2002,
+  author = {Ratasuk, R. and Ghosh, A. and Classon, B.},
+  title = {Quasi-static method for predicting link-level performance},
+  booktitle = {Proc. IEEE 55th Vehicular Technology Conference VTC Spring 2002},
+  year = {2002},
+  volume = {3},
+  pages = {1298--1302},
+  month = may # { 6--9,},
+  doi = {10.1109/VTC.2002.1002825},
+  owner = {rdomingo},
+  timestamp = {2009.07.15}
+}
+
+@INPROCEEDINGS{Ritesh2009,
+  author = {Ritesh K. Kalle, Mayank Raj and Debabrata Das},
+  title = {A novel architecture for IEEE 802.16m subscriber station for joint
+	power saving class management},
+  booktitle = {First International Communication Systems and Networks and Workshops,
+	COMSNETS 2009},
+  year = {2009},
+  pages = {1 -10},
+  month = {5-10}
+}
+
+@MASTERSTHESIS{master_emanuel2004,
+  author = {Emanuel Bezerra Rodrigues},
+  title = {Proposta de Estrutura para Controle de Congestionamento em Redes
+	Celulares WCDMA e Avaliação de Desempenho},
+  school = {Universidade Federal do Ceará},
+  year = {2004},
+  owner = {souzadej},
+  timestamp = {2009.07.15}
+}
+
+@INPROCEEDINGS{Sachs2007,
+  author = {Sachs, J. and Aguero, R. and Daoud, K. and Gebert, J. and Koudouridis,
+	G. P. and Meago, F. and Prytz, M. and Rinta-aho, T. and Tang, H.
+	},
+  title = {Generic Abstraction of Access Performance and Resources for Multi-Radio
+	Access Management},
+  booktitle = {Proc. 16th IST Mobile and Wireless Communications Summit},
+  year = {2007},
+  pages = {1--5},
+  month = jul # { 1--5,},
+  doi = {10.1109/ISTMWC.2007.4299139},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- é um paper baseado no conceito do Ambient Networks.
+	
+	- Ele levanta o ponto que temos que ter uma métrica genérica para
+	comparar os diversos sistemas que compõe a rede MA. Ele propõe uma
+	entidade chamada GLL a qual é responsável por medir e mandar ao MRRM
+	tal métrica genérica (a qual ele chama de Access Resource Abstraction).
+	Com essa idéia, ele formula os algoritmos de AS baseado em um nível
+	de recurso requerido, máximo e ocupado.
+	
+	- Formula a seleção de acesso baseado em duas “etapas”: policy-based
+	AS e Dynamic AS. A primeira fase (policy-based AS) determina o validate
+	set (VS), o qual é definido como o conjunto de RATs (redes) aceitáveis
+	para servir o usuário (escolha baseada em critérios de capacidade
+	do terminal, QoS supporting, security support, etc). Em seguida,
+	para cada flow request, é aplicado o Dynamic AS, o qual consiste
+	na escolha da melhor rede para atende-lo. Essa fase é baseda em parâmetros
+	de desempenho de link e da abstração de recurso de acesso.
+	
+	- Ele se reporta ao 3GPP e ao 802.21 como órgãos que estão tratando
+	do interworking.
+	
+	- Não mostra nenhum resultado, só apresenta a formulação dos algoritmos
+	de AS.},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{DFCA,
+  author = {Salmenkaita, M. and Gimenez, J. and Tapia, P. and Fernandez-Navarro,
+	M.},
+  title = {Optimizing the {GSM}/{EDGE} air interface for multiple services with
+	dynamic frequency and channel assignment},
+  booktitle = {Vehicular Technology Conference, 2002. VTC2002-Fall. IEEE 56th},
+  year = {2002},
+  volume = {4},
+  pages = {2215 -- 2219},
+  month = {Sept.},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@ARTICLE{Sari1995,
+  author = {Sari, H. and Karam, G. and Jeanclaude, I.},
+  title = {Transmission techniques for digital terrestrial TV broadcasting},
+  journal = {IEEE Communications Magazine},
+  year = {1995},
+  volume = {33},
+  pages = {100--109},
+  number = {2},
+  abstract = {The authors discuss the potential of OFDM signaling, with its limitations
+	and inherent problems, as well as another potential technique that
+	has so far been overlooked: single-carrier transmission with frequency-domain
+	equalization.},
+  doi = {10.1109/35.350382},
+  file = {:Sari1995.pdf:PDF},
+  issn = {0163-6804},
+  keywords = {channel coding, digital television, equalisers, frequency division
+	multiplexing, frequency-domain analysis, interleaved codes, synchronisation,
+	television broadcasting, OFDM signaling, carrier synchronisation,
+	channel coding, coded-OFDM, digital terrestrial TV broadcasting,
+	frequency-domain equalization, frequency-domain interleaving, single-carrier
+	transmission, transmission techniques},
+  owner = {edgsouza},
+  timestamp = {2009.06.29}
+}
+
+@ARTICLE{Scutari2008,
+  author = {Scutari, G. and Palomar, D. P. and Barbarossa, S.},
+  title = {Asynchronous Iterative Water-Filling for Gaussian Frequency-Selective
+	Interference Channels},
+  journal = {IEEE Transactions on Information Theory},
+  year = {2008},
+  volume = {54},
+  pages = {2868--2878},
+  number = {7},
+  abstract = {This paper considers the maximization of information rates for the
+	Gaussian frequency-selective interference channel, subject to power
+	and spectral mask constraints on each link. To derive decentralized
+	solutions that do not require any cooperation among the users, the
+	optimization problem is formulated as a static noncooperative game
+	of complete information. To achieve the so-called Nash equilibria
+	of the game, we propose a new distributed algorithm called asynchronous
+	iterative water-filling algorithm. In this algorithm, the users update
+	their power spectral density (PSD) in a completely distributed and
+	asynchronous way: some users may update their power allocation more
+	frequently than others and they may even use outdated measurements
+	of the received interference. The proposed algorithm represents a
+	unified framework that encompasses and generalizes all known iterative
+	water-filling algorithms, e.g., sequential and simultaneous versions.
+	The main result of the paper consists of a unified set of conditions
+	that guarantee the global converge of the proposed algorithm to the
+	(unique) Nash equilibrium of the game.},
+  doi = {10.1109/TIT.2008.924723},
+  file = {:Scutari2008.pdf:PDF},
+  issn = {0018-9448},
+  keywords = {Gaussian channels, distributed algorithms, game theory, iterative
+	methods, Gaussian frequency-selective interference channels, Nash
+	equilibria, asynchronous iterative water-filling, decentralized solutions,
+	distributed algorithm, game theory, information rate maximization,
+	power spectral density, spectral mask constraint, totally asynchronous
+	algorithm, Game theory, Gaussian frequency-selective interference
+	channel, Nash Equilibrium (NE), iterative water-filling algorithm,
+	totally asynchronous algorithm},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@ARTICLE{Scuturici2006,
+  author = {Scuturici and Ejigu},
+  title = {Positioning Support in Pervasive Environments},
+  journal = {Proceedings of the 2006 ACS/IEEE International Conference on Pervasive
+	Services},
+  year = {2006},
+  file = {:pervasiveEnvironment.pdf:PDF},
+  owner = {bazzo},
+  timestamp = {2010.02.19}
+}
+
+@ARTICLE{Shafi2009,
+  author = {Shafi, M. and Greenstein, L.J. and Molisch, A.F.},
+  title = {Propagation Issues for Cognitive Radio},
+  journal = {Proceedings of the IEEE},
+  year = {2009},
+  volume = {97},
+  pages = {787-804},
+  number = {5},
+  month = {May },
+  abstract = {Cognitive radios are expected to work in bands below about 3.5 GHz
+	and may be used for a variety of applications, e.g., broadband fixed
+	wireless access, mobile and nomadic access, etc. Cognitive radio
+	system designers must have access to a wide range of channel models
+	covering a wide span of operating frequencies, carrier bandwidths,
+	deployment conditions, and environments. This paper provides a comprehensive
+	overview of the propagation channel models that will be used for
+	the design of cognitive radio systems. We start with classical models
+	for signal loss versus distance and discuss their dependence on the
+	physical properties of the environment and operating frequency. Here
+	we also introduce the concept of log-normal shadowing resulting from
+	signal blockage by man-made and natural features. Next, we discuss
+	the time-varying nature of the wireless channel, introduced as a
+	result of the motion of objects in the channel. This is followed
+	by a discussion on the dispersion of the signal caused by various
+	effects of propagation, especially in the time and frequency domains.
+	Angular dispersion, which is discussed next, is important because
+	cognitive radios may be based on modems that exploit the spatial
+	domain. Lastly, we summarize channel models that have been standardized
+	for fixed and mobile systems.},
+  doi = {10.1109/JPROC.2009.2015704},
+  file = {:Shafi2009.pdf:PDF},
+  issn = {0018-9219},
+  keywords = {cognitive radio, direction-of-arrival estimation, multipath channels,
+	radiowave propagation, wireless channelsangle-of-arrival, channel
+	models, cognitive radio, delay spread, log-normal shadowing, multipath
+	propagation, propagation channel, signal blockage, wireless channel},
+  owner = {edgsouza},
+  timestamp = {2009.07.06}
+}
+
+@INPROCEEDINGS{Shamai2001,
+  author = {Shamai, S. and Zaidel, B. M. },
+  title = {Enhancing the cellular downlink capacity via co-processing at the
+	transmitting end},
+  booktitle = {Proc. VTC 2001 Spring Vehicular Technology Conference IEEE VTS 53rd},
+  year = {2001},
+  volume = {3},
+  pages = {1745--1749 vol.3},
+  abstract = {A linear pre-processing plus encoding scheme is proposed, which significantly
+	enhances cellular downlink performance, while putting the complexity
+	burden on the transmitting end. The approach is based on LQ factorization
+	of the channel transfer matrix combined with the "writing on dirty
+	paper" approach (Caire, G. and Shamai, S., Proc. 38th Annual Allerton
+	Conference on Communication, Control and Computing, 2000) for eliminating
+	the effect of uncorrelated interference, which is fully known at
+	the transmitter but unknown at the receiver. The attainable average
+	rates with the proposed scheme approach those of optimum joint processing
+	at the high SNR region},
+  doi = {10.1109/VETECS.2001.944993},
+  file = {:Shamai2001.pdf:PDF},
+  keywords = {cellular radio, channel capacity, computational complexity, encoding,
+	interference suppression, radio receivers, radio transmitters, signal
+	processing, transfer function matrices, LQ factorization, cellular
+	downlink capacity, channel transfer matrix, complexity burden, coprocessing,
+	encoding, linear pre-processing, linear quadratic factorization,
+	transmitter, uncorrelated interference},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@INPROCEEDINGS{Shang2008,
+  author = {Shang, Xiaohu and Chen, Biao and Kramer, G. and Poor, H. V. },
+  title = {On the capacity of MIMO interference channels},
+  booktitle = {Proc. 46th Annual Allerton Conference on Communication, Control,
+	and Computing},
+  year = {2008},
+  pages = {700--707},
+  doi = {10.1109/ALLERTON.2008.4797626},
+  file = {:Shang2008.pdf:PDF},
+  keywords = {Gaussian channels, MIMO communication, channel capacity, matrix algebra,
+	radiofrequency interference, MIMO interference channels, Z interference,
+	capacity region, channel matrices, mixed interference, multiple-input-multiple-output
+	channel, noisy interference, scalar Gaussian interference channel,
+	sum-rate capacity},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@INPROCEEDINGS{Silva2007,
+  author = {da Silva, A. P. and Cavalcanti, F. R. P. and de O. Neto, R. A. },
+  title = {VoIP Capacity Analysis of Wireless Multi-Access Networks using Access
+	Selection Schemes},
+  booktitle = {Proc. IEEE 18th International Symposium on Personal, Indoor and Mobile
+	Radio Communications PIMRC 2007},
+  year = {2007},
+  pages = {1--5},
+  month = sep # { 3--7,},
+  __markedentry = {[marclore]},
+  doi = {10.1109/PIMRC.2007.4394720},
+  owner = {marclore},
+  timestamp = {2009.07.10}
+}
+
+@INPROCEEDINGS{Silva2006,
+  author = {da Silva, A. P. and de S. Chaves, F. and de Sousa, V. A. and de O.
+	Neto, R. A. and Cavalcanti, F. R. P. },
+  title = {Performance evaluation of access selection algorithms for VoIP on
+	wireless multi-access networks},
+  booktitle = {Proc. International Telecommunications Symposium},
+  year = {2006},
+  pages = {663--667},
+  month = sep # { 3--6,},
+  __markedentry = {[marclore]},
+  doi = {10.1109/ITS.2006.4433356},
+  owner = {marclore},
+  timestamp = {2009.07.10}
+}
+
+@ARTICLE{Sklar1997a,
+  author = {Sklar, B.},
+  title = {Rayleigh fading channels in mobile digital communication systems
+	.I. Characterization},
+  journal = {IEEE Communications Magazine},
+  year = {1997},
+  volume = {35},
+  pages = {90--100},
+  number = {7},
+  month = jul,
+  doi = {10.1109/35.601747},
+  owner = {souzadej},
+  timestamp = {2009.07.15}
+}
+
+@ARTICLE{Sklar1997c,
+  author = {Sklar, B.},
+  title = {Rayleigh Fading Channels in Mobile Digital Communication Systems
+	Part II: Mitigation},
+  journal = {IEEE Communications Magazine},
+  year = {1997},
+  volume = {35},
+  pages = {148--155},
+  number = {9},
+  month = sep,
+  doi = {10.1109/MCOM.1997.621038},
+  owner = {souzadej},
+  timestamp = {2009.07.15}
+}
+
+@BOOK{book_sklar1998,
+  title = {Digital communications: fundamentals and applications},
+  publisher = {Prentice-Hall, Inc.},
+  year = {1988},
+  author = {Sklar, Bernard},
+  address = {Upper Saddle River, NJ, USA},
+  isbn = {0-13-211939-0},
+  owner = {souzadej},
+  timestamp = {2009.07.15}
+}
+
+@INPROCEEDINGS{Slingerland2007,
+  author = {Slingerland, A. M. R. and Pawelczak, P. and Prasad, R. V. and Lo,
+	A. and Hekmat, R.},
+  title = {Performance of Transport Control Protocol Over Dynamic Spectrum Access
+	Links},
+  booktitle = {Proc. 2nd IEEE International Symposium on New Frontiers in Dynamic
+	Spectrum Access Networks DySPAN 2007},
+  year = {2007},
+  pages = {486--495},
+  month = apr # { 17--20,},
+  doi = {10.1109/DYSPAN.2007.71},
+  owner = {bazzo},
+  review = {De Juliano Bazzo (bazzo):
+	
+	- Se o TCP pode eficientemente prover uma conexão estável end-to-end
+	sobre links DSA, sabendo da dinâmica da rede e a natureza imprevisível,
+	permanece sem ser esclarecido.
+	
+	PU = Primary User
+	
+	- Os autores estudam por simulação a habilidade de vários tipos de
+	TCP utilizarem eficientemente os links DSA.
+	
+	- O tempo de observação é o principal componente para ajuste do tput
+	ao invés da detecção de erros PU.
+	
+	- Cooperative DSA = quando o usuário primário e secundário negociam
+	o uso do canal.
+	
+	- Foi utilizado o NS-2 com melhorias no modelo do TCP. O TCP usado
+	foi o Linux-TCP que é próximo da implementação real do Linux.
+	
+	- TCP-Vegas evita congestionamento e não sofre dos problemas de oscilação
+	da janela de congestionamento do TCP-Reno e por isso consegue melhor
+	tput em certos cenários.
+	
+	- Os estudos do paper focam no TCP-SACK pois esse é o mais empregado
+	atualmente.
+	
+	- Simulações foram realizadas da seguinte forma:
+	
+	 MS------wireless link-------------BS-------------cable link---------Computer
+	
+	- A detecção do PU é perfeita não ocorrem erros na conexão wireless.
+	
+	- Sendo dois ambientes:
+	
+	 . 12 canais de 200kbps
+	
+	 . 3 canais de 800kbps.
+	
+	 Provou-se que a eficiência dos diversos tipos de TCP é muito mais
+	quanto maior for o número de canais. Isso deve-se ao fato de com
+	12 canais o tamanho do buffer é potencialmente maior para (i) manter
+	a capacidade de transmissão dos pacotes enfileirados do buffer quando
+	a capacidade do link DSA aumenta e (ii) absorver pacotes quando a
+	capacidade do link diminiu até o sender puder dimnuir a taxa de envio.
+	
+	 A eficiencia á maior com longos periodos de ON e OFF ao invés de
+	curtos períodos de ON e OFF. Isso porque o TCP não precisa se adaptar
+	tão frequentemente.
+	
+	
+	CONCLUSÃO: O paper analisa o desempenho de diversos tipos de implementações
+	de TCP em um ambiente DSA. O desempenho é função do número de canais
+	e tamanho de buffer. Típica experiência de network simulation.},
+  timestamp = {2009.07.23}
+}
+
+@INPROCEEDINGS{Somekh2006,
+  author = {Somekh, O. and Simeone, O. and Bar-Ness, Y. and Haimovich, A. M.},
+  title = {Distributed Multi-Cell Zero-Forcing Beamforming in Cellular Downlink
+	Channels},
+  booktitle = {Proc. IEEE Global Telecommunications Conference GLOBECOM '06},
+  year = {2006},
+  pages = {1--6},
+  abstract = {For a multiple-input single-output (MISO) downlink channel with M
+	transmit antennas, it has been recently proved that zero-forcing
+	beamforming (ZFBF) to a subset of (at most) M "semi-orthogonal" users
+	is optimal in terms of the sum-rate, asymptotically with the number
+	of users. However, determining the subset of users for transmission
+	is a complex optimization problem. Adopting the ZFBF scheme in a
+	cooperative multi-cell scenario renders the selection process even
+	more difficult since more users are involved. In this paper, we consider
+	a multi-cell cooperative ZFBF scheme combined with a simple sub-optimal
+	users selection procedure for the Wyner downlink channel setup. According
+	to this sub-optimal procedure, the user with the "best" local channel
+	is selected for transmission in each cell. It is shown that under
+	an overall power constraint, a distributed multi-cell ZFBF to this
+	sub-optimal subset of users achieves the same sum-rate growth rate
+	as an optimal scheme deploying joint multi-cell dirty-paper coding
+	(DPC) techniques, asymptotically with the number of users per cell.
+	Moreover, the overall power constraint is shown to ensure in probability,
+	equal per-cell power constraints when the number of users per-cell
+	increases.},
+  doi = {10.1109/GLOCOM.2006.94},
+  file = {:Somekh2006.pdf:PDF},
+  issn = {1930-529X},
+  keywords = {Rayleigh channels, cellular radio, multiuser channels, transmitting
+	antennas, MISO channel, Rayleigh fading channel, Wyner downlink channel,
+	cellular downlink channel, dirty-paper coding technique, distributed
+	multi-cell zero-forcing beamforming, multiple-input single-output
+	downlink channel, optimization problem, semi-orthogonal user, suboptimal
+	user selection procedure, transmit antennas},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@ARTICLE{Somekh2007,
+  author = {Somekh, O. and Zaidel, B. M. and Shamai, S.},
+  title = {Sum Rate Characterization of Joint Multiple Cell-Site Processing},
+  journal = {IEEE Transactions on Information Theory},
+  year = {2007},
+  volume = {53},
+  pages = {4473--4497},
+  number = {12},
+  abstract = {The sum-rate capacity of a cellular system model is analyzed, considering
+	the uplink and downlink channels, while addressing both nonfading
+	and flat-fading channels. The focus is on a simple Wyner-like multicell
+	model, where the system cells are arranged on a circle, and the cell
+	sites are located at the boundaries of the cells. For the uplink
+	channel, analytical expressions of the sum-rate capacities are derived
+	for intra-cell time-division multiple-access (TDMA) scheduling, and
+	a "wideband" (WB) scheme (where all users are active simultaneously
+	utilizing all bandwidths for coding). Assuming individual equal per-cell
+	power constraints, and using the Lagrangian uplink-downlink duality
+	principle, an analytical expression for the sum-rate capacity of
+	the downlink channel is derived for nonfading channels, and shown
+	to coincide with the corresponding uplink result. Introducing flat-fading,
+	lower and upper bounds on the average per-cell ergodic sum-rate capacity
+	are derived. The bounds exhibit an O(loge K) multiuser diversity
+	factor for a number of users per cell K Gt 1, in addition to the
+	array diversity gain. Joint multicell processing is shown to eliminate
+	out-of-cell interference, which is traditionally considered to be
+	a limiting factor in high-rate reliable communications.},
+  doi = {10.1109/TIT.2007.909170},
+  file = {:Somekh2007.pdf:PDF},
+  issn = {0018-9448},
+  keywords = {broadband networks, cellular radio, diversity reception, fading channels,
+	radio links, time division multiple access, Lagrangian uplink-downlink
+	duality principle, TDMA scheduling, Wyner-like multicell model, array
+	diversity gain, average per-cell ergodic sum-rate capacity, cellular
+	system model, downlink channels, flat-fading channels, intra-cell
+	time-division multiple-access scheduling, joint multiple cell-site
+	processing, nonfading channels, out-of-cell interference elimination,
+	sum rate characterization, uplink channels, wideband scheme, Distributed
+	antenna array, Shannon theory, Wyner's cellular model, fading, multicell
+	processing, multiuser detection, multiuser diversity},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@ARTICLE{Song2007,
+  author = {Wei Song and Weihua Zhuang and Yu Cheng},
+  title = {Load balancing for cellular/WLAN integrated networks},
+  journal = {IEEE Network},
+  year = {2007},
+  volume = {21},
+  pages = {27--33},
+  number = {1},
+  month = jan,
+  doi = {10.1109/MNET.2007.314535},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- Se concentra em algoritmo de load balancing para uma rede MA composta
+	uma estrutura cellular/WLAN loose-coupled. O framework é baseado
+	em duas fases: static AS e dynamic VHO.
+	
+	- Traz uma descrição rápida das iniciativas do 3GGP, principalemnte
+	para as normas: 22.934, 23.234 e 23.836
+	
+	- Fala um pouco da complementaridade dos dois sistemas e do loose
+	e tight coupled.
+	
+	- Traz um boa descrição do cenário loose-coupled da norma 23.234.
+	
+	- Define o conceito de Policy-based Resource Management. Policy-based
+	approach is increasingly popular for network management with the
+	merits of flexibility and scalability. The service QoS requirements
+	and the details of network conguration aredecoupled to facilitate
+	dynamic control. The Internet engineering task force (IETF) has defined
+	a policy-based management framework [9].
+	
+	- The IETF policy framework has been adapted and introduced in the
+	QoS architecture of UMTS
+	
+	systems [10].},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{Sousa2006a,
+  author = {de Sousa, V. A. and Neto, R. Ad. O. and Chaves, Fd. S. and Cardoso,
+	L. S. and Cavalcanti, F. R. P. },
+  title = {Access Selection with Anticipatory Vertical Handover for Multi-Access
+	Networks},
+  booktitle = {Proc. IEEE 17th International Symposium on Personal, Indoor and Mobile
+	Radio Communications},
+  year = {2006},
+  pages = {1--5},
+  month = sep # { 11--14,},
+  __markedentry = {[marclore]},
+  doi = {10.1109/PIMRC.2006.254022},
+  owner = {marclore},
+  timestamp = {2009.07.10}
+}
+
+@INPROCEEDINGS{Sousa2006c,
+  author = {de Sousa, V. A. and Neto, R. Ad. O. and Chaves, Fd. S. and Cavalcanti,
+	F. R. P. },
+  title = {Attractiveness of Intelligent Access Selection for Multi-Access Beyond
+	3G Wireless Networks},
+  booktitle = {Proc. IEEE 17th International Symposium on Personal, Indoor and Mobile
+	Radio Communications},
+  year = {2006},
+  pages = {1--5},
+  month = sep # { 11--14,},
+  __markedentry = {[marclore]},
+  doi = {10.1109/PIMRC.2006.254292},
+  owner = {marclore},
+  timestamp = {2009.07.10}
+}
+
+@INPROCEEDINGS{Sousa2006,
+  author = {de Sousa, V. A. and de O. Neto, R. A. and de S. Chaves, F. and Cardoso,
+	L. S. and Cavalcanti, F. R. P.},
+  title = {Access selection with connection reallocation for multi-access networks},
+  booktitle = {Proc. International Telecommunications Symposium},
+  year = {2006},
+  pages = {615--619},
+  month = sep # { 3--6,},
+  __markedentry = {[marclore]},
+  doi = {10.1109/ITS.2006.4433347},
+  owner = {marclore},
+  timestamp = {2009.07.10}
+}
+
+@INPROCEEDINGS{Sousa2006b,
+  author = {de Sousa, V. A. and de O. Neto, R. A. and de S. Chaves, F. and da
+	Silva, A. P. and Cavalcanti, F. R. P.},
+  title = {Conception and evaluation of access selection algorithms for cooperative
+	beyond 3G systems},
+  booktitle = {Proc. International Telecommunications Symposium},
+  year = {2006},
+  pages = {603--608},
+  month = sep # { 3--6,},
+  __markedentry = {[marclore]},
+  doi = {10.1109/ITS.2006.4433345},
+  owner = {marclore},
+  timestamp = {2009.07.10}
+}
+
+@ARTICLE{Stemm97,
+  author = {Mark Stemm and Randy H. Katz and Y H. Katz},
+  title = {Measuring and Reducing Energy Consumption of Network Interfaces in
+	Hand-Held Devices},
+  journal = {Transactions on Communications, special Issue on Mobile Computing
+	- Institute of Electronics, Information and Communication Engineers
+	- IEICE},
+  year = {1997},
+  pages = {1125-1131},
+  owner = {souzadej}
+}
+
+@ARTICLE{Stevenson2009,
+  author = {Stevenson, C. and Chouinard, G. and Zhongding Lei and Wendong Hu
+	and Shellhammer, S. and Caldwell, W.},
+  title = {IEEE 802.22: The first cognitive radio wireless regional area network
+	standard},
+  journal = {IEEE Communications Magazine},
+  year = {2009},
+  volume = {47},
+  pages = {130-138},
+  number = {1},
+  month = {January},
+  abstract = {This article presents a high-level overview of the IEEE 802.22 standard
+	for cognitive wireless regional area networks (WRANs) that is under
+	development in the IEEE 802 LAN/MAN Standards Committee.},
+  doi = {10.1109/MCOM.2009.4752688},
+  file = {:C\:\\Users\\papers\\references\\IEEE 802.22 - The first cognitive radio wireless regional area network standard.pdf:PDF},
+  issn = {0163-6804},
+  keywords = {cognitive radio, television broadcasting, IEEE 802.22 standard, cognitive
+	radio, wireless regional area network},
+  owner = {edgsouza},
+  review = {This is a good introduction to the IEEE 802.22 standard and it provides
+	a nice overview of the tecnology. It introduces the terminology of
+	the field and presents the main characteristics of the system: OFDMA
+	with 2048 carriers (variable carrier spacing), SISO, TDD (FDD is
+	in wish list) fixed base stations (BS) and customer premisses equipment
+	(CPE), outdoor antennas. The main PHY and MAC layer features are
+	presented and the frame structure looks like the IEEE 802.16e one.
+	The cognitive functions (spectrum management, geolocation and database,
+	spectrum sensing) are briefly described.
+	
+	
+	From Juliano Bazzo (bazzo):
+	
+	- TV channels from 5-13 in VHF band and 14-51 in the UHF band could
+	be used for fixed broadband access systems.
+	
+	- 802.22 = cognitive radio techiniques, use of TV broadcast bandwidth,
+	low density areas (rural environments)
+	
+	- Two methods of spectrum awareness:
+	
+	 . geo-location/database
+	
+	 . spectrum sensing
+	
+	- PHY layer must be adjusted to absorb longer multipath delays, might
+	be up to 37ms.
+	
+	- SME (Station Management Entity) can access any layer.
+	
+	- Network Entry addons from 802.22 in comparison with others wireless
+	technologies: explicitly specify the operations of geolocations,
+	channel database access, initial spectrum sensing, internetwork synchronization
+	and discovery.
+	
+	CONCLUSION: Very good paper that explores the 802.22 standard. A good
+	lecture for those that are starting in this technology.},
+  timestamp = {2009.07.13}
+}
+
+@INCOLLECTION{Hulkonen2010,
+  author = {S{\"{a}}ily, M. and Hulkkonen, J. and Pedersen, K. and Juncker, C.
+	and Paiva, R. C. D. and Iida, R. and Piirainen, O. and Sundaralingam,
+	S. and Loureiro, A. and Helt-Hansen, J. and Domingos, R. and Tavares,
+	F.},
+  title = {Orthogonal sub-channel with {AMR}/{SAIC}},
+  booktitle = {{GSM}/{EDGE}: Evolution and Performance},
+  publisher = {John Wiley \& Sons},
+  year = {2010},
+  editor = {S{\"{a}}ily, M. and Sebire, G. and Riddington, E. P.},
+  owner = {rapaiva},
+  timestamp = {2010.02.05}
+}
+
+@INPROCEEDINGS{Saily2008,
+  author = {S{\"{a}}ily, M. and Hulkkonen, J. and Piirainen, O. and Niemela,
+	K. and Zacarias B, E.},
+  title = {EGPRS2 Uplink Performance for GERAN Evolution},
+  booktitle = {Vehicular Technology Conference, 2008. VTC Spring 2008. IEEE},
+  year = {2008},
+  pages = {2572-2576},
+  month = {May},
+  abstract = {This paper presents a higher performance uplink concept for the evolution
+	of GSM/EDGE radio access network (GERAN). The EGPRS2 UL concept can
+	operate at 1.2 times the current GERAN symbol rate, and employ 4-,
+	16- and 32-QAM constellations, concatenated with convolutional codes.
+	The interference introduced by the higher transmit signal bandwidth
+	is mitigated by the use of interference rejection combining (IRC)
+	receivers. We explore both noise and interference limited scenarios,
+	in link and system level simulations. The simulation study shows
+	that the user peak data rates can be increased up to 100%, and that
+	the average throughput over practical signal to noise ratio (SNR)
+	conditions can gain up to 50%. Therefore, coverage and user bit rates
+	can be significantly improved without requiring additional radio
+	frequency spectrum.},
+  doi = {10.1109/VETECS.2008.565},
+  issn = {1550-2252},
+  keywords = {cellular radio, convolutional codes, interference suppression, packet
+	radio networks, quadrature amplitude modulation, radio access networks,
+	radio links, radio receiversEGPRS2 uplink, GERAN evolution, GSM/EDGE
+	radio access network, QAM constellation, convolutional code, interference
+	rejection combining receivers}
+}
+
+@ARTICLE{TAkiyama2009,
+  author = {T Akiyama, Y Teranishi, S Okamura, S Shimojo},
+  title = {A Consideration of the Precision Improvement in WiFi Positioning
+	System},
+  journal = {International Conference on Complex, Intelligent and Software Intensive
+	Systems},
+  year = {2009},
+  file = {:AConsiderationof.pdf:PDF},
+  owner = {bazzo},
+  review = {De Juliano Bazzo [bazzo]:
+	
+	- Analisa os dados de uma base de dados de positionamento de APs chamada
+	Locky.jp.
+	
+	- Locky.jp contém dados da posição dos APs inseridas voluntariamente
+	por usuários utilizando o GPS ou mapas
+	
+	- Locky.jp também contém medidas de RSSI dos usuários que são utilizadas
+	para localização.
+	
+	- O paper tem o objetivo de propor uma técnica que baseando-se nas
+	medidas de RSSI dos usuários fazer uma correção no posicionanto dos
+	APs que normalmente está sujeito a erros por ser manual e voluntária.
+	
+	- A estimativa é feita baseada numa região circular de probabilidade
+	do AP estar naquela posição.
+	
+	- Paper traz uma conclusão pobre.},
+  timestamp = {2010.02.19}
+}
+
+@ARTICLE{Tandra2009,
+  author = {Tandra, R. and Sahai, A. and Mishra, S.M.},
+  title = {What is a Spectrum Hole and What Does it Take to Recognize One?},
+  journal = {Proceedings of the IEEE},
+  year = {2009},
+  volume = {97},
+  pages = {824-848},
+  number = {5},
+  month = {May },
+  abstract = {ldquoSpectrum holesrdquo represent the potential opportunities for
+	noninterfering (safe) use of spectrum and can be considered as multidimensional
+	regions within frequency, time, and space. The main challenge for
+	secondary radio systems is to be able to robustly sense when they
+	are within such a spectrum hole. To allow a unified discussion of
+	the core issues in spectrum sensing, the ldquoweighted probability
+	of area recoveredrdquo (WPAR) metric is introduced to measure the
+	performance of a sensing strategy; and the ldquofear of harmful interferencerdquo
+	F HI metric is introduced to measure its safety. These metrics explicitly
+	consider the impact of asymmetric uncertainties (and misaligned incentives)
+	in the system model. Furthermore, they allow a meaningful comparison
+	of diverse approaches to spectrum sensing unlike the traditional
+	triad of sensitivity, probability of false-alarm P FA, and probability
+	of missed-detection P MD. These new metrics are used to show that
+	fading uncertainty forces the WPAR performance of single-radio sensing
+	algorithms to be very low for small values of F HI, even for ideal
+	detectors. Cooperative sensing algorithms enable a much higher WPAR,
+	but only if users are guaranteed to experience independent fading.
+	Lastly, in-the-field calibration for wide-band (but uncertain) environment
+	variables (e.g., interference and shadowing) can robustly guarantee
+	safety (low F HI) even in the face of potentially correlated users
+	without sacrificing WPAR.},
+  doi = {10.1109/JPROC.2009.2015710},
+  file = {:Tandra2009.pdf:PDF},
+  issn = {0018-9219},
+  keywords = {fading, radio spectrum management, signal detectionarea recovered
+	weighted probability, fading uncertainty, secondary radio system,
+	single radio sensing, spectrum hole, spectrum safe use, spectrum
+	sensing},
+  owner = {edgsouza},
+  timestamp = {2009.07.06}
+}
+
+@ARTICLE{Teerawat2009,
+  author = {Teerawat Issariyakul, Laxminarayana S Pillutla and Vikram Krishnamurthy},
+  title = {Tuning Radio Resource in an Overlay Cognitive Radio Network for TCP:
+	Greed Isn't Good},
+  journal = {To be published at IEEE Communications Magazine},
+  year = {2009},
+  file = {:Teerawat2009.pdf:PDF},
+  owner = {bazzo},
+  review = {De Juliano Bazzo (bazzo):
+	
+	- Paper analisa o desempenho do TCP em redes cognitivas sobrepostas.
+	
+	- Utiliza o NS-2 para simulação.
+	
+	- Mostra que usuários secundários são penalizados pela perda de conexão
+	quando um usuário primário utiliza sua banda. Isso degrada o desempenho
+	do TCP e do t-put.
+	
+	- Sugere que o t-put do usuário secundário nem sempre aumenta quando
+	há disponibilidade de recursos de rádio, principalmente devido às
+	interrupções do usuário primário. Assim, é necessário controlar como/quanto
+	o usuário secundário obtém os recursos de rádio.
+	
+	- As "Distributed CR Network Architectures" podem ser divididas em:
+	
+	 . Cooperativas: nessa rede os usuários compartilham a informação
+	de interferência e determinam a alocação do espectro baseando-se
+	nessa informação.
+	
+	 . Não-cooperativas: usuários acessam o espectro baseando-se em políticas
+	locais, uma vez que não há comunicação a respeito da informação de
+	interferência entre os usuários da rede.
+	
+	- Projeto Nautilus: Busca algoritmos inteligentes para compartilhamento
+	de espectro em redes ad hoc. O projeto propoem 2 algoritmos:
+	
+	 . Baseado em graph-coloring
+	
+	 . Baseado em barganha
+	
+	- Propostas de melhorar o TCP para redes wireless são 3:
+	
+	 . end-to-end solutions
+	
+	 . split-connection solutions.
+	
+	 . link-layer solutions <--- ESTA É A MAIS POPULAR pois não precisa
+	modificar o TCP atual.
+	
+	- Perdas mais comuns do TCP:
+	
+	 . Por congestionamento.
+	
+	 . Por erro.
+	
+	 . Por colisão
+	
+	 . e a mais nova, Perda por interrupção do serviço.
+	
+	- Simulação
+	
+	 . Foi mostrado que existe um número de canais (BS-MS) ótimo para
+	ser utilizado pelos usuários secundários e esse valor aumenta quando
+	o número de usuários secundários aumenta. Veja Figura 3.
+	
+	
+	CONCLUSÕES: O paper consegue mostrar o efeito na redução do t-put
+	dos usuários secundários quando há um aumento na carga e também no
+	número de canais capturados pelos usuários secundários. No entando,
+	olhando para a curva 3, houve uma redução drástica somente quando
+	há somente um usuário e quando a janela de TCP chega ao seu máximo.
+	Aumentando, o número de usuários secundários e também a carga do
+	sistema, o t-put é reduzido sem variações drásticas, o que é esperado.
+	
+	Acredito que em ambientes reais, o problema do TCP por interrupção
+	de serviço, não é mais severo do que o problema de congestionamento,
+	por exemplo.
+	
+	Ainda, não está claro/provado que outras versões do TCP (Reno? Vegas,
+	SACK?) tem o mesmo comportamento. Qual foi o tipo de TCP utilizado?},
+  timestamp = {2009.07.23}
+}
+
+@ARTICLE{Telatar1999,
+  author = {I. E. Telatar},
+  title = {Capacity of multi-antenna {G}aussian channels},
+  journal = {European Transactions on Telecommunications},
+  year = {1999},
+  volume = {10},
+  pages = {585--596},
+  number = {6},
+  file = {:Telatar1999.pdf:PDF},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@BOOK{book_tranter,
+  title = {Principles of Communication Systems Simulation with Wireless Applications},
+  publisher = {Prentice Hall},
+  year = {2004},
+  author = {W. H. Tranter and K. S. Shammugan and T.S Rappaport and K.L.Kosbar}
+}
+
+@TECHREPORT{winner,
+  author = {3GPP TR 25.996 V6.1.0},
+  title = {Spatial channel model for multiple input multiple output (MIMO) simulations},
+  year = {2003}
+}
+
+@INPROCEEDINGS{Armin2007,
+  author = {Armin Veichtlbauer and Peter Dorfinger},
+  title = {Modeling of energy efficient wireless communication},
+  booktitle = {15th International Conference on Software, Telecommunications and
+	Computer Networks, 2007. SoftCOM 2007.},
+  year = {2007},
+  pages = {1-5},
+  month = {27-29},
+  owner = {souzadej}
+}
+
+@INPROCEEDINGS{Venkatesan2007a,
+  author = {Venkatesan, S. },
+  title = {Coordinating Base Stations for Greater Uplink Spectral Efficiency
+	in a Cellular Network},
+  booktitle = {Proc. IEEE 18th International Symposium on Personal, Indoor and Mobile
+	Radio Communications PIMRC 2007},
+  year = {2007},
+  pages = {1--5},
+  doi = {10.1109/PIMRC.2007.4394771},
+  file = {:Venkatesan2007a.pdf:PDF},
+  keywords = {antenna arrays, array signal processing, cellular radio, cochannel
+	interference, interference suppression, radio links, SNR, base station
+	antenna, cellular network, cochannel interference, coherent linear
+	beamforming, coordinating base stations, signal-to-noise ratio, suppressing
+	interference, uplink spectral efficiency},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@INPROCEEDINGS{Venkatesan2007,
+  author = {Venkatesan, S. and Lozano, A. and Valenzuela, R.},
+  title = {Network MIMO: Overcoming Intercell Interference in Indoor Wireless
+	Systems},
+  booktitle = {Conference Record of the Forty-First Asilomar Conference on Signals,
+	Systems and Computers ACSSC 2007},
+  year = {2007},
+  pages = {83--87},
+  abstract = {Network MIMO is a family of techniques whereby each user in a wireless
+	system is served through all the access points within its range of
+	influence. By tightly coordinating the transmission and reception
+	of signals at multiple access points, network MIMO transcends the
+	limits on spectral efficiency due to intercell interference. Taking
+	prior information- theoretic analyses of Network MIMO to the next
+	level, this paper quantifies the spectral efficiency gains obtainable
+	under realistic propagation and operational conditions. Our study
+	relies on detailed simulations and, for specificity, is conducted
+	within the framework of the IEEE 802.16e Mobile WiMAX system. All
+	the relevant physical-layer functionalities of Mobile WiMAX are accurately
+	replicated. Furthermore, to facilitate the coordination between access
+	points, we postulate an indoor deployment organized around a gigabit-ethernet
+	backhaul. The results confirm that Network MIMO stands to provide
+	a multiple-fold increase in spectral efficiency under such conditions.},
+  doi = {10.1109/ACSSC.2007.4487170},
+  file = {:Venkatesan2007.pdf:PDF},
+  issn = {1058-6393},
+  keywords = {MIMO communication, WiMax, indoor radio, interference (signal), local
+	area networks, mobile radio, IEEE 802.16 mobile WiMAX system, gigabit
+	ethernet backhaul, indoor wireless systems, intercell interference,
+	multiple access points, network MIMO, spectral efficiency gains},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@INPROCEEDINGS{Refarm2010,
+  author = {Vieira, R. D. and Paiva, R. C. D. and Hulkonen, J. and S{\"{a}}ily,
+	M. and Jarvela, R. and Iida, R. and Tavares, F. and Niemela, K.},
+  title = {{GSM} Evolution Importance in Re-farming 900{MHz} band},
+  booktitle = {Vehicular Technology Conference, 2010. VTC2010-Fall. IEEE 72nd},
+  year = {2010},
+  month = {September},
+  owner = {rafapaiv},
+  timestamp = {2010.05.05}
+}
+
+@INPROCEEDINGS{Webb2004,
+  author = {Webb, M. and Beach, M. and Nix, A.},
+  title = {Capacity limits of MIMO channels with co-channel interference},
+  booktitle = {Proc. VTC 2004-Spring Vehicular Technology Conference 2004 IEEE 59th},
+  year = {2004},
+  volume = {2},
+  pages = {703--707 Vol.2},
+  doi = {10.1109/VETECS.2004.1388919},
+  file = {:Webb2004.pdf:PDF},
+  issn = {1550-2252},
+  keywords = {MIMO systems, Monte Carlo methods, array signal processing, channel
+	capacity, cochannel interference, correlation methods, INR, MIMO
+	channel capacity limits, MIMO channel matrix, MIMO communication
+	systems, Monte Carlo simulation, capacity lower bounds, channel correlation,
+	cochannel interference, interference-to-noise ratio, interferer number,
+	multiple receive antennas, multiple transmit antennas, receive array
+	size, sub-channel gains, transmit array size},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@INPROCEEDINGS{Wu2007,
+  author = {Leijia Wu and Sandrasegaran, K.},
+  title = {A Survey on Common Radio Resource Management},
+  booktitle = {Proc. 2nd International Conference on Wireless Broadband and Ultra
+	Wideband Communications AusWireless 2007},
+  year = {2007},
+  pages = {66},
+  month = aug # { 27--30,},
+  doi = {10.1109/AUSWIRELESS.2007.15},
+  owner = {souzadej},
+  timestamp = {2009.07.09}
+}
+
+@ARTICLE{Y.Cheng2005,
+  author = {Y. Cheng, Y. Chawathe, A. LaMarca and J. Krumm},
+  title = {Accuracy characterization for metropolitan-scale Wi-Fi localization},
+  journal = {Intel Research},
+  year = {2005},
+  file = {:Accuracy Characterization for Metropolitan.pdf:PDF},
+  owner = {bazzo},
+  timestamp = {2010.02.19}
+}
+
+@BOOK{Book:Yacoub93,
+  title = {Foundations of Mobile Radio Engineering},
+  publisher = {CRC Press},
+  year = {1993},
+  author = {{Michel} Daoud Yacoub},
+  owner = {souzadej},
+  timestamp = {2009.07.15}
+}
+
+@INPROCEEDINGS{Yang2008,
+  author = {Kemeng Yang and Gondal, I. and Bin Qiu},
+  title = {Context Aware Vertical Soft Handoff Algorithm For Heterogeneous Wireless
+	Networks},
+  booktitle = {Proc. VTC 2008-Fall Vehicular Technology Conference IEEE 68th},
+  year = {2008},
+  pages = {1--5},
+  month = sep # { 21--24,},
+  doi = {10.1109/VETECF.2008.272},
+  file = {:Yang2008.pdf:PDF},
+  owner = {bazzo},
+  review = {De Juliano Bazzo [bazzo]:
+	
+	- Considera parâmetros: BW requerida pelo usuário, user traffic cost,
+	access network utilization e SINR.
+	
+	- A estratégia com CAVSH resulta em baixa probatilidade de queda,
+	lower average cost to the user and higher t-put qdo comparado com
+	o vertical hard handoff.
+	
+	- Estudos preliminares em CAVSH baseavam-se somente em valores de
+	SINR.
+	
+	- Siglas iimportantes:
+	
+	 CAVSH: Context-Aware Vertical Soft handoff
+	
+	 CSVH: Vertical Handoff Algorithm
+	
+	Conclusão: Paper bem objetivo e interessante. Os autores já vem gerando
+	trabalhos avaliando o desempenho de diversas técnicas de HO. Nesse
+	paper, eles avaliam diversas métricas como SINR, utilização da rede
+	e também uma função custo que é baseado no tput da rede para então
+	decidir em qual rede se conectar. Eles consideram um cenário onde
+	o móvel pode se conectar em até 4 BSs+APs ao mesmo tempo.
+	
+	Sugestão de pesquisa:
+	
+	 - Agregar todas as métricas analisadas nesse paper em apenas uma
+	função custo.
+	
+	 - Analisar como seria o desempenho do Horizontal Soft Handover numa
+	rede WIMAX multilayer.},
+  timestamp = {2009.07.27}
+}
+
+@ARTICLE{Shun2008,
+  author = {Shun-ren Yang and Phone Lin and Pei-tang Huang},
+  title = {Modeling power saving for GAN and UMTS interworking},
+  journal = {IEEE Transactions on Wireless Communications},
+  year = {2008},
+  volume = {7},
+  pages = {5326 -5335},
+  number = {12},
+  month = {december}
+}
+
+@ARTICLE{Shun2007,
+  author = {Shun-Ren Yang and Sheng-Ying Yan and Hui-Nien Hung},
+  title = {Modeling UMTS Power Saving with Bursty Packet Data Traffic},
+  journal = {IEEE Transactions on Mobile Computing},
+  year = {2007},
+  volume = {6},
+  pages = {1398 -1409},
+  number = {12},
+  month = {dec},
+  owner = {souzadej}
+}
+
+@INPROCEEDINGS{Yilmaz2005,
+  author = {Yilmaz, O. and Furuskar, A. and Pettersson, J. and Simonsson, A.
+	},
+  title = {Access selection in WCDMA and WLAN multi-access networks},
+  booktitle = {Proc. VTC 2005-Spring Vehicular Technology Conference 2005 IEEE 61st},
+  year = {2005},
+  volume = {4},
+  pages = {2220--2224},
+  month = may # { 30--} # jun # { 1,},
+  doi = {10.1109/VETECS.2005.1543729},
+  owner = {bazzo},
+  timestamp = {2009.08.04}
+}
+
+@ARTICLE{Yu2007,
+  author = {Yu, Wei and Lan, T.},
+  title = {Transmitter Optimization for the Multi-Antenna Downlink With Per-Antenna
+	Power Constraints},
+  journal = {IEEE Transactions on Signal Processing},
+  year = {2007},
+  volume = {55},
+  pages = {2646--2660},
+  number = {6},
+  doi = {10.1109/TSP.2006.890905},
+  file = {:Yu2007.pdf:PDF},
+  issn = {1053-587X},
+  keywords = {antenna arrays, duality (mathematics), minimax techniques, multiuser
+	channels, radio transmitters, transmitting antennas, Lagrangian duality,
+	capacity-achieving transmitter design, dual uplink problem, minimax
+	optimization problem, minimum-power beamforming design, multi-antenna
+	downlink, multiple transmit antennas, multiuser downlink channel,
+	numerical optimization techniques, per-antenna downlink transmitter
+	optimization problem, per-antenna power constraints, power amplifier,
+	sum-power constraint, uplink-downlink duality, Beamforming, Lagrangian
+	duality, broadcast channel, capacity region, dirty-paper coding},
+  owner = {edgsouza},
+  timestamp = {2009.07.01}
+}
+
+@ARTICLE{Yu2006,
+  author = {Yu, Wei and Lui, R.},
+  title = {Dual methods for nonconvex spectrum optimization of multicarrier
+	systems},
+  journal = {IEEE Transactions on Communications},
+  year = {2006},
+  volume = {54},
+  pages = {1310--1322},
+  number = {7},
+  abstract = {The design and optimization of multicarrier communications systems
+	often involve a maximization of the total throughput subject to system
+	resource constraints. The optimization problem is numerically difficult
+	to solve when the problem does not have a convexity structure. This
+	paper makes progress toward solving optimization problems of this
+	type by showing that under a certain condition called the time-sharing
+	condition, the duality gap of the optimization problem is always
+	zero, regardless of the convexity of the objective function. Further,
+	we show that the time-sharing condition is satisfied for practical
+	multiuser spectrum optimization problems in multicarrier systems
+	in the limit as the number of carriers goes to infinity. This result
+	leads to efficient numerical algorithms that solve the nonconvex
+	problem in the dual domain. We show that the recently proposed optimal
+	spectrum balancing algorithm for digital subscriber lines can be
+	interpreted as a dual algorithm. This new interpretation gives rise
+	to more efficient dual update methods. It also suggests ways in which
+	the dual objective may be evaluated approximately, further improving
+	the numerical efficiency of the algorithm. We propose a low-complexity
+	iterative spectrum balancing algorithm based on these ideas, and
+	show that the new algorithm achieves near-optimal performance in
+	many practical situations.},
+  doi = {10.1109/TCOMM.2006.877962},
+  file = {:Yu2006.pdf:PDF},
+  issn = {0090-6778},
+  keywords = {concave programming, digital subscriber lines, iterative methods,
+	digital subscriber lines, iterative spectrum balancing algorithm,
+	multicarrier systems, multiuser spectrum optimization problems, nonconvex
+	spectrum optimization, optimal spectrum balancing algorithm, time-sharing
+	condition, Digital subscriber lines (DSLs), discrete multitone (DMT),
+	duality theory, dynamic spectrum management (DSM), iterative spectrum
+	balancing (ISB), nonconvex optimization, optimal spectrum balancing
+	(OSB), orthogonal frequency-division multiplex (OFDM)},
+  owner = {edgsouza},
+  timestamp = {2009.06.29}
+}
+
+@ARTICLE{Yu2004,
+  author = {Yu, Wei and Rhee, Wonjong and Boyd, S. and Cioffi, J. M.},
+  title = {Iterative water-filling for Gaussian vector multiple-access channels},
+  journal = {IEEE Transactions on Information Theory},
+  year = {2004},
+  volume = {50},
+  pages = {145--152},
+  number = {1},
+  abstract = {This paper proposes an efficient numerical algorithm to compute the
+	optimal input distribution that maximizes the sum capacity of a Gaussian
+	multiple-access channel with vector inputs and a vector output. The
+	numerical algorithm has an iterative water-filling interpretation.
+	The algorithm converges from any starting point, and it reaches within
+	1/2 nats per user per output dimension from the sum capacity after
+	just one iteration. The characterization of sum capacity also allows
+	an upper bound and a lower bound for the entire capacity region to
+	be derived.},
+  doi = {10.1109/TIT.2003.821988},
+  file = {:Yu2004.pdf:PDF},
+  issn = {0018-9448},
+  keywords = {Gaussian channels, channel capacity, convergence of numerical methods,
+	convex programming, iterative methods, multi-access systems, multiuser
+	channels, power control, Gaussian vector multiple-access channels,
+	channel capacity, convergence, convex optimization, efficient numerical
+	algorithm, iterative water-filling interpretation, multiple-antenna
+	systems, multiuser channels, optimal input distribution, optimization
+	methods, power control, sum capacity maximization, vector inputs,
+	vector output},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@BOOK{book_zander2001,
+  title = {Radio Resource Management for Wireless Networks},
+  publisher = {Artech House, Inc.},
+  year = {2001},
+  editor = {Artech House, Inc.},
+  author = {Zander, Jens and Queseth, Olav},
+  address = {Norwood, MA, USA},
+  isbn = {1580531466},
+  owner = {souzadej},
+  timestamp = {2009.07.14}
+}
+
+@ARTICLE{Zhang2009,
+  author = {Zhang, Jun and Chen, Runhua and Andrews, J. G. and Ghosh, A. and
+	Heath, R. W.},
+  title = {Networked MIMO with clustered linear precoding},
+  journal = {IEEE Transactions on Wireless Communications},
+  year = {2009},
+  volume = {8},
+  pages = {1910--1921},
+  number = {4},
+  abstract = {A clustered base transceiver station (BTS) coordination strategy is
+	proposed for a large cellular MIMO network, which includes full intra-cluster
+	coordination-to enhance the sum rate-and limited inter-cluster coordination-to
+	reduce interference for the cluster edge users. Multi-cell block
+	diagonalization is used to coordinate the transmissions across multiple
+	BTSs in the same cluster. To satisfy per-BTS power constraints, three
+	combined precoder and power allocation algorithms are proposed with
+	different performance and complexity tradeoffs. For inter-cluster
+	coordination, the coordination area is chosen to balance fairness
+	for edge users and the achievable sum rate. It is shown that a small
+	cluster size (about 7 cells) is sufficient to obtain most of the
+	sum rate benefits from clustered coordination while greatly relieving
+	channel feedback requirement. Simulations show that the proposed
+	coordination strategy efficiently reduces interference and provides
+	a considerable sum rate gain for cellular MIMO networks.},
+  doi = {10.1109/TWC.2009.080180},
+  file = {:Zhang2009.pdf:PDF},
+  issn = {1536-1276},
+  keywords = {MIMO communication, cellular radio, channel coding, interference suppression,
+	linear codes, precoding, radiofrequency interference, wireless channels,
+	cellular MIMO network, channel feedback, clustered base transceiver
+	station, clustered linear precoding, inter-cluster coordination,
+	interference reduction, intra-cluster coordination, multicell block
+	diagonalization, power allocation algorithm, MIMO systems, base station
+	coordination, cellular technology, resource allocation and interference
+	management},
+  owner = {edgsouza},
+  timestamp = {2009.06.30}
+}
+
+@ARTICLE{Zhang2009a,
+  author = {Wei Zhang and Ben Letaief, K.},
+  title = {Cooperative Communications for Cognitive Radio Networks},
+  journal = {Proceedings of the IEEE},
+  year = {2009},
+  volume = {97},
+  pages = {878-893},
+  number = {5},
+  month = {May },
+  abstract = {Cognitive radio is an exciting emerging technology that has the potential
+	of dealing with the stringent requirement and scarcity of the radio
+	spectrum. Such revolutionary and transforming technology represents
+	a paradigm shift in the design of wireless systems, as it will allow
+	the agile and efficient utilization of the radio spectrum by offering
+	distributed terminals or radio cells the ability of radio sensing,
+	self-adaptation, and dynamic spectrum sharing. Cooperative communications
+	and networking is another new communication technology paradigm that
+	allows distributed terminals in a wireless network to collaborate
+	through some distributed transmission or signal processing so as
+	to realize a new form of space diversity to combat the detrimental
+	effects of fading channels. In this paper, we consider the application
+	of these technologies to spectrum sensing and spectrum sharing. One
+	of the most important challenges for cognitive radio systems is to
+	identify the presence of primary (licensed) users over a wide range
+	of spectrum at a particular time and specific geographic location.
+	We consider the use of cooperative spectrum sensing in cognitive
+	radio systems to enhance the reliability of detecting primary users.
+	We shall describe spectrum sensing for cognitive radios and propose
+	robust cooperative spectrum sensing techniques for a practical framework
+	employing cognitive radios. We also investigate cooperative communications
+	for spectrum sharing in a cognitive wireless relay network. To exploit
+	the maximum spectrum opportunities, we present a cognitive space-time-frequency
+	coding technique that can opportunistically adjust its coding structure
+	by adapting itself to the dynamic spectrum environment.},
+  doi = {10.1109/JPROC.2009.2015716},
+  file = {:Zhang2009a.pdf:PDF},
+  issn = {0018-9219},
+  keywords = {cognitive radio, diversity reception, fading channels, frequency allocation,
+	space-time codes, spread spectrum communication, telecommunication
+	network reliabilitycognitive wireless relay network, cooperative
+	spectrum sensing technique, distributed terminal, dynamic spectrum
+	sharing, fading channel, network reliability, radio spectrum utilization,
+	space diversity, space-time-frequency coding technique},
+  owner = {edgsouza},
+  timestamp = {2009.07.06}
+}
+
+@INPROCEEDINGS{paper_ZHANG2006,
+  author = {ZHANG, Y. and GU, J. and YANG, D.},
+  title = {Link level modeling for high speed communication system simulations},
+  booktitle = {TENCON 2006. 2006 IEEE Region 10 Conference},
+  year = {2006},
+  owner = {rdomingo},
+  timestamp = {2009.07.09}
+}
+
+@INPROCEEDINGS{Zhang2008,
+  author = {Zhenyu Zhang and Xiaoyao Xie},
+  title = {Application research of evolution in cognitive radio based on GA},
+  booktitle = {Industrial Electronics and Applications, 2008. ICIEA 2008. 3rd IEEE
+	Conference on},
+  year = {2008},
+  pages = {1575-1579},
+  month = {June},
+  abstract = {With the fast development of cognitive radio, best decision problem
+	in cognitive radio receives considerable attention. This paper introduces
+	the research of cognitive radio. Genetic algorithm and itpsilas applications
+	in decision maker are introduced. Based on biologic evolution principle,
+	genetic algorithm can get the system best parameters by dominant
+	character. The cognitive cycle and genetic algorithm are introduced.
+	Based on genetic algorithm, the genes and chromosomes of cognitive
+	are proposed. Under different fitness rules, the cases of biologically
+	inspired cognitive radio are studied. The limitation of Rieserpsilas
+	CR mode based on GA is analyzed. The proposal for improvement is
+	studied.},
+  doi = {10.1109/ICIEA.2008.4582784},
+  file = {:Zhang2008.pdf:PDF},
+  keywords = {cognitive radio, decision making, decision theory, genetic algorithms,
+	neural nets, telecommunication computingRieserpsilas cognitive radio
+	mode, best decision problem, biologic evolution principle, chromosomes,
+	decision making, fitness rules, genetic algorithm, neural network},
+  owner = {edgsouza},
+  timestamp = {2009.07.06}
+}
+
+@INPROCEEDINGS{Lei2008,
+  author = {Lei Zhou and Haibo Xu and Hui Tian and Youjun Gao and Lei Du and
+	Lan Chen},
+  title = {Performance Analysis of Power Saving Mechanism with Adjustable DRX
+	Cycles in 3GPP LTE},
+  booktitle = {IEEE 68th Vehicular Technology Conference. VTC 2008-Fall.},
+  year = {2008},
+  pages = {1 -5},
+  month = {21-24}
+}
+
+@INPROCEEDINGS{Zhou2008,
+  author = {Yu Zhou and Yanxia Rong and Hyeong-Ah Choi and Jae-Hoon Kim and JungKyo
+	Sohn and Hyeong In Choi},
+  title = {Utility-based load balancing in WLAN/UMTS internetworking systems},
+  booktitle = {Proc. IEEE Radio and Wireless Symposium},
+  year = {2008},
+  pages = {587--590},
+  month = jan # { 22--24,},
+  doi = {10.1109/RWS.2008.4463560},
+  owner = {souzadej},
+  review = {De Vicente Sousa (souzadej):
+	
+	- Ele faz uma boa introdução mencionando as taxas de tranamissão dos
+	sistemas legados e dissertando sobre a complementaridade das características
+	das redes legadas como uma motivação técnica das redes MA.
+	
+	- Fala também de forma suncinta dos requerimentos de HW do terminal
+	para torná-lo apto ao cenário MA.
+	
+	- Fala sobre a possibilidade de uma arquiterura de rede MA ser basead
+	na camada IP switch layer.
+	
+	- Classifica a arquitetura de MA em duas categorias: losse and tight
+	coupling. Dá referecias e uma definição sucinta dos dois conceitos.
+	
+	- Dá uma referecia do Dual Mode terminal (DTM) e das normas do 3GPP
+	que tratam de Multi-acesso
+	
+	- quanto aos resultados, ele mostra dois casos onde a seleção de acesso
+	é feita de forma aleatória, mas no caso 2, o VHO é feito baseado
+	numa função utilidade proposta (funções baseadas em bandwidth avaliability.
+	Para UMTs, baseada na capacidade de pólo e para o WLAN, na busyness
+	radio).},
+  timestamp = {2009.07.09}
+}
+
+@PROCEEDINGS{Zukerman2003,
+  title = {Internet Traffic Modeling and Future Technology Implications},
+  year = {2003},
+  author = {Moshe Zukerman and Timothy D. Neame and Ronald G. Addie},
+  booktitle = {in Proceedings of IEEE INFOCOM},
+  owner = {souzadej},
+  timestamp = {2010.03.20}
+}
+
+@BOOK{blueBook,
+  title = {{GSM}, {GPRS} and {EDGE} Performance},
+  publisher = {John Wiley \& Sons},
+  year = {2003},
+  editor = {Halonen, T. and Romero, J. and Melero, J.},
+  edition = {second},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@BOOK{LTE-UMTS,
+  title = {{LTE} for {UMTS} -- {OFDMA} and {SC-FDMA} Based Radio Access},
+  publisher = {John Wiley \& Sons},
+  year = {2009},
+  editor = {Holma, H. and Toskala, A.},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@BOOK{newBlueBook,
+  title = {{GSM}/{EDGE}: Evolution and Performance},
+  publisher = {John Wiley \& Sons},
+  year = {2010},
+  editor = {Saily, M. and Sebire, G. and Riddington, E. P. },
+  owner = {lida},
+  timestamp = {2010.07.08}
+}
+
+@MANUAL{1MA129,
+  title = {EDGE Evolution
+	
+	Technology Introduction},
+  organization = {Rohde \& Schwarz},
+  owner = {lida},
+  timestamp = {2009.11.13}
+}
+
+@STANDARD{3GPP23.888,
+  title = {System Improvements for Machine-Type Communications},
+  organization = {TSG GERAN},
+  institution = {3rd Generation Partnership Project (3GPP)},
+  number = {TR 23.888},
+  revision = {0.3.2},
+  owner = {rafapaiv},
+  timestamp = {2010.05.07}
+}
+
+@STANDARD{3GPP45.912,
+  title = {Feasibility study for evolved GSM/EDGE radio access network (GERAN)},
+  organization = {TSG GERAN},
+  institution = {3rd Generation Partnership Project (3GPP)},
+  number = {45.912},
+  revision = {7.2.0},
+  owner = {lida},
+  timestamp = {2009.11.16}
+}
+
+@STANDARD{3GPP45.914,
+  title = {Circuit Switched Voice Capacity Evolution for GSM/EDGE Radio Access
+	Network (GERAN)},
+  organization = {TSG GERAN},
+  institution = {3rd Generation Partnership Project (3GPP)},
+  number = {45.914},
+  revision = {8.2.0},
+  owner = {lida},
+  timestamp = {2009.12.21}
+}
+
+@MISC{GSM,
+  title = {{GSM} {A}ssociation - http://www.gsmworld.com},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@MANUAL{WhiteOSC,
+  title = {Nokia Siemens Networks Doubling GSM Voice Capacity with the Orthogonal
+	Sub Channel},
+  organization = {Nokia Siemens Networks},
+  year = {2009},
+  note = {White paper, www.nokiasiemensnetworks.com},
+  owner = {rapaiva},
+  timestamp = {2010.01.22}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
