@@ -28,27 +28,26 @@
 \maketitle
 
 \begin{abstract}
-Results of the SCRUM methodology to development of new features of a GSM system level simulator for research proposes compared to current methodology used in the research center.
+Results of the SCRUM methodology to development of new features of a GSM system level simulator for research propose to try to solve some problems like knowledge centralization, replacement process of team members and lack of flexibility with resources allocation.
 \end{abstract}
      
 \begin{resumo} 
+Resultados da aplicação da metodologia agil SCRUM no desenvolvimento de novas funcionalidade em um simulador dinâmico de GSM para tentar resolver problemas como centralização de conhecimento, processo de substituição de membros da equipe e falta de flexibilidade de alocação de recursos.
 \end{resumo}
 
 
 \section{Introdução}
-O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto defindos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a metodologia corrente. 
+O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto definidos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível. 
 
 \section{Ambiente de desenvolvimento}
-Essa sessão define  como era o projeto e como era a metodologia usada para o desenvolvimento desse projeto e quais eram os problemas que eram mais detectados pelos membros participantes do projeto.
-\subsection{Metodologia corrente}
-A metodologia antiga do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade. A parte do GSM seria atualizada para a versão EGPRS2, originalmente somente um pesquisador iria ficar responsável e uma atualização do canal de voz ficaria responsável pro apenais um pesquisador. Normalmente a equipe era formada por quatro pesquisadores e cada um ficava com uma funcionalidade.  Isso gerava vários problemas. Um era quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ele se perdia pois não havia um forma de repassar esse conhecimento entre os membros da equipe.
-\subsection{Problemas a serem Resolvidos}
-O processo anil SCRUM é cada vez mais utilizado para o desenvolvimento de software e com bons resultados. Ele é muito adaptado a troca de escopo de forma natural ao processo. O processo de pesquisa que é o foco do Indt tinha problemas para gerenciar as demandas para o simulador dinâmico de rede para atender as necessidades dos clientes.
 
-\section{Processos ageis} 
+\subsection{Motivação}
+A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade. A parte do GSM que seria atualizada para a versão EGPRS2, originalmente somente um pesquisador iria ficar responsável e uma atualização do canal de voz ficaria responsável pro apenais um pesquisador. Normalmente a equipe era formada por quatro pesquisadores e cada um ficava com uma funcionalidade.  Isso gerava vários problemas. Um era quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ele se perdia pois não havia um forma de repassar eficiente esse conhecimento entre os membros da equipe. O conhecimento ficava muito centralizado e era complicado deslocar um recurso de uma funcionalidade que precisa ser entrega antes. Isso tornava a alocação de recuso muito pouco flexível.   
+
+\section{Processo ágil} 
 %\label{sec:firstpage}
 \subsection{Produção em Massa e Produção de um novo produto}
-Para a construção de um produto, pode-se definir um processo de linha de produção de produção em massa. Apos de construído alguns exemplares e verificar que os requisitos foram alcançados, a linha esta montada e a partir disso, a grau de incerteza para a produção de varias unidades é baixo já que o processo foi medido na implantação da linha e variação de um produto para outro deve ser minima. Mas imagine se nesse processo fosse possível que cada produto produzido tivesse varias diferenças e a linha deveria ser reconfigurada a cada nova unidade, isso ser considerado como um novo produto e os tempos e medições que foram feitas não seriam validas. O tabela~\ref{tabela:Comparativo} mostra as difrence de ums linha de montagem estabilizada e o desenvolvimento  de um novo produto.\cite{agileBook}
+Para a construção de um produto, pode-se definir um processo de linha de produção de produção em massa. Apos de construído alguns exemplares e verificar que os requisitos foram alcançados, a linha esta montada e a partir disso, a grau de incerteza para a produção de varias unidades é baixo já que o processo foi medido na implantação da linha e variação de um produto para outro deve ser minima. Mas imagine se nesse processo fosse possível que cada produto produzido tivesse varias diferenças e a linha deveria ser reconfigurada a cada nova unidade, isso ser considerado como um novo produto e os tempos e medições que foram feitas não seriam validas. A tabela~\ref{tabela:Comparativo} mostra as diferenças de uma linha de montagem estabilizada e o desenvolvimento  de um novo produto.\cite{agileBook}
 
 \begin{table}
 \begin{center}
@@ -56,23 +55,92 @@ Para a construção de um produto, pode-se definir um processo de linha de produçã
 
     \begin{tabular}{ | p{7cm} | p{7cm} |}
     \hline
-    Produção em Massa & Produção de um novo produto\\ \hline
+    \textbf{Produção em Massa} & \textbf{Produção de um novo produto}\\ \hline
     Possibilidade de completar a especificação e depois construir & Risco alto de mudança de especificação no meio da construção\\ \hline  
     Mesmo no começo a estimativa de custo e esforço é confiável & As estimativa de custo e esforço se 
     tornam confiáveis no decorrer da produção pelos dados do projeto\\ \hline
     O cronograma detalhado de atividades pode ser feito com precisão & O cronograma deve ser monitorado 
     e modificado com os ciclos de acompanhamento dentro do projeto\\ \hline
-    Adapção do processo para mudanças são raras e nao estao esperadas e 
+    Adaptação do processo para mudanças são raras e não estão esperadas e acontecem raramente & Parte natural do processo criativo então as mudanças são esperadas e a probabilidade é alta.\\ \hline
     \end{tabular}
 \end{center}
 \end{table}
 
+Considerando essas diferenças é difícil tentar modelar um processo de desenvolvimento de software. Existem muita incerteza como novas tenologias ou arquiteturas que dificultam mapear isso num processo de produção em massa. Outro aspecto que dificuldade que a especificação inicial dificilmente vai ser manter  ate o final do processo. Uma lista de motivos que explica esse dificuldade \cite{fakeit}
+\begin{itemize}
+
+\item Os cliente não sabem o que querem
+
+\item Eles tem dificuldade de expressar tudo que querem
+
+\item Vários detalhes somente ficam claros no meio do processo
+
+\item Os detalhes poder ser muito complexos para as pessoas
+
+\item Como o processo do produto, o cliente muda os requisitos
+
+\item Fatores externos pode exigir mudanças no produto
+ 
+\end{itemize}
+
+Considerando como o modelo de produção em massa foi pensado e a natureza do desenvolvimento de software, todo novo produto deve ser tratado pela equipe como um novo produto. Mas isso não resolve o problema mas somente elimina uma metodologia. Com a aumento da importância do desenvolvimento de software em varias áreas, foi necessário criar um processo para esses novos produto 
+
+\subsection{Processo Interativo e Adaptativo}
+
+O processo interativo é uma forma de construir software o ciclo de vida é constituindo de vários ciclo de interação. Essas interações pode ser considerados como um mini projeto que tem as atividades de analise de requisitos, design, programação e teste. Baseado em \cite{IIDbrief}, esse processo se originou na ideia,proposta em 1930 por Walter
+Shewhart\cite{shewhart1986statistical}, do PDSA(plan-do-study-act) que eram ciclos de melhoramento da qualidade. Esse ciclo é mostrado na figura~\ref{Figura:PDSA} 
+
+\begin{figure}
+  
+  
+  \begin{center}
+	\includegraphics[scale=0.50]{pdsa.png}
+	
+	\caption{plan-do-study-act}
+	\label{Figura:PDSA}
+	\end{center}
+\end{figure}
+
+
+
+A partir dessa ideia inicial , houve uma amadurecimento através dos anos e aplicações em projetos como aviões supersônicos como  X-15 e de softaware. Assim, foi formalidado o  processo interativo e incremental(IID) pode ser descrito visto na figura~\ref{Figura:IID}( \cite{RUP2005}). 
+
+\begin{figure}
+  
+  
+  \begin{center}
+	\includegraphics[scale=1.00]{IID.png}
+	
+	\caption{processo interativo e incremental}
+	\label{Figura:IID}
+	\end{center}
+\end{figure}
+
+Comparando as figuras~\ref{Figura:PDSA} e ~\ref{Figura:IID}, nota-se grande semelhança. As diferencsa~são que IID existe uma fase inicial mais formal e uma fase de termino do projeto mais clara também.
+
+
+Um erro comum é considerar que interativo e incremental são sinônimos. Interativo vem dos ciclos repetidos de desenvolvimento e o incremental é para definir aumento do escopo em cada ciclo. O tamanho de cada interação vai depender de projeto para projeto mas o normal atualmente são de uma a seis semanas.\cite{agileBook}. Alem disso, a priorização do IID pode ser feita :
+
+ 
+ \begin{itemize}
+
+\item IID orientado a riscos: A prioridade é feita pela tarefas mais difícil que tem maior risco pois resolver esse problemas no começo é mais vantajoso. 
+
+\item IID orientado ao cliente: O Cliente define a ordem de prioridade baseado no maior valor negócios da lista de tarefas.
+ 
+\end{itemize}
+
+Alem disso em ambos casos de priorização , esses lista de prioridade deve ser revista em cada interação.
+
+\subsection{Processo Interativo e Adaptativo}
 \subsection{SCRUM}
-Explicao sobre SCRUM
 
-\section{Implantacao incial do SCRUM no processo de pesquisa}
 
-Implantacao inicial sobre o processo desnvolvidos
+Explição sobre SCRUM
+
+\section{Implantação inicial do SCRUM no processo de pesquisa}
+
+Implantacao inicial sobre o processo desenvolvidos
 \subsection{Vantagens}
 
 \subsection{Desvantagens}
