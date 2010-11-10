@@ -38,13 +38,15 @@ Resultados da aplicação da metodologia agil SCRUM no desenvolvimento de novas fu
 
 \section{Introdução}
 O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto definidos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível. 
+Esse artigo foi mostra a motivação de implantação de Scrum no projeto, apresenta alguns processos de software, uma descrição do Scrum e como foi a implantação dessa metodologia no ambiente de desnvolvimento. 
 
-\section{Ambiente de desenvolvimento}
 
-\subsection{Motivação}
-A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade. A parte do GSM que seria atualizada para a versão EGPRS2, originalmente somente um pesquisador iria ficar responsável e uma atualização do canal de voz ficaria responsável pro apenais um pesquisador. Normalmente a equipe era formada por quatro pesquisadores e cada um ficava com uma funcionalidade.  Isso gerava vários problemas. Um era quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ele se perdia pois não havia um forma de repassar eficiente esse conhecimento entre os membros da equipe. O conhecimento ficava muito centralizado e era complicado deslocar um recurso de uma funcionalidade que precisa ser entrega antes. Isso tornava a alocação de recuso muito pouco flexível.   
 
-\section{Processo ágil} 
+\section{Motivação}
+A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade. A parte do GSM que seria atualizada para a versão EGPRS2, originalmente somente um pesquisador iria ficar responsável e uma atualização do canal de voz ficaria responsável por apenas outro um pesquisador. Normalmente a equipe era formada por quatro pesquisadores e cada um ficava com uma funcionalidade.  Isso gerava vários problemas. Um era que quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ele se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe. O conhecimento ficava muito centralizado e era complicado deslocar um recurso de uma funcionalidade que precisa ser entrega antes. Isso tornava a alocação de recuso muito pouco flexível.   
+
+\section{Processos de Desenvolvimento} 
+Essa mostra alguns tipos de processo e suas motivações e como pode ser usados e cometários de como eles podem ser usado para o desenvolvimento de software.
 %\label{sec:firstpage}
 \subsection{Produção em Massa e Produção de um novo produto}
 Para a construção de um produto, pode-se definir um processo de linha de produção de produção em massa. Apos de construído alguns exemplares e verificar que os requisitos foram alcançados, a linha esta montada e a partir disso, a grau de incerteza para a produção de varias unidades é baixo já que o processo foi medido na implantação da linha e variação de um produto para outro deve ser minima. Mas imagine se nesse processo fosse possível que cada produto produzido tivesse varias diferenças e a linha deveria ser reconfigurada a cada nova unidade, isso ser considerado como um novo produto e os tempos e medições que foram feitas não seriam validas. A tabela~\ref{tabela:Comparativo} mostra as diferenças de uma linha de montagem estabilizada e o desenvolvimento  de um novo produto.\cite{agileBook}
@@ -116,7 +118,7 @@ A partir dessa ideia inicial , houve uma amadurecimento através dos anos e aplic
 	\end{center}
 \end{figure}
 
-Comparando as figuras~\ref{Figura:PDSA} e ~\ref{Figura:IID}, nota-se grande semelhança. As diferencsa~são que IID existe uma fase inicial mais formal e uma fase de termino do projeto mais clara também.
+Comparando as figuras~\ref{Figura:PDSA} e ~\ref{Figura:IID}, nota-se grande semelhança. As diferencas são que IID existe uma fase inicial mais formal e uma fase de termino do projeto mais clara também.
 
 
 Um erro comum é considerar que interativo e incremental são sinônimos. Interativo vem dos ciclos repetidos de desenvolvimento e o incremental é para definir aumento do escopo em cada ciclo. O tamanho de cada interação vai depender de projeto para projeto mas o normal atualmente são de uma a seis semanas.\cite{agileBook}. Alem disso, a priorização do IID pode ser feita :
@@ -132,11 +134,27 @@ Um erro comum é considerar que interativo e incremental são sinônimos. Interativ
 
 Alem disso em ambos casos de priorização , esses lista de prioridade deve ser revista em cada interação.
 
-\subsection{Processo Interativo e Adaptativo}
+\subsection{Processo ágil}
+
+Um processo agil é defindo por processo intertivo incrementar limitado por uma janlea de tempo que varia de alguns dias a algumas semanas. Em 2001, foi criado Agile Alliance que criou um manifesto\cite{AgileAlliance} mostrado na tabela~\ref{tabela:Agil}
+ \begin{table}
+\begin{center}
+\caption{Manifesto Agil}\label{tabela:Agil}
+
+    \begin{tabular}{ | p{7cm} |}
+    \hline
+    \textbf{Manifesto Agil}\\ \hline
+    Indivíduos e interações mais que processos e ferramentas\\ \hline
+Software em funcionamento mais que documentação abrangente\\ \hline
+Colaboração com o cliente mais que negociação de contratos\\ \hline
+Responder a mudanças mais que seguir um plano\\ \hline
+    \end{tabular}
+\end{center}
+\end{table}
 \subsection{SCRUM}
 
+Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas características importantes\cite{agileBook}
 
-Explição sobre SCRUM
 
 \section{Implantação do SCRUM no processo de pesquisa}
 \subsection{Primeiro ciclo}
