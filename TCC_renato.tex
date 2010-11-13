@@ -37,8 +37,9 @@ Resultados da aplicação da metodologia agil SCRUM no desenvolvimento de novas fu
 
 
 \section{Introdução}
-O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto definidos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível. 
-Esse artigo foi mostra a motivação de implantação de Scrum no projeto, apresenta alguns processos de software, uma descrição do Scrum e como foi a implantação dessa metodologia no ambiente de desnvolvimento. 
+\label{intro}
+O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto definidos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível. Foi definido que para avalição da equipe a porcentagem de esfoço das sprint deveria ser maior que 90\% excluindo as hisotiras 	que não puderam ser entreges por motivos externos.
+
 
 
 
@@ -141,25 +142,31 @@ Um processo agil é defindo por processo intertivo incrementar limitado por uma j
 \begin{center}
 \caption{Manifesto Agil}\label{tabela:Agil}
 
-    \begin{tabular}{ | p{7cm} |}
+    \begin{tabular}{ | p{14cm}|}
     \hline
     \textbf{Manifesto Agil}\\ \hline
-    Indivíduos e interações mais que processos e ferramentas\\ \hline
-Software em funcionamento mais que documentação abrangente\\ \hline
-Colaboração com o cliente mais que negociação de contratos\\ \hline
+    Indivíduos e interações mais que processos e ferramentas\\*
+Software em funcionamento mais que documentação abrangente\\*
+Colaboração com o cliente mais que negociação de contratos\\*
 Responder a mudanças mais que seguir um plano\\ \hline
+Ou seja, mesmo havendo valor nos itens à direita,
+valorizamos mais os itens à esquerda.\\ \hline
+
     \end{tabular}
 \end{center}
 \end{table}
-\subsection{SCRUM}
 
+Alem disso, a Agile Alleance definiu doze principios\cite{AgileAlliance} que de maneira resumida definine que a satifação do cliente tem a maior prioridade, que as equipes de desenvolvimento , negocios e cliente deve sempre manter contato durante o  desenvolvimento, que a conversa cara a cara seria o metodo idela desse contato, que o produto de software deve ser entrege com frquencias e que mudancas nos requisitos devam ser bem vindos. 
+\subsection{Scrum}
+\label{SCRUMmodel}
 Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas características importantes\cite{agileBook}
 
 
-\section{Implantação do SCRUM no processo de pesquisa}
+\section{Implantação do Scrum no processo de pesquisa}
+Como foi dito na 
 \subsection{Primeiro ciclo}
-As primeiras sprint forma feitas sem um treinamento . A equipe utilizou uma apresentação e dicas de um membro que já  tinha participado de processo SCRUM em outra empresa. Infelizmente, esses primeiro sprint  divergiram muito da metodologia mais comumente aceita pela comunidade. Mas isso foi interessante que podemos evoluir o processo junto com a equipe.
-A equipe inicial era formada por 
+As primeiras sprint forma feitas sem um treinamento formal . Plea falta de experiencia da equipe, esses primeiro sprints não seguiram completamente o modelo descrito na seção~\ref{SCRUMmodel}. Mas isso foi interessante que podemos evoluir o processo junto com a equipe para adaptar o Scrum nosso necessidade.
+A equipe inicial era formada por :
 
 \begin{itemize}
 
@@ -171,33 +178,59 @@ A equipe inicial era formada por
 
 \item Ricardo  - Membro da equipe
 
-\item Guilherme - Estagiário
+\item Guilherme - Estagiário ou seja ele dedica somente 20 hora ao processo
 
- 
+\item Rafael - Membro contratado para substituir o Bernardo que entrou no projeto no sprint (inserir ref) 
 \end{itemize}
+
+Através de dados fornecidos pelos artefatos criados no desenvolvimento das sprints , pode-se avalias o impacto na produtividade na saida de um recurso e a quanto tempo um novo recurso poderia prover um produtividade similar. Com proporção de distribuição de esforço em cada tópico, pode-se determinar se houve transferência de conhecimento.  
+
+
 \subsection{Metodologia do Primeiro ciclo}
 
-A metodologia tinha as mairoes diferrence do SCRUm descrito na sessao que o esforco era votado por tafera e essas tarefas eram predefinidas conforme o conhecimento da equpoe. Isso gera um detalhamento na historia mas demora muito para comecar uma sprint pos todas as hisotiara terima varias tarefas a serem votadas e isso não garantioam que serima as unicas tarefas a serem feitas para conclusao doa historia. QUando uma nova tarefa tinah que ser adicionada , o esforco da hisotira nao era alterado e se era cancelado uma tafea  predefinida, o esforco da hisotoria era diminuido. Isso poderia dar uma falta mensagem ao gerente que falta uma porcentagem de 50\% de uma hisotaria estava concluida. Mas uma vantagem 	que isso faciliat a visulacao do grafico de "effort burndown" 
+A metodologia desse primeiro ciclo definia que o esforço era votado por tarefa e elas eram predefinidas conforme o conhecimento da equipe durante  a fase de "Sprint Planing" e o esforço da historia seria a soma de esforço de cada tarefa definida para terminar aquela historia. Isso gera um detalhamento no gráfico de "burndown" mas a fase de "Sprint Planing" demorava muito pois todas as historias tem varias tarefas a serem votadas e isso não garantiria que seria as únicas tarefas a serem feitas para conclusão doa historia. Quando uma nova tarefa tinha que ser adicionada , esse nova tarefa não tinha votação de esforço sendo assim o esforço da historia não era alterado e se era cancelado uma tarefa  predefinida, o esforço da historia era diminuindo.
 
-Como a equipe não tinha experiencia , a primeira sprint teve 10 dias. 
+Foi definido que a primeira sprint teria 10 dias para ensinar a equipe dentro da metodologia. As outras sprint seriam que 15 em 15 dias.  A equipe definiu que seria o tempo ideal pois esse era um período que o escopo do projeto provavelmente não seria mudado ou seja o produt backlog não precisaria ser revisto. A ideia nomrlamtne de 30 dias por sprint seria um periodo muito longo e risco de mudanca no meio era alto e  isso acarretaria que uma sprint pude-se ser cancelada.
+
+
+\subsection{Substituição de recurso}
+
+Como dito no seção~\ref{intro}, a equipe era avaliada pela porcentagem de esforço entregue. O gráfico da figura~\ref{Figura:Esfoco}  mostra a percentagem de esforço entrege nas barras e uma linha com o valor bruto de esforcoe , foi retirado o primeiro sprint poque ele era menor e não poderia ser comprado com os outros de forma direta. 
+
+\begin{figure}
+  
+  
+  \begin{center}
+	\includegraphics[scale=0.70]{fig/esforco.png}
+	
+	\caption{Esforço por sprint}
+	\label{Figura:Esfoco}
+	\end{center}
+\end{figure}
+
+\subsection{transferência de conhecimento}
 
 \subsection{Adaptação do ciclo de vide de uma tarefa}
- No quadro de controle das taferas normalmente é usado post-it e um quador branco.
- Existem normalmente 4 estados desse post-it. Mas isso não era suficiente para as nossas tarefas
+ No quadro de controle das tarefas normalmente é usado post-it e um quadro branco.
+ Existem normalmente 3 estados desse post-it.  
  \begin{itemize}
 
 \item To Do - Fase incial de todos as tarefas
 
-\item Ongoing - Qnado a tarefa é aloca para algum recurso
+\item Ongoing - Quando a tarefa é aloca para algum recurso e começa efetivamente a ser feita 
 
-\item Running - 
+\item Done - Quando a tarefa foi termianda pelo recurso 
 
-\item Ricardo  - Membro da equipe
-
-\item Guilherme - Estagiário
 
  
 \end{itemize}
+
+
+
+Mas isso não era suficiente para as nossas tarefas
+
+
+\subsection{Adaptação do tempo de sprint}
 
 \subsection{Segundo  ciclo}
 
