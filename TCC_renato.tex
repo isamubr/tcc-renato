@@ -137,7 +137,7 @@ Alem disso em ambos casos de priorização , esses lista de prioridade deve ser re
 
 \subsection{Processo ágil}
 
-Um processo agil é defindo por processo intertivo incrementar limitado por uma janlea de tempo que varia de alguns dias a algumas semanas. Em 2001, foi criado Agile Alliance que criou um manifesto\cite{AgileAlliance} mostrado na tabela~\ref{tabela:Agil}
+Um processo ágil é definido por processo interativo incrementar limitado por uma janela de tempo que varia de alguns dias a algumas semanas. Em 2001, foi criado Agile Alliance que criou um manifesto\cite{AgileAlliance} mostrado na tabela~\ref{tabela:Agil}
  \begin{table}
 \begin{center}
 \caption{Manifesto Agil}\label{tabela:Agil}
@@ -156,7 +156,7 @@ valorizamos mais os itens à esquerda.\\ \hline
 \end{center}
 \end{table}
 
-Alem disso, a Agile Alleance definiu doze principios\cite{AgileAlliance} que de maneira resumida definine que a satifação do cliente tem a maior prioridade, que as equipes de desenvolvimento , negocios e cliente deve sempre manter contato durante o  desenvolvimento, que a conversa cara a cara seria o metodo idela desse contato, que o produto de software deve ser entrege com frquencias e que mudancas nos requisitos devam ser bem vindos. 
+Alem disso, a Agile Alleance definiu doze princípios\cite{AgileAlliance} que de maneira resumida define que a satisfação do cliente tem a maior prioridade, que as equipes de desenvolvimento , negócios e cliente deve sempre manter contato durante o  desenvolvimento, que a conversa cara a cara seria o método ideal desse contato, que o produto de software deve ser entregue com frequência e que mudanças nos requisitos devam ser bem vindos. 
 \subsection{Scrum}
 \label{SCRUMmodel}
 Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas características importantes\cite{agileBook}
@@ -164,9 +164,9 @@ Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas caracterí
 
 \section{Implantação do Scrum no processo de pesquisa}
 \subsection {Objetivo do projeto e o simulador sistemico}
-O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece resultados de simulações sistêmicas de uma rede celular GSM. Esse resultados são usado principalmente para os dois casos. O pricipal uso é na padronização que é fornecer resultados para as reuniões do GERAN dentro do  3GPP que alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas em artigos de congresso e principais assuntos são OSC que dobra a capacidade de voz na rede onde os resultdos do simulador foram mostrado no \cite{GSMevo} e \cite{DFRHR} e EGPRS2 que aumenta a capacidade de dados da redes GSM para valores mais próximos das redes 3G.
+O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece resultados de simulações sistêmicas de uma rede celular GSM. Esse resultados são usado principalmente para os dois casos. O principal uso é na padronização que é fornecer resultados para as reuniões do GERAN dentro do  3GPP que alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas em artigos de congresso e principais assuntos são OSC que dobra a capacidade de voz na rede onde os resultados do simulador foram mostrado no \cite{GSMevo} e \cite{DFRHR} e EGPRS2 que aumenta a capacidade de dados da redes GSM para valores mais próximos das redes 3G.
 
-Sendo assim, a principal entrega para os clientes do projeto são os resultados de simulação consequentemtne o codigo do simulador feito em c++ e mudancas desse codigo para gerar novos resultdos desejados tem pouca importancia para o cliente final e como o simulador tem mais de 5 anos, a qualidade do codigo e documentação dele foi decaindo . Isso gerou algumas dificuldade nas sprints executatadas e isso vai ser abordado nos secoes posteriores.      
+Sendo assim, a principal entrega para os clientes do projeto são os resultados de simulação consequentemente o código do simulador feito em c++ e mudanças desse código para gerar novos resultados desejados tem pouca importância para o cliente final e como o simulador tem mais de 5 anos, a qualidade do código e documentação dele foi decaindo . Isso gerou algumas dificuldade nas sprints executadas e isso vai ser abordado nos seções posteriores.      
 
 \subsection{Primeiro ciclo}
 As primeiras sprint forma feitas sem um treinamento formal . Plea falta de experiencia da equipe, esses primeiro sprints não seguiram completamente o modelo descrito na seção~\ref{SCRUMmodel}. Mas isso foi interessante que podemos evoluir o processo junto com a equipe para adaptar o Scrum nosso necessidade.
@@ -194,14 +194,16 @@ Através de dados fornecidos pelos artefatos criados no desenvolvimento das sprin
 
 A metodologia desse primeiro ciclo definia que o esforço era votado por tarefa e elas eram predefinidas conforme o conhecimento da equipe durante  a fase de "Sprint Planing" e o esforço da historia seria a soma de esforço de cada tarefa definida para terminar aquela historia. Isso gera um detalhamento no gráfico de "burndown" mas a fase de "Sprint Planing" demorava muito pois todas as historias tem varias tarefas a serem votadas e isso não garantiria que seria as únicas tarefas a serem feitas para conclusão doa historia. Quando uma nova tarefa tinha que ser adicionada , esse nova tarefa não tinha votação de esforço sendo assim o esforço da historia não era alterado e se era cancelado uma tarefa  predefinida, o esforço da historia era diminuindo.
 
-Foi definido que a primeira sprint teria 10 dias para ensinar a equipe dentro da metodologia. As outras sprint seriam que 15 em 15 dias.  A equipe definiu que seria o tempo ideal pois esse era um período que o escopo do projeto provavelmente não seria mudado ou seja o produt backlog não precisaria ser revisto. A ideia nomrlamtne de 30 dias por sprint seria um periodo muito longo e risco de mudanca no meio era alto e  isso acarretaria que uma sprint pude-se ser cancelada.
+Foi definido que a primeira sprint teria 10 dias para ensinar a equipe dentro da metodologia. As outras sprint seriam que 15 em 15 dias.  A equipe definiu que seria o tempo ideal pois esse era um período que o escopo do projeto provavelmente não seria mudado ou seja o produt backlog não precisaria ser revisto. A ideia nomrlamtne de 30 dias por sprint seria um período muito longo e risco de mudança no meio era alto e  isso acarretaria que uma sprint pude-se ser cancelada.
 
 
 \subsection{Substituição de recurso}
 
 Como dito no seção~\ref{intro}, a equipe era avaliada pela porcentagem de esforço entregue. O gráfico da figura~\ref{Figura:Esfoco}  mostra a percentagem de esforço entregue nas barras e uma linha com o valor bruto de esforço , foi retirado o primeiro sprint poque ele era menor e não poderia ser comprado com os outros de forma direta. 
 
-Analisando a figura~\ref{Figura:Esfoco}, o sprint 3 foi o ultimo que o Bernardo paritipou, o primeiro que Rafael participou e o spint com a maior quantidade de recursos (5,5). Comparando com sprint 2, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu. Apesar da  porcentagem ter aumentado mas isso pode ser atribuído a maturidade melhorada das estimativas pelo resto da equipe. Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos os sprint), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de "sprint review", no sprint 4 foram detectados alguns bugs que impediram a entrega de algumas historias e houve um treinamento da equipe em uma ferrameten que era sabido na "sprint panning" e não foi ajustado o esforço para isso e o recurso novo só recebeu o computador na metade do sprint. Uma medida corretiva para isso vai ser mostrado no topico~\ref{adapCiclo}.        
+Analisando a figura~\ref{Figura:Esfoco}, o sprint 3 foi o ultimo que o Bernardo partipou, o primeiro que Rafael participou e o spint com a maior quantidade de recursos (5,5). Comparando com sprint 2, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu. Apesar da  porcentagem ter aumentado mas isso pode ser atribuído a maturidade melhorada das estimativas pelo resto da equipe. Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos os sprint), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de "sprint review", no sprint 4 foram detectados alguns bugs que impediram a entrega de algumas historias e houve um treinamento da equipe em uma ferrameten que era sabido na "sprint panning" e não foi ajustado o esforço para isso e o recurso novo só recebeu o computador na metade do sprint. Uma medida corretiva para isso vai ser mostrado no topico~\ref{adapCiclo}. 
+
+Outro varição de recursos foi feita entre o sprint        
 
 \begin{figure}
   
@@ -228,7 +230,7 @@ Analisando a figura
 
 \item Ongoing - Quando a tarefa é aloca para algum recurso e começa efetivamente a ser feita 
 
-\item Done - Quando a tarefa foi termianda pelo recurso 
+\item Done - Quando a tarefa foi terminada pelo recurso 
 
 
  
