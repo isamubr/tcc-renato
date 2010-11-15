@@ -38,7 +38,7 @@ Resultados da aplicação da metodologia agil SCRUM no desenvolvimento de novas fu
 
 \section{Introdução}
 \label{intro}
-O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto definidos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível. Foi definido que para avalição da equipe a porcentagem de esfoço das sprint deveria ser maior que 90\% excluindo as hisotiras 	que não puderam ser entreges por motivos externos.
+O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto definidos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível. 
 
 
 
@@ -47,12 +47,12 @@ O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simul
 A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade. A parte do GSM que seria atualizada para a versão EGPRS2, originalmente somente um pesquisador iria ficar responsável e uma atualização do canal de voz ficaria responsável por apenas outro um pesquisador. Normalmente a equipe era formada por quatro pesquisadores e cada um ficava com uma funcionalidade.  Isso gerava vários problemas. Um era que quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ele se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe. O conhecimento ficava muito centralizado e era complicado deslocar um recurso de uma funcionalidade que precisa ser entrega antes. Isso tornava a alocação de recuso muito pouco flexível.   
 
 \section{Processos de Desenvolvimento} 
-Essa mostra alguns tipos de processo e suas motivações e como pode ser usados e cometários de como eles podem ser usado para o desenvolvimento de software.
+Esse tópico mostra alguns tipos de processo e suas motivações e como pode ser usados e cometários de como eles podem ser usado para o desenvolvimento de software.
 %\label{sec:firstpage}
 \subsection{Produção em Massa e Produção de um novo produto}
 Para a construção de um produto, pode-se definir um processo de linha de produção de produção em massa. Apos de construído alguns exemplares e verificar que os requisitos foram alcançados, a linha esta montada e a partir disso, a grau de incerteza para a produção de varias unidades é baixo já que o processo foi medido na implantação da linha e variação de um produto para outro deve ser minima. Mas imagine se nesse processo fosse possível que cada produto produzido tivesse varias diferenças e a linha deveria ser reconfigurada a cada nova unidade, isso ser considerado como um novo produto e os tempos e medições que foram feitas não seriam validas. A tabela~\ref{tabela:Comparativo} mostra as diferenças de uma linha de montagem estabilizada e o desenvolvimento  de um novo produto.\cite{agileBook}
 
-\begin{table}
+\begin{table}[htbp]
 \begin{center}
 \caption{Comparativo em os tipo de Produção}\label{tabela:Comparativo}
 
@@ -93,7 +93,7 @@ Considerando como o modelo de produção em massa foi pensado e a natureza do dese
 O processo interativo é uma forma de construir software o ciclo de vida é constituindo de vários ciclo de interação. Essas interações pode ser considerados como um mini projeto que tem as atividades de analise de requisitos, design, programação e teste. Baseado em \cite{IIDbrief}, esse processo se originou na ideia,proposta em 1930 por Walter
 Shewhart\cite{shewhart1986statistical}, do PDSA(plan-do-study-act) que eram ciclos de melhoramento da qualidade. Esse ciclo é mostrado na figura~\ref{Figura:PDSA} 
 
-\begin{figure}
+\begin{figure}[htbp]
   
   
   \begin{center}
@@ -108,7 +108,7 @@ Shewhart\cite{shewhart1986statistical}, do PDSA(plan-do-study-act) que eram cicl
 
 A partir dessa ideia inicial , houve uma amadurecimento através dos anos e aplicações em projetos como aviões supersônicos como  X-15 e de softaware. Assim, foi formalidado o  processo interativo e incremental(IID) pode ser descrito visto na figura~\ref{Figura:IID}( \cite{RUP2005}). 
 
-\begin{figure}
+\begin{figure}[htbp]
   
   
   \begin{center}
@@ -138,7 +138,7 @@ Alem disso em ambos casos de priorização , esses lista de prioridade deve ser re
 \subsection{Processo ágil}
 
 Um processo ágil é definido por processo interativo incrementar limitado por uma janela de tempo que varia de alguns dias a algumas semanas. Em 2001, foi criado Agile Alliance que criou um manifesto\cite{AgileAlliance} mostrado na tabela~\ref{tabela:Agil}
- \begin{table}
+ \begin{table}[htbp]
 \begin{center}
 \caption{Manifesto Agil}\label{tabela:Agil}
 
@@ -156,7 +156,9 @@ valorizamos mais os itens à esquerda.\\ \hline
 \end{center}
 \end{table}
 
-Alem disso, a Agile Alleance definiu doze princípios\cite{AgileAlliance} que de maneira resumida define que a satisfação do cliente tem a maior prioridade, que as equipes de desenvolvimento , negócios e cliente deve sempre manter contato durante o  desenvolvimento, que a conversa cara a cara seria o método ideal desse contato, que o produto de software deve ser entregue com frequência e que mudanças nos requisitos devam ser bem vindos. 
+Alem disso, a Agile Alleance definiu doze princípios\cite{AgileAlliance} que de maneira resumida define que a satisfação do cliente tem a maior prioridade, 
+que as equipes de desenvolvimento , negócios e cliente deve sempre manter contato durante o  desenvolvimento, que a conversa cara a cara seria o método ideal 
+desse contato, que o produto de software deve ser entregue com frequência e que mudanças nos requisitos devam ser bem vindos. 
 \subsection{Scrum}
 \label{SCRUMmodel}
 Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas características importantes\cite{agileBook}
@@ -192,20 +194,16 @@ Através de dados fornecidos pelos artefatos criados no desenvolvimento das sprin
 
 \subsection{Metodologia do Primeiro ciclo}
 
-A metodologia desse primeiro ciclo definia que o esforço era votado por tarefa e elas eram predefinidas conforme o conhecimento da equipe durante  a fase de "Sprint Planing" e o esforço da historia seria a soma de esforço de cada tarefa definida para terminar aquela historia. Isso gera um detalhamento no gráfico de "burndown" mas a fase de "Sprint Planing" demorava muito pois todas as historias tem varias tarefas a serem votadas e isso não garantiria que seria as únicas tarefas a serem feitas para conclusão doa historia. Quando uma nova tarefa tinha que ser adicionada , esse nova tarefa não tinha votação de esforço sendo assim o esforço da historia não era alterado e se era cancelado uma tarefa  predefinida, o esforço da historia era diminuindo.
+A metodologia desse primeiro ciclo definia que o esforço era votado por tarefa e elas eram predefinidas conforme o conhecimento da equipe durante  a fase de "Sprint Planing" e o esforço da historia seria a soma de esforço de cada tarefa definida para terminar aquela historia. Isso gera um detalhamento no gráfico de burndown mas a fase de "Sprint Planing" demorava muito pois todas as historias tem varias tarefas a serem votadas e isso não garantiria que seria as únicas tarefas a serem feitas para conclusão doa historia. Quando uma nova tarefa tinha que ser adicionada , esse nova tarefa não tinha votação de esforço sendo assim o esforço da historia não era alterado e se era cancelado uma tarefa  predefinida, o esforço da historia era diminuindo. Foi definido que para avalição da equipe a porcentagem de esfoço das sprint deveria ser maior que 90\% excluindo as hisotiras 	que não puderam ser entreges por motivos externos.
 
-Foi definido que a primeira sprint teria 10 dias para ensinar a equipe dentro da metodologia. As outras sprint seriam que 15 em 15 dias.  A equipe definiu que seria o tempo ideal pois esse era um período que o escopo do projeto provavelmente não seria mudado ou seja o produt backlog não precisaria ser revisto. A ideia nomrlamtne de 30 dias por sprint seria um período muito longo e risco de mudança no meio era alto e  isso acarretaria que uma sprint pude-se ser cancelada.
+Foi definido que a primeira sprint teria 10 dias para ensinar a equipe dentro da metodologia. As outras sprint seriam que 15 em 15 dias.  A equipe definiu que seria o tempo ideal pois esse era um período que o escopo do projeto provavelmente não seria mudado ou seja o produt backlog não precisaria ser revisto. A ideia normalmente de 30 dias por sprint seria um período muito longo e risco de mudança no meio era alto e  isso acarretaria que uma sprint pude-se ser cancelada.
 
 
 \subsection{Substituição de recurso}
 
 Como dito no seção~\ref{intro}, a equipe era avaliada pela porcentagem de esforço entregue. O gráfico da figura~\ref{Figura:Esfoco}  mostra a percentagem de esforço entregue nas barras e uma linha com o valor bruto de esforço , foi retirado o primeiro sprint poque ele era menor e não poderia ser comprado com os outros de forma direta. 
 
-Analisando a figura~\ref{Figura:Esfoco}, o sprint 3 foi o ultimo que o Bernardo partipou, o primeiro que Rafael participou e o sprint com a maior quantidade de recursos (5,5). Comparando com sprint 2, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu. Apesar da  porcentagem ter aumentado mas isso pode ser atribuído a maturidade melhorada das estimativas pelo resto da equipe. Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos os sprint), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de "sprint review", no sprint 4 foram detectados alguns bugs que impediram a entrega de algumas historias e houve um treinamento da equipe em uma ferrameten que era sabido na "sprint panning" e não foi ajustado o esforço para isso e o recurso novo só recebeu o computador na metade do sprint. Uma medida corretiva para isso vai ser mostrado no topico~\ref{adapCiclo}. 
-
-Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 para 3 recursos. Nesse caso, a varição foi bem menor e o esforço entregue foi o mesmo. A produtividade se manteve mesmo perdendo um recurso, isso mostrou que o conhecimento do membro que sai pode ser compensado por outro 3 membros da equipe desde que  todos estejam participando ativamente de alguns sprints que nesse caso foi de aproximadamente três considerando que o membro mais recente que permaneceu na equipe tinha entrado na sprint 3. Alem de mostrar que a maturidade de estimativas vem naturalmente quando a equipe tem melhor ideia da produtividade da mesma baseada na experiencia dela no projeto e no historio das sprints.       
-
-\begin{figure}
+\begin{figure}[htbp]
   
   
   \begin{center}
@@ -216,40 +214,70 @@ Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 pa
 	\end{center}
 \end{figure}
 
-Analisando a figura 
+Analisando a figura~\ref{Figura:Esfoco}, o sprint 3 foi o ultimo que o Bernardo partipou, o primeiro que Rafael participou e o sprint com a maior quantidade de recursos (5,5). Comparando com sprint 2, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu. Apesar da  porcentagem ter aumentado mas isso pode ser atribuído a maturidade melhorada das estimativas pelo resto da equipe. Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos os sprint), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de "sprint review", no sprint 4 foram detectados alguns bugs que impediram a entrega de algumas historias e houve um treinamento da equipe em uma ferrameten que era sabido na "sprint panning" e não foi ajustado o esforço para isso e o recurso novo só recebeu o computador na metade do sprint. Uma medida corretiva para isso vai ser mostrado no topico~\ref{adapCiclo}. 
+
+Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 para 3 recursos. Nesse caso, a varição foi bem menor e o esforço entregue foi o mesmo. A produtividade se manteve mesmo perdendo um recurso, isso mostrou que o conhecimento do membro que sai pode ser compensado por outro 3 membros da equipe desde que  todos estejam participando ativamente de alguns sprints que nesse caso foi de aproximadamente três considerando que o membro mais recente que permaneceu na equipe tinha entrado na sprint 3. Alem de mostrar que a maturidade de estimativas vem naturalmente quando a equipe tem melhor ideia da produtividade da mesma baseada na experiencia dela no projeto e no historio das sprints.       
+
+
+
 
 \subsection{Transferência de conhecimento}
 
-Um dos objetivos da implantação do Scrum era transferir o conhecimento de OSC para os outros membros da equipe, isso pode ser medido comparando o numero de tarefas concluídas por ele sobre esse assunto durante os sprint e quantas tarefas desse assunto foram concluídas pelo resto do time.
+Um dos objetivos da implantação do Scrum era transferir o conhecimento de OSC para os outros membros da equipe, isso pode ser medido comparando o numero de tarefas concluídas por ele sobre esse assunto durante os sprint e quantas tarefas desse assunto foram concluídas pelo resto do time que é mostrado na tabela~\ref{tabela:transConh} .
 
+\begin{table}[htbp]
+\caption{Transferencia de Conhecimento}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{ 3}{|c|}{Quantidade de tarefas entregues sobre OSC} \\ \hline
+Sprint & Bernardo & Equipe \\ \hline
+1 & 25 & 0 \\ \hline
+2 & 15 & 15 \\ \hline
+3 & 9 & 18 \\ \hline
+\end{tabular}
+\end{center}
+\label{tabela:transConh}
+\end{table}
+
+Lembrando que não houve nenhuma tarefa especifica para transferir esse conhecimento. Analisando os dados da tabela~\ref{tabela:transConh} percebe-se que o as responsabilidades sobre o assunto OSC foram migrando para os outros membros da equipe de forma gradativa e natural.  A equipe atribuiu isso a três fatores:
+
+\begin{itemize}
+
+\item Sprint Planning -Durante essa fase, as tarefas do OSC foram detalhadas e votas e isso gerava um debate como seria implementada e que pontos do código isso afetaria. Isso ajuda a outros membros entender como o OSC funcionava dentro do código. Alem que a divisão de uma historia em tarefas ajuda a visualizar o problema e entende-lo.
+
+\item Reuniões diárias - Com as reuniões diárias todos os membros da equipe sabia como estavam e o que foi feito no dia anterior no código relacionado ao OSC.
+
+\item Documentação - Cada historia para ser considera entregue, tinha que ter um relatório simples sobre o que foi feito para concluir, isso ajudou a ter um histórico de mudanças no código para o OSC.
+
+\end{itemize}
+ 
 
 \subsection{Adaptação do ciclo de vide de uma tarefa}
 \label{adapCiclo}
  No quadro de controle das tarefas normalmente é usado post-it e um quadro branco.
- Existem normalmente 3 estados desse post-it.  
+ Existem normalmente 3 estados desse quadro branco(To Do, Ongoing, Done). Mas isso não era suficiente para as nossas tarefas, a primeira mudança foi que nas tarefas que envolviam codificação, essa tarefas tinha um estagio de revisão e deveria ser feita por um recurso diferente que executou essa tarefa, apos a revisão feita e os erros detectados corrigidos que essa tarefa passaria para a coluna de feito no quadro branco. A segunda mudança esta atrelada a tarefas que envolviam criar simulações e rodar simulações. Para essas tarefas foi criado um estagio de Running para as tarefas que estão rodando que normalmente duravam alguns dias no caso no simulador desse projeto . A figura(inser ref) é mostrada lista fina de estagios foi :  
  \begin{itemize}
 
 \item To Do - Fase inicial de todos as tarefas
 
 \item Ongoing - Quando a tarefa é aloca para algum recurso e começa efetivamente a ser feita 
 
-\item Done - Quando a tarefa foi terminada pelo recurso 
+\item Running -  Estado novo criado pela equipe para mostra que tarefas de simulação estão rodando no servidor
 
+\item Review -  Estado novo para revisar as tarefas que geravam código para evitar bugs.
+
+\item Done - Quando a tarefa foi terminada pelo recurso 
 
  
 \end{itemize}
 
 
-
-Mas isso não era suficiente para as nossas tarefas
-
+\subsection{Segundo  ciclo}
 
 \subsection{Adaptação do tempo de sprint}
 
-\subsection{Segundo  ciclo}
-
-
-\section{Conclusao}
+\section{Conclusão}
  
 
 
