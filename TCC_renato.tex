@@ -137,7 +137,7 @@ Alem disso em ambos casos de priorização , esses lista de prioridade deve ser re
 
 \subsection{Processo ágil}
 
-Um processo ágil é definido por processo interativo incrementar limitado por uma janela de tempo que varia de alguns dias a algumas semanas. Em 2001, foi criado Agile Alliance que criou um manifesto\cite{AgileAlliance} mostrado na tabela~\ref{tabela:Agil}
+Um processo ágil é definido por processo interativo incrementar limitado por uma janela de tempo que varia de alguns dias a algumas semanas. Em 2001, foi criado Agile Alliance que criou um manifesto~\cite{AgileAlliance} mostrado na tabela~\ref{tabela:Agil}
  \begin{table}[htbp]
 \begin{center}
 \caption{Manifesto Agil}\label{tabela:Agil}
@@ -161,7 +161,21 @@ que as equipes de desenvolvimento , negócios e cliente deve sempre manter contat
 desse contato, que o produto de software deve ser entregue com frequência e que mudanças nos requisitos devam ser bem vindos. 
 \subsection{Scrum}
 \label{SCRUMmodel}
+
 Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas características importantes\cite{agileBook}
+\begin{itemize}
+
+\item Equipe auto-gerida e auto-organizável
+
+\item Reuniões diarias entre a equipe.
+
+\item Ciclos de interação com tempo definido( normalmente 30 dias)
+
+\item Cada interação tem o planejamento redefinido pelos interesses dos clientes
+
+\end{itemize}
+
+Apesar da primeira comparação de o desenvolvimento com o jogo de ruby ser anterior a ele, o artigo~\cite{Schwaber95scrumdevelopment} comparou os métodos de desenvolvimentos disponíveis em 1995 como o waterfall, espiral e interativo e mostrou como os problemas inerentes deles poderiam ser resolvidos atrases dessa nova proposta que foi denominada SCRUM. Esse mesmo autor junto como Beele \cite{AgileScrum} criou um livro que foi um detalhamento desse método. Isso foi testado em varias empresas e esses aplicações praticas do método forma mostra em  \cite{AgileMS}. Atualmente, o SCRUM é mantido pela scrum.org. O documento oficial é o SCRUM Guide ~\cite{scrumguide} craido por Ken Schwaber e Jeff Sutherland. Existe grande interesse em divulgar o metodo pois esse guida esta traduzido no site deles para 15 linguas e a explicação do SCRUM desse item é baseado nesse guia\cite{scrumguide}.
 
 
 \section{Implantação do Scrum no processo de pesquisa}
@@ -193,7 +207,7 @@ Através de dados fornecidos pelos artefatos criados no desenvolvimento das sprin
 
 
 \subsection{Metodologia do Primeiro ciclo}
-
+\label{metodo1}
 A metodologia desse primeiro ciclo definia que o esforço era votado por tarefa e elas eram predefinidas conforme o conhecimento da equipe durante  a fase de "Sprint Planing" e o esforço da historia seria a soma de esforço de cada tarefa definida para terminar aquela historia. Isso gera um detalhamento no gráfico de burndown mas a fase de "Sprint Planing" demorava muito pois todas as historias tem varias tarefas a serem votadas e isso não garantiria que seria as únicas tarefas a serem feitas para conclusão doa historia. Quando uma nova tarefa tinha que ser adicionada , esse nova tarefa não tinha votação de esforço sendo assim o esforço da historia não era alterado e se era cancelado uma tarefa  predefinida, o esforço da historia era diminuindo. Foi definido que para avalição da equipe a porcentagem de esfoço das sprint deveria ser maior que 90\% excluindo as hisotiras 	que não puderam ser entreges por motivos externos.
 
 Foi definido que a primeira sprint teria 10 dias para ensinar a equipe dentro da metodologia. As outras sprint seriam que 15 em 15 dias.  A equipe definiu que seria o tempo ideal pois esse era um período que o escopo do projeto provavelmente não seria mudado ou seja o produt backlog não precisaria ser revisto. A ideia normalmente de 30 dias por sprint seria um período muito longo e risco de mudança no meio era alto e  isso acarretaria que uma sprint pude-se ser cancelada.
@@ -201,7 +215,7 @@ Foi definido que a primeira sprint teria 10 dias para ensinar a equipe dentro da
 
 \subsection{Substituição de recurso}
 
-Como dito no seção~\ref{intro}, a equipe era avaliada pela porcentagem de esforço entregue. O gráfico da figura~\ref{Figura:Esfoco}  mostra a percentagem de esforço entregue nas barras e uma linha com o valor bruto de esforço , foi retirado o primeiro sprint poque ele era menor e não poderia ser comprado com os outros de forma direta. 
+Como dito no seção~\ref{metodo1}, a equipe era avaliada pela porcentagem de esforço entregue. O gráfico da figura~\ref{Figura:Esfoco}  mostra a percentagem de esforço entregue nas barras e uma linha com o valor bruto de esforço , foi retirado o primeiro sprint poque ele era menor e não poderia ser comprado com os outros de forma direta. 
 
 \begin{figure}[htbp]
   
@@ -216,7 +230,7 @@ Como dito no seção~\ref{intro}, a equipe era avaliada pela porcentagem de esforç
 
 Analisando a figura~\ref{Figura:Esfoco}, o sprint 3 foi o ultimo que o Bernardo partipou, o primeiro que Rafael participou e o sprint com a maior quantidade de recursos (5,5). Comparando com sprint 2, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu. Apesar da  porcentagem ter aumentado mas isso pode ser atribuído a maturidade melhorada das estimativas pelo resto da equipe. Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos os sprint), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de "sprint review", no sprint 4 foram detectados alguns bugs que impediram a entrega de algumas historias e houve um treinamento da equipe em uma ferrameten que era sabido na "sprint panning" e não foi ajustado o esforço para isso e o recurso novo só recebeu o computador na metade do sprint. Uma medida corretiva para isso vai ser mostrado no topico~\ref{adapCiclo}. 
 
-Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 para 3 recursos. Nesse caso, a varição foi bem menor e o esforço entregue foi o mesmo. A produtividade se manteve mesmo perdendo um recurso, isso mostrou que o conhecimento do membro que sai pode ser compensado por outro 3 membros da equipe desde que  todos estejam participando ativamente de alguns sprints que nesse caso foi de aproximadamente três considerando que o membro mais recente que permaneceu na equipe tinha entrado na sprint 3. Alem de mostrar que a maturidade de estimativas vem naturalmente quando a equipe tem melhor ideia da produtividade da mesma baseada na experiencia dela no projeto e no historio das sprints.       
+Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 para 3 recursos. Nesse caso, a varição de porcentagem de esforço entregue foi bem menor e o pontos de esforço entregue foi o mesmo. A produtividade se manteve mesmo perdendo um recurso, isso mostrou que o conhecimento do membro que sai pode ser compensado por outro 3 membros da equipe desde que  todos estejam participando ativamente de alguns sprints que nesse caso foi de aproximadamente três considerando que o membro mais recente que permaneceu na equipe tinha entrado na sprint 3. Alem de mostrar que a maturidade de estimativas vem naturalmente quando a equipe tem melhor ideia da produtividade da mesma baseada na experiencia dela no projeto e no historio das sprints.       
 
 
 
