@@ -97,7 +97,7 @@ Shewhart\cite{shewhart1986statistical}, do PDSA(plan-do-study-act) que eram cicl
   
   
   \begin{center}
-	\includegraphics[scale=0.50]{fig/pdsa.png}
+	\includegraphics[scale=0.70]{fig/pdsa.png}
 	
 	\caption{plan-do-study-act}
 	\label{Figura:PDSA}
@@ -135,9 +135,9 @@ Um erro comum é considerar que interativo e incremental são sinônimos. Interativ
 
 Alem disso em ambos casos de priorização , esses lista de prioridade deve ser revista em cada interação.
 
-\subsection{Processo ágil}
+\subsection{Método ágil}
 
-Um processo ágil é definido por processo interativo incrementar limitado por uma janela de tempo que varia de alguns dias a algumas semanas. Em 2001, foi criado Agile Alliance que criou um manifesto~\cite{AgileAlliance} mostrado na tabela~\ref{tabela:Agil}
+Um método ágil é definido por processo interativo incrementar limitado por uma janela de tempo que varia de alguns dias a algumas semanas. Em 2001, foi criado Agile Alliance que criou um manifesto~\cite{AgileAlliance} mostrado na tabela~\ref{tabela:Agil}
  \begin{table}[htbp]
 \begin{center}
 \caption{Manifesto Agil}\label{tabela:Agil}
@@ -177,6 +177,64 @@ Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas caracterí
 
 Apesar da primeira comparação de o desenvolvimento com o jogo de ruby ser anterior a ele, o artigo~\cite{Schwaber95scrumdevelopment} comparou os métodos de desenvolvimentos disponíveis em 1995 como o waterfall, espiral e interativo e mostrou como os problemas inerentes deles poderiam ser resolvidos atrases dessa nova proposta que foi denominada SCRUM. Esse mesmo autor junto como Beele \cite{AgileScrum} criou um livro que foi um detalhamento desse método. Isso foi testado em varias empresas e esses aplicações praticas do método forma mostra em  \cite{AgileMS}. Atualmente, o SCRUM é mantido pela scrum.org. O documento oficial é o SCRUM Guide ~\cite{scrumguide} craido por Ken Schwaber e Jeff Sutherland. Existe grande interesse em divulgar o metodo pois esse guida esta traduzido no site deles para 15 linguas e a explicação do SCRUM desse item é baseado nesse guia\cite{scrumguide}.
 
+\subsubsection{Papeis no SCRUM}
+Foram definidos alguns papeis e as responsabilidade de cada um deles:
+\begin{itemize}
+
+\item Scrum Master(SM): papel que garante que os valores, regras do SCRUM sejam seguidas. Responsável por optimizar junto com o time o processo e eliminar impedimentos para que o SCRUm funcione bem dentro da equipe
+
+\item Produt Owner(PO): papel responsável por gerenciar o product backlog. Essa papel pode ser ajudado por outras pessoas mas deve ter exercido somente por uma pessoa. Deve-se priorizar o product backlog e garantir os membros da equipe estejam cientes disso. 
+
+\item Time: Membros que efetivamente define como as tarefas do product backlog deve ser desenvolvidas. Eles se auto-organizam para isso. O numero ideal é cinco a nove membros no time.
+
+\end{itemize}
+
+\subsubsection{Artefatos no SCRUM}
+\begin{itemize}
+
+\item Product Backlog: Os requisitos do produto que o time está desenvolvendo está todo no product backlog. O PO é o responsável pelo Poduct Backlog, por seu conteúdo, por sua  disponibilidade e 
+por sua priorização.O Backlog do Produto evolui à medida que o produto e o ambiente em que ele será usado evoluem. O Backlog é dinâmico, no sentido de  que ele está constantemente mudando para identificar o que o produto necessita. Os itens, que normalmente são chamados de historias, do Backlog do Produto possuem os atributos de descrição, prioridade e estimativa. A prioridade é determinada por risco, valor e necessidade.  
+
+\item Sprint Backlog: É um subconjunto do product backlog que define as historias e tarefas que o time vai realizar em um clico de desenvolvimento(Sprint). Esse aretefato é gerado no Sprint Planning.Somente o Time pode modificar o seu Backlog da Sprint durante uma Sprint. Somente o Time pode mudar o seu conteúdo ou as suas estimativas. O Backlog da Sprint é um retrato em tempo real altamente visível do trabalho que o Time planeja efetuar durante a Sprint, e ele pertence unicamente ao Time.  
+
+\item Sprint Backlog Burndown:um gráfico da quantidade restante de trabalho do Backlog da Sprint em uma  determinada Sprint ao longo do tempo da Sprint.  
+
+\item Ciclos de interação com tempo definido( normalmente 30 dias)
+
+\item Cada interação tem o planejamento redefinido pelos interesses dos clientes
+
+\end{itemize}
+
+\subsubsection{Reuniões no SCRUM}
+As reuniões dentro do SCRUM são definidas com um tempo de duração bem definido , isso ajuda a manter o foco deles pois esse tempo não deve ser execedido se não isso pode virar rotina e prejudicaro processo, o SM deve sempre controlar que o tempos das reuniões seja respeitado. As reuniões definidas pelo manual são:
+\begin{itemize}
+
+\item Planejamento Da Release: Reunião opcional para determinar planos e objetivos. define as maiores prioridades do backlog, risco e quais caracteristica o release vai ter ter. 
+
+\item Sprint: Um ciclo de interação completo que é composto por outras reuniões. Durante uma Sprint, o SM tenta manter o objetivo e que não haja mudança durante esse tempo.O tamanho de uma sprint deve ter em volta de 1 mes. Esse tempo é considero suficiente para entregar valor ao cliente e curto para evitar que o objetivo fiquei obsoleto ou o projeto fique sem controle. Somente o PO tem autoridade para cancelar uma sprint antes do termino do dias predefindo dele.e  Isso acontece quando o objetivo dela fica obsoleto ou uma novo direcionamento da equipe seja necessário. Mas , esse recurso for usado constante , demostra que o tempo de sprint é muito longo e o escopo do projeto muda mais rápido que o tempo de sprint e esse tempo deve ser ajustado.   
+
+\subitem Sprint Planning: Reunião inicial dentro de uma nova sprint. O tempo usual é de oito horas para uma sprint de trinta dias. Esse planejamento pode ser dividido em duas partes. A primeira parte para definir o que vai ser feito a partir das historias com maior prioridade no produt backlog. A quantidade de historias que serão inclusas no sprint é baseado nas experiencia passada no time e eles que define isso. Com as historias selecionadas pelo time para a sprint é defini o objetivo da sprint.  A segunda parte é definir como vai ser implementadas as historias. Durante esse planejamento, são definias tarefas dentro de cada historia para detalhar como vai ser a implementação. Essas tarefas deve ser detalhada ao ponto que cada uma seja concluída na máximo em um dia de trabalho. Esse conjunto de historias e tarefas é definido como sprint backlog.
+
+\subitem Sprint Review: Reunião realizada ao fim do ciclo de uma Sprint.É uma reunião de quatro horas para um sprint de 30 dias. Nela o PO determina o que foi feito e o que não foi feito nos resultados apresntados pelo time. Alem disso, é discutido como foi realizado as historias e quais problemas foram encontradas e como foi solucionado para entregar valor ao cliente ao final da Sprint e responde perguntas dos outros envolvidos. O PO apresenta e discute o product backlog. Todas as informações dessa reunião são uma entrada importante para o Sprint planning da próxima sprint.
+
+\subitem Sprint Retrospective : Reunião realizada ao fim do ciclo de uma Sprint.É uma reunião de três horas para um sprint de 30 dias. O SM incetiva o time a revisar o processo SCRUM que foi efetuado nesse Sprint. O Objetivo é torna-lo mais eficiente e prazeroso para a equipe. Essa reunião é muito importante pois nela que ocorre a optimização e adequação do método para as necessidades da equipe. Esse passo é fundamental para melhorar a produtividade do time.
+
+\subitem Reuniao Diaria : Reunião realizada todo dia e deve durar quinze minutos e de preferencia em pé para evitar que tome muito tempo da equipe. Durante esssa reuniao , cada membro da equipe informa o que foi feito desde a utlima reuniao diaria, o que pretende fazer até a proxima reunião diária e quais foram os impedimentos achados.
+
+\end{itemize}
+
+A figura~\ref{Figura:cicloSCRUM}(\cite{montainGoat}) mostra o ciclo de vida de uma Sprint de forma esquematica.
+
+\begin{figure}[htbp]
+  
+  
+  \begin{center}
+	\includegraphics[scale=0.60]{fig/ScrumLargeLabelled.png}
+	
+	\caption{Ciclo de Vida de uma Sprint}
+	\label{Figura:cicloSCRUM}
+	\end{center}
+\end{figure}
 
 \subsubsection {Papeis dentro do SCRUM}
 Existem três papeis importantes dentro do SCRUM:
