@@ -38,15 +38,28 @@ Resultados da aplicação da metodologia agil SCRUM no desenvolvimento de novas fu
 
 \section{Introdução}
 \label{intro}
-O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto definidos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível. 
+O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto definidos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível. Importante que para esse projeto, os clientes requisitam resultados de simulação, o código para a geração não é analisado pelo cliente. 
+
+Esse artigo primeiro mostra a motivação na seção~\ref{motivacao} e comente um pouco sobre o simulacoes e suas linhas de pesquisa na seção~\ref{objeSims}. Uma breve dexcrição de algumas metodologias e com enfase no SCRUM parece na seção~\ref{metodologias}. Detalhamentos e resultados da implantação do SCRUM no porjeto é mostrado na seção~\ref{implementacao}. Por fim, uma conclusão é mostrada na seçao~\ref{conclusao}
 
 
 
 
 \section{Motivação}
-A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade. A parte do GSM que seria atualizada para a versão EGPRS2, originalmente somente um pesquisador iria ficar responsável e uma atualização do canal de voz ficaria responsável por apenas outro um pesquisador. Normalmente a equipe era formada por quatro pesquisadores e cada um ficava com uma funcionalidade.  Isso gerava vários problemas. Um era que quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ele se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe. O conhecimento ficava muito centralizado e era complicado deslocar um recurso de uma funcionalidade que precisa ser entrega antes. Isso tornava a alocação de recuso muito pouco flexível.   
+\label{motivacao}
+A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade. A parte do GSM que seria atualizada para a versão EGPRS2, originalmente somente um pesquisador iria ficar responsável e uma atualização do canal de voz ficaria responsável por apenas outro um pesquisador. Normalmente a equipe era formada por quatro pesquisadores e cada um ficava com uma funcionalidade.  
 
-\section{Processos de Desenvolvimento} 
+Isso gerava vários problemas. Um era que quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ele se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe. O conhecimento ficava muito centralizado e era complicado deslocar um recurso de uma funcionalidade que precisa ser entrega antes. Isso tornava a alocação de recuso muito pouco flexível.   
+
+\section{Objetivo do projeto e o simulador sistêmico}
+\label{objeSims}
+O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece resultados de simulações sistêmicas de uma rede celular GSM. Esse resultados são usado principalmente para os dois casos. O principal uso é na padronização que é fornecer resultados para as reuniões do GERAN dentro do  3GPP que alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas em artigos de congresso e principais assuntos são OSC que dobra a capacidade de voz na rede onde os resultados do simulador foram mostrado no \cite{GSMevo} e \cite{DFRHR} e EGPRS2 que aumenta a capacidade de dados da redes GSM para valores mais próximos das redes 3G.
+
+Sendo assim, a principal entrega para os clientes do projeto são os resultados de simulação consequentemente o código do simulador feito em c++ e mudanças desse código para gerar novos resultados desejados tem pouca importância para o cliente final e como o simulador tem mais de 5 anos, a qualidade do código e documentação dele foi decaindo . Isso gerou algumas dificuldade nas sprints executadas e isso vai ser abordado nos seções posteriores.  
+
+
+\section{Metodologias Desenvolvimento} 
+\label{metodologias}
 Esse tópico mostra alguns tipos de processo e suas motivações e como pode ser usados e cometários de como eles podem ser usado para o desenvolvimento de software.
 %\label{sec:firstpage}
 \subsection{Produção em Massa e Produção de um novo produto}
@@ -88,7 +101,7 @@ Considerando essas diferenças é difícil tentar modelar um processo de desenvolvi
 
 Considerando como o modelo de produção em massa foi pensado e a natureza do desenvolvimento de software, todo novo produto deve ser tratado pela equipe como um novo produto. Mas isso não resolve o problema mas somente elimina uma metodologia. Com a aumento da importância do desenvolvimento de software em varias áreas, foi necessário criar um processo para esses novos produto 
 
-\subsection{Processo Interativo e Adaptativo}
+\subsection{Metodologia Interativa e Adaptativa}
 
 O processo interativo é uma forma de construir software o ciclo de vida é constituindo de vários ciclo de interação. Essas interações pode ser considerados como um mini projeto que tem as atividades de analise de requisitos, design, programação e teste. Baseado em \cite{IIDbrief}, esse processo se originou na ideia,proposta em 1930 por Walter
 Shewhart\cite{shewhart1986statistical}, do PDSA(plan-do-study-act) que eram ciclos de melhoramento da qualidade. Esse ciclo é mostrado na figura~\ref{Figura:PDSA} 
@@ -167,7 +180,7 @@ Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas caracterí
 
 \item Equipe auto-gerida e auto-organizável
 
-\item Reuniões diarias entre a equipe.
+\item Reuniões diárias entre a equipe.
 
 \item Ciclos de interação com tempo definido( normalmente 30 dias)
 
@@ -175,7 +188,7 @@ Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas caracterí
 
 \end{itemize}
 
-Apesar da primeira comparação de o desenvolvimento com o jogo de ruby ser anterior a ele, o artigo~\cite{Schwaber95scrumdevelopment} comparou os métodos de desenvolvimentos disponíveis em 1995 como o waterfall, espiral e interativo e mostrou como os problemas inerentes deles poderiam ser resolvidos atrases dessa nova proposta que foi denominada SCRUM. Esse mesmo autor junto como Beele \cite{AgileScrum} criou um livro que foi um detalhamento desse método. Isso foi testado em varias empresas e esses aplicações praticas do método forma mostra em  \cite{AgileMS}. Atualmente, o SCRUM é mantido pela scrum.org. O documento oficial é o SCRUM Guide ~\cite{scrumguide} craido por Ken Schwaber e Jeff Sutherland. Existe grande interesse em divulgar o metodo pois esse guida esta traduzido no site deles para 15 linguas e a explicação do SCRUM desse item é baseado nesse guia\cite{scrumguide}.
+Apesar da primeira comparação de o desenvolvimento com o jogo de ruby ser anterior a ele, o artigo~\cite{Schwaber95scrumdevelopment} comparou os métodos de desenvolvimentos disponíveis em 1995 como o waterfall, espiral e interativo e mostrou como os problemas inerentes deles poderiam ser resolvidos atrases dessa nova proposta que foi denominada SCRUM. Esse mesmo autor junto como Beele \cite{AgileScrum} criou um livro que foi um detalhamento desse método. Isso foi testado em varias empresas e esses aplicações praticas do método forma mostra em  \cite{AgileMS}. Atualmente, o SCRUM é mantido pela scrum.org. O documento oficial é o SCRUM Guide ~\cite{scrumguide} craido por Ken Schwaber e Jeff Sutherland. Existe grande interesse em divulgar o método pois esse guida esta traduzido no site deles para 15 idiomas e a explicação do SCRUM desse item é baseado nesse guia\cite{scrumguide}.
 
 \subsubsection{Papeis no SCRUM}
 Foram definidos alguns papeis e as responsabilidade de cada um deles:
@@ -199,10 +212,6 @@ por sua priorização.O Backlog do Produto evolui à medida que o produto e o ambie
 
 \item Sprint Backlog Burndown:um gráfico da quantidade restante de trabalho do Backlog da Sprint em uma  determinada Sprint ao longo do tempo da Sprint.  
 
-\item Ciclos de interação com tempo definido( normalmente 30 dias)
-
-\item Cada interação tem o planejamento redefinido pelos interesses dos clientes
-
 \end{itemize}
 
 \subsubsection{Reuniões no SCRUM}
@@ -223,7 +232,7 @@ As reuniões dentro do SCRUM são definidas com um tempo de duração bem definido ,
 
 \end{itemize}
 
-A figura~\ref{Figura:cicloSCRUM}(\cite{montainGoat}) mostra o ciclo de vida de uma Sprint de forma esquematica.
+A figura~\ref{Figura:cicloSCRUM}(\cite{montainGoat}) mostra o ciclo de vida de uma Sprint de forma esquemática.
 
 \begin{figure}[htbp]
   
@@ -236,22 +245,9 @@ A figura~\ref{Figura:cicloSCRUM}(\cite{montainGoat}) mostra o ciclo de vida de u
 	\end{center}
 \end{figure}
 
-\subsubsection {Papeis dentro do SCRUM}
-Existem três papeis importantes dentro do SCRUM:
- 
- \begin{itemize}
-
-\item ScrumMaster: Responsavem por garantir que o time  
-
-\item IID orientado ao cliente: O Cliente define a ordem de prioridade baseado no maior valor negócios da lista de tarefas.
- 
-\end{itemize}
 
 \section{Implantação do Scrum no processo de pesquisa}
-\subsection {Objetivo do projeto e o simulador sistêmico}
-O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece resultados de simulações sistêmicas de uma rede celular GSM. Esse resultados são usado principalmente para os dois casos. O principal uso é na padronização que é fornecer resultados para as reuniões do GERAN dentro do  3GPP que alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas em artigos de congresso e principais assuntos são OSC que dobra a capacidade de voz na rede onde os resultados do simulador foram mostrado no \cite{GSMevo} e \cite{DFRHR} e EGPRS2 que aumenta a capacidade de dados da redes GSM para valores mais próximos das redes 3G.
-
-Sendo assim, a principal entrega para os clientes do projeto são os resultados de simulação consequentemente o código do simulador feito em c++ e mudanças desse código para gerar novos resultados desejados tem pouca importância para o cliente final e como o simulador tem mais de 5 anos, a qualidade do código e documentação dele foi decaindo . Isso gerou algumas dificuldade nas sprints executadas e isso vai ser abordado nos seções posteriores.      
+\label{implementacao}    
 
 \subsection{Primeiro ciclo}
 As primeiras sprint forma feitas sem um treinamento formal . Plea falta de experiencia da equipe, esses primeiro sprints não seguiram completamente o modelo descrito na seção~\ref{SCRUMmodel}. Mas isso foi interessante que podemos evoluir o processo junto com a equipe para adaptar o Scrum nosso necessidade.
@@ -272,7 +268,7 @@ A equipe inicial era formada por :
 \item Rafael - Membro contratado para substituir o Bernardo que entrou no projeto no sprint 3 
 \end{itemize}
 
-Através de dados fornecidos pelos artefatos criados no desenvolvimento das sprints , pode-se avalias o impacto na produtividade na saida de um recurso e a quanto tempo um novo recurso poderia prover um produtividade similar. Com proporção de distribuição de esforço em cada tópico, pode-se determinar se houve transferência de conhecimento.  
+Através de dados fornecidos pelos artefatos criados no desenvolvimento das sprints , pode-se avalias o impacto na produtividade na saída de um recurso e a quanto tempo um novo recurso poderia prover um produtividade similar. Com proporção de distribuição de esforço em cada tópico, pode-se determinar se houve transferência de conhecimento.  
 
 
 \subsection{Metodologia do Primeiro ciclo}
@@ -284,22 +280,35 @@ Foi definido que a primeira sprint teria 10 dias para ensinar a equipe dentro da
 
 \subsection{Substituição de recurso}
 
-Como dito no seção~\ref{metodo1}, a equipe era avaliada pela porcentagem de esforço entregue. O gráfico da figura~\ref{Figura:Esfoco}  mostra a percentagem de esforço entregue nas barras e uma linha com o valor bruto de esforço , foi retirado o primeiro sprint poque ele era menor e não poderia ser comprado com os outros de forma direta. 
+Como dito no seção~\ref{metodo1}, a equipe era avaliada pela porcentagem de esforço entregue. O gráfico da figura~\ref{Figura:percent_Esfoco}  mostra a percentagem de esforço entregue e o gráfico da figura~\ref{Figura:comp_Esfoco} mostra duas curvar, uma é o esforço combinado no Sprint Planning e a outra é o esforço entrrege no Sprint Review. Foi retirado o primeiro sprint porque ele era menor e não poderia ser comprado com os outros de forma direta nos dois gráficos. 
 
 \begin{figure}[htbp]
   
   
   \begin{center}
-	\includegraphics[scale=0.70]{fig/esforco.png}
+	\includegraphics[scale=0.70]{fig/percent_esforco.png}
 	
-	\caption{Esforço por sprint}
-	\label{Figura:Esfoco}
+	\caption{Percentagem de esforço entregue por sprint}
+	\label{Figura:percent_Esfoco}
 	\end{center}
 \end{figure}
 
-Analisando a figura~\ref{Figura:Esfoco}, o sprint 3 foi o ultimo que o Bernardo partipou, o primeiro que Rafael participou e o sprint com a maior quantidade de recursos (5,5). Comparando com sprint 2, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu. Apesar da  porcentagem ter aumentado mas isso pode ser atribuído a maturidade melhorada das estimativas pelo resto da equipe. Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos os sprint), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de "sprint review", no sprint 4 foram detectados alguns bugs que impediram a entrega de algumas historias e houve um treinamento da equipe em uma ferrameten que era sabido na "sprint panning" e não foi ajustado o esforço para isso e o recurso novo só recebeu o computador na metade do sprint. Uma medida corretiva para isso vai ser mostrado no topico~\ref{adapCiclo}. 
+\begin{figure}[htbp]
+  
+  
+  \begin{center}
+	\includegraphics[scale=0.70]{fig/comp_esforco.png}
+	
+	\caption{Comparativo do Esforço combinado e entregue por Sprint}
+	\label{Figura:comp_Esfoco}
+	\end{center}
+\end{figure}
 
-Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 para 3 recursos. Nesse caso, a varição de porcentagem de esforço entregue foi bem menor e o pontos de esforço entregue foi o mesmo. A produtividade se manteve mesmo perdendo um recurso, isso mostrou que o conhecimento do membro que sai pode ser compensado por outro 3 membros da equipe desde que  todos estejam participando ativamente de alguns sprints que nesse caso foi de aproximadamente três considerando que o membro mais recente que permaneceu na equipe tinha entrado na sprint 3. Alem de mostrar que a maturidade de estimativas vem naturalmente quando a equipe tem melhor ideia da produtividade da mesma baseada na experiencia dela no projeto e no historio das sprints.       
+O sprint 3 foi o ultimo que o Bernardo partipou, o primeiro que Rafael participou e o sprint com a maior quantidade de recursos (5,5). Comparando com sprint 3 com o Sprint 3, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu como mostra a figura~\ref{Figura:comp_Esfoco}. Apesar da  porcentagem como mostra a figura~\ref{Figura:percent_Esfoco} ter aumentado mas isso pode ser atribuído a maturidade melhorada das estimativas pelo resto da equipe. 
+
+Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos os sprint), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de "sprint review", no sprint 4 foram detectados alguns bugs que impediram a entrega de algumas historias e houve um treinamento da equipe em uma ferrameten que era sabido na "sprint panning" e não foi ajustado o esforço para isso e o recurso novo só recebeu o computador na metade do sprint. Uma medida corretiva para evitar bugs vai ser mostrado no topico~\ref{adapCiclo}. 
+
+Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 para 3 recursos. Nesse caso, a varição de porcentagem de esforço entregue foi bem menor e o pontos de esforço entregue foi o mesmo. A produtividade se manteve mesmo perdendo um recurso, isso mostrou que o conhecimento do membro que saiu pode ser compensado por outro 3 membros da equipe desde que  todos estejam participando ativamente de alguns sprints que nesse caso foi de aproximadamente três considerando que o membro mais recente que permaneceu na equipe tinha entrado na sprint 3. Alem de mostrar que a maturidade de estimativas vem naturalmente quando a equipe tem melhor ideia da produtividade da mesma baseada na experiencia dela no projeto e no historio das sprints.       
 
 
 
@@ -361,7 +370,7 @@ Lembrando que não houve nenhuma tarefa especifica para transferir esse conhecime
 \subsection{Adaptação do tempo de sprint}
 
 \section{Conclusão}
- 
+\label{conclusao} 
 
 
 
