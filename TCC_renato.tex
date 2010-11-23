@@ -10,7 +10,7 @@
      
 \sloppy
 
-\title{Aplicação do processo ágil Scrum em um ambiente de Pesquisa em um simulador GSM}
+\title{Aplicação do processo ágil SCRUM em um ambiente de Pesquisa em um simulador GSM}
 
 \author{Renato Faria Iida\inst{1}, Renato Willi\inst{2} }
 
@@ -32,30 +32,41 @@ Results of the SCRUM methodology to development of new features of a GSM system 
 \end{abstract}
      
 \begin{resumo} 
-Resultados da aplicação da metodologia agil SCRUM no desenvolvimento de novas funcionalidade em um simulador dinâmico de GSM para tentar resolver problemas como centralização de conhecimento, processo de substituição de membros da equipe e falta de flexibilidade de alocação de recursos.
+Resultados da aplicação da metodologia ágil SCRUM no desenvolvimento de novas funcionalidade em um simulador dinâmico de GSM para tentar resolver problemas como centralização de conhecimento, processo de substituição de membros da equipe e falta de flexibilidade de alocação de recursos.
 \end{resumo}
 
 
 \section{Introdução}
 \label{intro}
-O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto definidos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível. Importante que para esse projeto, os clientes requisitam resultados de simulação, o código para a geração não é analisado pelo cliente. 
+O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto definidos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível. Importante que para esse projeto, os clientes requisitam resultados de simulação, o código para a geração desses resultados não é analisado pelo cliente. 
 
-Esse artigo primeiro mostra a motivação na seção~\ref{motivacao} e comente um pouco sobre o simulacoes e suas linhas de pesquisa na seção~\ref{objeSims}. Uma breve dexcrição de algumas metodologias e com enfase no SCRUM parece na seção~\ref{metodologias}. Detalhamentos e resultados da implantação do SCRUM no porjeto é mostrado na seção~\ref{implementacao}. Por fim, uma conclusão é mostrada na seçao~\ref{conclusao}
-
-
+Esse artigo primeiro mostra a motivação na seção~\ref{motivacao} e comente um pouco sobre o simulações e suas linhas de pesquisa na seção~\ref{Sims}. Uma breve descrição de algumas metodologias e com enfase no SCRUM parece na seção~\ref{metodologias}. Detalhamentos e resultados da implantação do SCRUM no projeto é mostrado na seção~\ref{implementacao}. Por fim, uma conclusão é mostrada na seção~\ref{conclusao}
 
 
-\section{Motivação}
+\section{Detalhes do projeto e o simulador sistêmico}
+\label{Sims}
+O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece resultados de simulações sistêmicas de uma rede celular GSM.  Na época da aplicação do SCRUM existia duas linhas de pesquisa:
+
+\begin{itemize}
+
+\item OSC:
+
+\item EGPRS2:
+
+ 
+\end{itemize}
+
+
+, Esse resultados são usado principalmente para os dois casos. O principal uso é na padronização que é fornecer resultados para as reuniões do GERAN dentro do  3GPP que alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas em artigos de congresso e principais assuntos são OSC que dobra a capacidade de voz na rede onde os resultados do simulador foram mostrado no \cite{GSMevo} e \cite{DFRHR} e EGPRS2 que aumenta a capacidade de dados da redes GSM para valores mais próximos das redes 3G.
+
+Sendo assim, a principal entrega para os clientes do projeto são os resultados de simulação consequentemente o código do simulador feito em c++ e mudanças desse código para gerar novos resultados desejados tem pouca importância para o cliente final e como o simulador tem mais de 5 anos, a qualidade do código e documentação dele foi decaindo . Isso gerou algumas dificuldade nas sprints executadas e isso vai ser abordado nos seções posteriores.  
+
+\section{Motivação e objetivo}
 \label{motivacao}
 A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade. A parte do GSM que seria atualizada para a versão EGPRS2, originalmente somente um pesquisador iria ficar responsável e uma atualização do canal de voz ficaria responsável por apenas outro um pesquisador. Normalmente a equipe era formada por quatro pesquisadores e cada um ficava com uma funcionalidade.  
 
 Isso gerava vários problemas. Um era que quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ele se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe. O conhecimento ficava muito centralizado e era complicado deslocar um recurso de uma funcionalidade que precisa ser entrega antes. Isso tornava a alocação de recuso muito pouco flexível.   
 
-\section{Objetivo do projeto e o simulador sistêmico}
-\label{objeSims}
-O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece resultados de simulações sistêmicas de uma rede celular GSM. Esse resultados são usado principalmente para os dois casos. O principal uso é na padronização que é fornecer resultados para as reuniões do GERAN dentro do  3GPP que alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas em artigos de congresso e principais assuntos são OSC que dobra a capacidade de voz na rede onde os resultados do simulador foram mostrado no \cite{GSMevo} e \cite{DFRHR} e EGPRS2 que aumenta a capacidade de dados da redes GSM para valores mais próximos das redes 3G.
-
-Sendo assim, a principal entrega para os clientes do projeto são os resultados de simulação consequentemente o código do simulador feito em c++ e mudanças desse código para gerar novos resultados desejados tem pouca importância para o cliente final e como o simulador tem mais de 5 anos, a qualidade do código e documentação dele foi decaindo . Isso gerou algumas dificuldade nas sprints executadas e isso vai ser abordado nos seções posteriores.  
 
 
 \section{Metodologias Desenvolvimento} 
@@ -119,7 +130,7 @@ Shewhart\cite{shewhart1986statistical}, do PDSA(plan-do-study-act) que eram cicl
 
 
 
-A partir dessa ideia inicial , houve uma amadurecimento através dos anos e aplicações em projetos como aviões supersônicos como  X-15 e de softaware. Assim, foi formalidado o  processo interativo e incremental(IID) pode ser descrito visto na figura~\ref{Figura:IID}( \cite{RUP2005}). 
+A partir dessa ideia inicial , houve uma amadurecimento através dos anos e aplicações em projetos como aviões supersônicos como  X-15 e de software. Assim, foi formalizado o  processo interativo e incremental(IID) pode ser descrito visto na figura~\ref{Figura:IID}( \cite{RUP2005}). 
 
 \begin{figure}[htbp]
   
@@ -157,7 +168,7 @@ Um método ágil é definido por processo interativo incrementar limitado por uma j
 
     \begin{tabular}{ | p{14cm}|}
     \hline
-    \textbf{Manifesto Agil}\\ \hline
+    \textbf{Manifesto ágil}\\ \hline
     Indivíduos e interações mais que processos e ferramentas\\*
 Software em funcionamento mais que documentação abrangente\\*
 Colaboração com o cliente mais que negociação de contratos\\*
@@ -169,7 +180,7 @@ valorizamos mais os itens à esquerda.\\ \hline
 \end{center}
 \end{table}
 
-Alem disso, a Agile Alleance definiu doze princípios\cite{AgileAlliance} que de maneira resumida define que a satisfação do cliente tem a maior prioridade, 
+Alem disso, a Agile Alliance definiu doze princípios\cite{AgileAlliance} que de maneira resumida define que a satisfação do cliente tem a maior prioridade, 
 que as equipes de desenvolvimento , negócios e cliente deve sempre manter contato durante o  desenvolvimento, que a conversa cara a cara seria o método ideal 
 desse contato, que o produto de software deve ser entregue com frequência e que mudanças nos requisitos devam ser bem vindos. 
 \subsection{Scrum}
@@ -188,7 +199,7 @@ Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas caracterí
 
 \end{itemize}
 
-Apesar da primeira comparação de o desenvolvimento com o jogo de ruby ser anterior a ele, o artigo~\cite{Schwaber95scrumdevelopment} comparou os métodos de desenvolvimentos disponíveis em 1995 como o waterfall, espiral e interativo e mostrou como os problemas inerentes deles poderiam ser resolvidos atrases dessa nova proposta que foi denominada SCRUM. Esse mesmo autor junto como Beele \cite{AgileScrum} criou um livro que foi um detalhamento desse método. Isso foi testado em varias empresas e esses aplicações praticas do método forma mostra em  \cite{AgileMS}. Atualmente, o SCRUM é mantido pela scrum.org. O documento oficial é o SCRUM Guide ~\cite{scrumguide} craido por Ken Schwaber e Jeff Sutherland. Existe grande interesse em divulgar o método pois esse guida esta traduzido no site deles para 15 idiomas e a explicação do SCRUM desse item é baseado nesse guia\cite{scrumguide}.
+Apesar da primeira comparação de o desenvolvimento com o jogo de rugby ser anterior a ele, o artigo~\cite{Schwaber95scrumdevelopment} comparou os métodos de desenvolvimentos disponíveis em 1995 como o waterfall, espiral e interativo e mostrou como os problemas inerentes deles poderiam ser resolvidos atrases dessa nova proposta que foi denominada SCRUM. Esse mesmo autor junto como Beele \cite{AgileScrum} criou um livro que foi um detalhamento desse método. Isso foi testado em varias empresas e esses aplicações praticas do método forma mostra em  \cite{AgileMS}. Atualmente, o SCRUM é mantido pela scrum.org. O documento oficial é o SCRUM Guide ~\cite{scrumguide} criado por Ken Schwaber e Jeff Sutherland. Existe grande interesse em divulgar o método pois esse guida esta traduzido no site deles para 15 idiomas e a explicação do SCRUM desse item é baseado nesse guia\cite{scrumguide}.
 
 \subsubsection{Papeis no SCRUM}
 Foram definidos alguns papeis e as responsabilidade de cada um deles:
@@ -196,33 +207,33 @@ Foram definidos alguns papeis e as responsabilidade de cada um deles:
 
 \item Scrum Master(SM): papel que garante que os valores, regras do SCRUM sejam seguidas. Responsável por optimizar junto com o time o processo e eliminar impedimentos para que o SCRUm funcione bem dentro da equipe
 
-\item Produt Owner(PO): papel responsável por gerenciar o product backlog. Essa papel pode ser ajudado por outras pessoas mas deve ter exercido somente por uma pessoa. Deve-se priorizar o product backlog e garantir os membros da equipe estejam cientes disso. 
+\item Produt Owner(PO): papel responsável por gerenciar o backlog do produto. Essa papel pode ser ajudado por outras pessoas mas deve ter exercido somente por uma pessoa. Deve-se priorizar o product backlog e garantir os membros da equipe estejam cientes disso. 
 
-\item Time: Membros que efetivamente define como as tarefas do product backlog deve ser desenvolvidas. Eles se auto-organizam para isso. O numero ideal é cinco a nove membros no time.
+\item Time: Membros que efetivamente define como as tarefas do backlog do produto devem ser desenvolvidas. Eles se auto-organizam para isso. O numero ideal é cinco a nove membros no time.
 
 \end{itemize}
 
 \subsubsection{Artefatos no SCRUM}
 \begin{itemize}
 
-\item Product Backlog: Os requisitos do produto que o time está desenvolvendo está todo no product backlog. O PO é o responsável pelo Poduct Backlog, por seu conteúdo, por sua  disponibilidade e 
-por sua priorização.O Backlog do Produto evolui à medida que o produto e o ambiente em que ele será usado evoluem. O Backlog é dinâmico, no sentido de  que ele está constantemente mudando para identificar o que o produto necessita. Os itens, que normalmente são chamados de historias, do Backlog do Produto possuem os atributos de descrição, prioridade e estimativa. A prioridade é determinada por risco, valor e necessidade.  
+\item Product Backlog(Backlog do Produto): Os requisitos do produto que o time está desenvolvendo está todo no backlog do produto. O PO é o responsável pelo Poduct Backlog, por seu conteúdo, por sua  disponibilidade e 
+por sua priorização. O Backlog do Produto evolui à medida que o produto e o ambiente em que ele será usado evoluem. O Backlog é dinâmico, no sentido de  que ele está constantemente mudando para identificar o que o produto necessita. Os itens, que normalmente são chamados de historias, do Backlog do Produto possuem os atributos de descrição, prioridade e estimativa. A prioridade é determinada por risco, valor e necessidade.  
 
-\item Sprint Backlog: É um subconjunto do product backlog que define as historias e tarefas que o time vai realizar em um clico de desenvolvimento(Sprint). Esse aretefato é gerado no Sprint Planning.Somente o Time pode modificar o seu Backlog da Sprint durante uma Sprint. Somente o Time pode mudar o seu conteúdo ou as suas estimativas. O Backlog da Sprint é um retrato em tempo real altamente visível do trabalho que o Time planeja efetuar durante a Sprint, e ele pertence unicamente ao Time.  
+\item Backlog da sprint(Sprint Backlog): É um subconjunto do backlog do produto que define as historias e tarefas que o time vai realizar em um clico de desenvolvimento(Sprint). Esse artefato é gerado no planejamento da Sprint. Somente o time pode modificar o Backlog da Sprint durante a mesma. Somente o Time pode mudar o seu conteúdo ou as suas estimativas. O Backlog da Sprint é um retrato em tempo real altamente visível do trabalho que o Time planeja efetuar durante a Sprint, e ele pertence unicamente ao Time.  
 
 \item Sprint Backlog Burndown:um gráfico da quantidade restante de trabalho do Backlog da Sprint em uma  determinada Sprint ao longo do tempo da Sprint.  
 
 \end{itemize}
 
 \subsubsection{Reuniões no SCRUM}
-As reuniões dentro do SCRUM são definidas com um tempo de duração bem definido , isso ajuda a manter o foco deles pois esse tempo não deve ser execedido se não isso pode virar rotina e prejudicaro processo, o SM deve sempre controlar que o tempos das reuniões seja respeitado. As reuniões definidas pelo manual são:
+As reuniões dentro do SCRUM são definidas com um tempo de duração bem definido , isso ajuda a manter o foco deles pois esse tempo não deve ser excedido se não isso pode virar rotina e prejudicarão o processo, o SM deve sempre controlar que o tempos das reuniões seja respeitado. As reuniões definidas pelo manual são:
 \begin{itemize}
 
-\item Planejamento Da Release: Reunião opcional para determinar planos e objetivos. define as maiores prioridades do backlog, risco e quais caracteristica o release vai ter ter. 
+\item Planejamento Da Release: Reunião opcional para determinar planos e objetivos. define as maiores prioridades do backlog, risco e quais característica o release vai ter ter. 
 
-\item Sprint: Um ciclo de interação completo que é composto por outras reuniões. Durante uma Sprint, o SM tenta manter o objetivo e que não haja mudança durante esse tempo.O tamanho de uma sprint deve ter em volta de 1 mes. Esse tempo é considero suficiente para entregar valor ao cliente e curto para evitar que o objetivo fiquei obsoleto ou o projeto fique sem controle. Somente o PO tem autoridade para cancelar uma sprint antes do termino do dias predefindo dele.e  Isso acontece quando o objetivo dela fica obsoleto ou uma novo direcionamento da equipe seja necessário. Mas , esse recurso for usado constante , demostra que o tempo de sprint é muito longo e o escopo do projeto muda mais rápido que o tempo de sprint e esse tempo deve ser ajustado.   
+\item Sprint: Um ciclo de interação completo que é composto por outras reuniões. Durante uma sprint, o SM tenta manter o objetivo e que não haja mudança durante esse tempo.O tamanho de uma sprint deve ter em volta de 1 mes. Esse tempo é considero suficiente para entregar valor ao cliente e curto para evitar que o objetivo fiquei obsoleto ou o projeto fique sem controle. Somente o PO tem autoridade para cancelar uma sprint antes do termino do dias predefindo dele.e  Isso acontece quando o objetivo dela fica obsoleto ou uma novo direcionamento da equipe seja necessário. Mas , esse recurso for usado constante , demostra que o tempo de sprint é muito longo e o escopo do projeto muda mais rápido que o tempo de sprint e esse tempo deve ser ajustado.   
 
-\subitem Sprint Planning: Reunião inicial dentro de uma nova sprint. O tempo usual é de oito horas para uma sprint de trinta dias. Esse planejamento pode ser dividido em duas partes. A primeira parte para definir o que vai ser feito a partir das historias com maior prioridade no produt backlog. A quantidade de historias que serão inclusas no sprint é baseado nas experiencia passada no time e eles que define isso. Com as historias selecionadas pelo time para a sprint é defini o objetivo da sprint.  A segunda parte é definir como vai ser implementadas as historias. Durante esse planejamento, são definias tarefas dentro de cada historia para detalhar como vai ser a implementação. Essas tarefas deve ser detalhada ao ponto que cada uma seja concluída na máximo em um dia de trabalho. Esse conjunto de historias e tarefas é definido como sprint backlog.
+\subitem Planejamento da sprint(Sprint Planning): Reunião inicial dentro de uma nova sprint. O tempo usual é de oito horas para uma sprint de trinta dias. Esse planejamento pode ser dividido em duas partes. A primeira parte para definir o que vai ser feito a partir das historias com maior prioridade no backlog do produto. A quantidade de historias que serão inclusas no sprint é baseado nas experiencia passada no time e eles que define isso. Com as historias selecionadas pelo time para a sprint é defini o objetivo da sprint.  A segunda parte é definir como vai ser implementadas as historias. Durante esse planejamento, são definias tarefas dentro de cada historia para detalhar como vai ser a implementação. Essas tarefas deve ser detalhada ao ponto que cada uma seja concluída na máximo em um dia de trabalho. Esse conjunto de historias e tarefas é definido como sprint backlog.
 
 \subitem Sprint Review: Reunião realizada ao fim do ciclo de uma Sprint.É uma reunião de quatro horas para um sprint de 30 dias. Nela o PO determina o que foi feito e o que não foi feito nos resultados apresntados pelo time. Alem disso, é discutido como foi realizado as historias e quais problemas foram encontradas e como foi solucionado para entregar valor ao cliente ao final da Sprint e responde perguntas dos outros envolvidos. O PO apresenta e discute o product backlog. Todas as informações dessa reunião são uma entrada importante para o Sprint planning da próxima sprint.
 
@@ -250,6 +261,7 @@ A figura~\ref{Figura:cicloSCRUM}(\cite{montainGoat}) mostra o ciclo de vida de u
 \label{implementacao}    
 
 \subsection{Primeiro ciclo}
+\label{primeiro}
 As primeiras sprint forma feitas sem um treinamento formal . Plea falta de experiencia da equipe, esses primeiro sprints não seguiram completamente o modelo descrito na seção~\ref{SCRUMmodel}. Mas isso foi interessante que podemos evoluir o processo junto com a equipe para adaptar o Scrum nosso necessidade.
 A equipe inicial era formada por :
 
@@ -304,7 +316,7 @@ Como dito no seção~\ref{metodo1}, a equipe era avaliada pela porcentagem de esfo
 	\end{center}
 \end{figure}
 
-O sprint 3 foi o ultimo que o Bernardo partipou, o primeiro que Rafael participou e o sprint com a maior quantidade de recursos (5,5). Comparando com sprint 3 com o Sprint 3, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu como mostra a figura~\ref{Figura:comp_Esfoco}. Apesar da  porcentagem como mostra a figura~\ref{Figura:percent_Esfoco} ter aumentado mas isso pode ser atribuído a maturidade melhorada das estimativas pelo resto da equipe. 
+O sprint 3 foi o ultimo que o Bernardo participou, o primeiro que Rafael participou e o sprint com a maior quantidade de recursos (5,5). Comparando com sprint 3 com o Sprint 3, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu como mostra a figura~\ref{Figura:comp_Esfoco}. Apesar da  porcentagem como mostra a figura~\ref{Figura:percent_Esfoco} ter aumentado mas isso pode ser atribuído a maturidade melhorada das estimativas pelo resto da equipe. 
 
 Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos os sprint), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de "sprint review", no sprint 4 foram detectados alguns bugs que impediram a entrega de algumas historias e houve um treinamento da equipe em uma ferrameten que era sabido na "sprint panning" e não foi ajustado o esforço para isso e o recurso novo só recebeu o computador na metade do sprint. Uma medida corretiva para evitar bugs vai ser mostrado no topico~\ref{adapCiclo}. 
 
@@ -315,7 +327,7 @@ Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 pa
 
 \subsubsection{Transferência de conhecimento}
 
-Um dos objetivos da implantação do Scrum era transferir o conhecimento de OSC para os outros membros da equipe, isso pode ser medido comparando o numero de tarefas concluídas por ele sobre esse assunto durante os sprint e quantas tarefas desse assunto foram concluídas pelo resto do time que é mostrado na tabela~\ref{tabela:transConh} .
+Um dos objetivos da implantação do SCRUM era transferir o conhecimento de OSC para os outros membros da equipe, isso pode ser medido comparando o numero de tarefas concluídas por ele sobre esse assunto durante os sprint e quantas tarefas desse assunto foram concluídas pelo resto do time que é mostrado na tabela~\ref{tabela:transConh} .
 
 \begin{table}[htbp]
 \caption{Transferencia de Conhecimento}
@@ -367,13 +379,17 @@ Lembrando que não houve nenhuma tarefa especifica para transferir esse conhecime
 
 \subsection{Segundo  ciclo}
 
-O segundo ciclo teve um marco importante que foi um treinamento de Scrum Master para os três membros da equipe. Isso mudou um pouco a metodologia do SCURM usado. 
-\subsubsection{Mudanças }
+O segundo ciclo teve um marco importante que foi um treinamento de Scrum Master para os três membros da equipe. Isso mudou a aplicação do SCRUM no projeto para melhor a eficacia do método no grupo.
+\subsubsection{Melhoramento da visão estratégica}
+Durante o primeiro ciclo mostrado na seção~/ref{primeiro}, a enfase do grupo era no sprint backlog e o product backlog normalmente era curto e englobava historias para somente 2 Sprints.
+Isso fazia que o time tinha pouca visão do objetivo final do produto. Isso dificultava antecipar imprevistos ou desenvolvimentos baseados nos historias do produt backlog. Isso limitava a visáo estrategia de todo o projeto. A medida foi criar uma nova reuniao de Produt backlog review que o  PO definia e apresentava o PO ao time e esse backlog tinha que tentar criar o máximo de historias para o semestre. Essa reunião era criada um pouco antes da Sprint Review e tinha o tempo de duas horas.    
+\subsubsection{Mudanças na métrica de esforço}
+A reuniao de Sprint Planning estva demanda muito tempo posi todo tarefa tinha que discutida a criacao e deposi votada o espfroco associadoa. Isso criava uma reuniao longa que cosntante mente demada mais tempo que o predeterminado.
 \subsubsection{Adaptação do tempo de sprint}
-
+O inicio e termino das sprint foram ajustados para eventos externos que poderiam mudar o prodcut backlog e até mesmo cancelar o sprint dependendo do resultados dessa reuniao externa. Para a padronizaçao dos assuntos desenvolvidos nesse projeto , a reunião definido dentro do 3GPP era a GERAN~\cite{GERAN2010}. Esse reunião tem um calendário definido com um ano de antecedencia e normalmente ocorre a cada dois meses. Com essa informação, foi alterado que o inicio das sprints para o final da uma reunião qunado o product backlog estaria atualizado com as ultimas ifnromacóes desse evento externo e termino de uma sprint para o inicio dessa reunião para que os resultados da sprint pudessem ser mostrados na reunião. Com isso o ciclo das sprint se tornou variável  entre 14 e 16 dias. Apesar de não ter a mesma quantidade de dias em cada sprint,  consilar as datas sas sprint com essas reuniao externa ajudou muito a manter o prodcut backlog atualizado com os objetivos dos cliente e evitou que as sprints tivesem que ser cnaceladas por algum fato de vinha da reuniao do GERAN~\cite{GERAN2010}.
 \section{Conclusão}
 \label{conclusao} 
-
+O problema levantados no inicio da implantação do SCRUM foram resolvidos de forma satisfatória com o primeiro ciclo como foi demostrado na seção~\ref{primeiro}. Isso ajudou a convencer a alta gerencia de ganhos dessa metodologia. Consequentemente outros projetos começaram a utiliza-lo também. Com o amadurecimento da equipe e com o maior conhecimento por meio de treinamento, algumas mudanças para melhorar a implementação foram sugeridos no segundo ciclo. Isso demostra que pode-se adaptar o SCRUM para a realidade da empresa desde que todos estejam conscientes como o SCRUM funciona e que essas otimizações corrigiam problemas que o time detectou nas reuniões de sprint retrospective e que o SCrum Master concrode tabem e que a ideia e principios do SCRUm sejam ainda respeitados.  
 
 
 \bibliographystyle{sbc}
