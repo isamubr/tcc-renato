@@ -49,24 +49,42 @@ O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece 
 
 \begin{itemize}
 
-\item OSC:
+\item OSC: é uma evolução nos canais de voz na GSM para que dois usuários possam usar o mesmo canal simultaneamente.Para isos é usando tecnicas de dois canis ortogonias e tecnias de eliminação de interferência.\cite{GSMevo} 
 
-\item EGPRS2:
+\item EGPRS2: EGPRS2 é a evolução da rede de dados na tecnologia GSM, a figura~\ref{Figura:EGPRS2} mostra um breve hisotorico dessa evolução e a quantidade de dados maxima que cada evolução preve para um usuário e quais os modulações foram usadas.\cite{egprs2}
 
  
 \end{itemize}
 
+\begin{figure}[htbp]
+  
+  
+  \begin{center}
+	\includegraphics[scale=0.60]{fig/egprs2_small.png}
+	
+	\caption{Evolução da transmissão de dados na redes GSM}
+	\label{Figura:EGPRS2}
+	\end{center}
+\end{figure}
 
-, Esse resultados são usado principalmente para os dois casos. O principal uso é na padronização que é fornecer resultados para as reuniões do GERAN dentro do  3GPP que alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas em artigos de congresso e principais assuntos são OSC que dobra a capacidade de voz na rede onde os resultados do simulador foram mostrado no \cite{GSMevo} e \cite{DFRHR} e EGPRS2 que aumenta a capacidade de dados da redes GSM para valores mais próximos das redes 3G.
+Os resultados dessas linhas de pesquisa são usados principalmente para os dois casos. O principal uso é na padronização que é fornecer resultados para as reuniões de padronização denominada GERAN\cite{GERAN2010} que alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas em artigos de congresso recetmen forma mostrados na conferencia VTC com\cite{GSMevo} e  \cite{DFRHR} e no ITS com \cite{egprs2} e \cite{oscITS}.
 
 Sendo assim, a principal entrega para os clientes do projeto são os resultados de simulação consequentemente o código do simulador feito em c++ e mudanças desse código para gerar novos resultados desejados tem pouca importância para o cliente final e como o simulador tem mais de 5 anos, a qualidade do código e documentação dele foi decaindo . Isso gerou algumas dificuldade nas sprints executadas e isso vai ser abordado nos seções posteriores.  
 
 \section{Motivação e objetivo}
 \label{motivacao}
-A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade. A parte do GSM que seria atualizada para a versão EGPRS2, originalmente somente um pesquisador iria ficar responsável e uma atualização do canal de voz ficaria responsável por apenas outro um pesquisador. Normalmente a equipe era formada por quatro pesquisadores e cada um ficava com uma funcionalidade.  
+A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade. A parte do GSM que seria atualizada para a versão EGPRS2, originalmente somente um pesquisador iria ficar responsável e uma atualização do canal de voz ficaria responsável por apenas outro um pesquisador. Normalmente a equipe era formada por quatro pesquisadores e cada um ficava com uma funcionalidade.Isso gerava vários problemas:
 
-Isso gerava vários problemas. Um era que quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ele se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe. O conhecimento ficava muito centralizado e era complicado deslocar um recurso de uma funcionalidade que precisa ser entrega antes. Isso tornava a alocação de recuso muito pouco flexível.   
+\begin{itemize}
 
+\item Quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ele se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe
+
+\item Conhecimento ficava muito centralizado pois cada tópico ficava com apenas um desenvolvedor
+
+\item Alocação de recuso muito pouco flexível
+ 
+\end{itemize}
+  Com base nesse pontos falhos no projeto, foi implantado o SCRUM e ele seria avaliado se ele poderia resolver esse pontos e trazer outras melhorias se possível. Na  seção~\ref{implementacao} vai ser mostrado como foi implantado e se esses problemas inicias foram sanados e como foi feito e com os artefatos do SCRUM foram usados para avaliar isso.
 
 
 \section{Metodologias Desenvolvimento} 
