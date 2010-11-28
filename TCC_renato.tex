@@ -49,9 +49,9 @@ O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece 
 
 \begin{itemize}
 
-\item OSC: é uma evolução nos canais de voz na GSM para que dois usuários possam usar o mesmo canal simultaneamente.Para isos é usando tecnicas de dois canis ortogonias e tecnias de eliminação de interferência.\cite{GSMevo} 
+\item OSC: é uma evolução nos canais de voz na GSM para que dois usuários possam usar o mesmo canal simultaneamente.Para isso é usando técnicas de dois canais ortogonais e tecnicas de eliminação de interferência.\cite{GSMevo} \cite{newBlueBook}
 
-\item EGPRS2: EGPRS2 é a evolução da rede de dados na tecnologia GSM, a figura~\ref{Figura:EGPRS2} mostra um breve hisotorico dessa evolução e a quantidade de dados maxima que cada evolução preve para um usuário e quais os modulações foram usadas.\cite{egprs2}
+\item EGPRS2: EGPRS2 é a evolução da rede de dados na tecnologia GSM, a figura~\ref{Figura:EGPRS2} mostra um breve histórico dessa evolução e a quantidade de dados máxima que cada evolução prevê para um usuário e quais os modulações foram usadas.\cite{egprs2}
 
  
 \end{itemize}
@@ -274,6 +274,26 @@ A figura~\ref{Figura:cicloSCRUM}(\cite{montainGoat}) mostra o ciclo de vida de u
 	\end{center}
 \end{figure}
 
+\subsubsection{Planning Poker}
+Diferente dos métodos tradicionais, a complexidade das tarefas e historias é definido somente pelo time e isso deve ser consensual entre eles. O planning poker é um técnica nos métodos ágeis para determinar o esse esforço entre os membros da equipe.Cada membro do time tem cartas com números (0, 1, 2, 3, 5, 8, 13, 20, 40, e 100).  Esses valores podem ser mapeados em pontos de historias, dias estimados ou unidade definidos pelo time. Importante manter uma regularidade dentro do time como esses numero devem ser entendidos para manter uma base histórica de pontuação entres os sprints.
+ Os passos são~\cite{poker}:
+\begin{enumerate}
+
+\item O time lê o item a ser votado. No caso de SCRUM, esse item pode ser uma historia ou uma tarefa.
+
+\item O time discute o item e podem fazer perguntas ao PO para tirar duvidas sobre o item. 
+
+\item Cada membro escolhe uma carta secretamente com o numero que acha mais correto para representar o item discutido. 
+
+\item Todas as carta são mostra ao time. Se todos escolheram o mesmo numero para o item, esse sera a estimativa.
+
+\item Caso sejam mostrados números diferentes, cada membro do time deve justificar a razão da sua estimativa. As de maior e menor valor são as as importante que sejam justificadas. 
+
+\item As estimativas são refeitas até que o consenso da estimativa seja alcançado pelo time.
+
+\end{enumerate} 
+
+
 
 \section{Implantação do Scrum no processo de pesquisa}
 \label{implementacao}    
@@ -310,7 +330,7 @@ Foi definido que a primeira sprint teria 10 dias para ensinar a equipe dentro da
 
 \subsubsection{Substituição de recurso}
 
-Como dito no seção~\ref{metodo1}, a equipe era avaliada pela porcentagem de esforço entregue. O gráfico da figura~\ref{Figura:percent_Esfoco}  mostra a percentagem de esforço entregue e o gráfico da figura~\ref{Figura:comp_Esfoco} mostra duas curvar, uma é o esforço combinado no Sprint Planning e a outra é o esforço entrrege no Sprint Review. Foi retirado o primeiro sprint porque ele era menor e não poderia ser comprado com os outros de forma direta nos dois gráficos. 
+Como dito no seção~\ref{metodo1}, a equipe era avaliada pela porcentagem de esforço entregue. O gráfico da figura~\ref{Figura:percent_Esfoco}  mostra a percentagem de esforço entregue e o gráfico da figura~\ref{Figura:comp_Esfoco} mostra duas curvas, uma é o esforço definido no planejamento da Sprint e a outra é o esforço entregue no revisão do  Sprint Review. Foi retirado o primeiro sprint porque ele era menor e não poderia ser comprado com os outros de forma direta nos dois gráficos. 
 
 \begin{figure}[htbp]
   
@@ -329,16 +349,16 @@ Como dito no seção~\ref{metodo1}, a equipe era avaliada pela porcentagem de esfo
   \begin{center}
 	\includegraphics[scale=0.70]{fig/comp_esforco.png}
 	
-	\caption{Comparativo do Esforço combinado e entregue por Sprint}
+	\caption{Comparativo do Esforço planejado e entregue por Sprint}
 	\label{Figura:comp_Esfoco}
 	\end{center}
 \end{figure}
 
-O sprint 3 foi o ultimo que o Bernardo participou, o primeiro que Rafael participou e o sprint com a maior quantidade de recursos (5,5). Comparando com sprint 3 com o Sprint 3, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu como mostra a figura~\ref{Figura:comp_Esfoco}. Apesar da  porcentagem como mostra a figura~\ref{Figura:percent_Esfoco} ter aumentado mas isso pode ser atribuído a maturidade melhorada das estimativas pelo resto da equipe. 
+O sprint 3 foi o ultimo que o Bernardo participou, o primeiro que Rafael participou e o sprint com a maior quantidade de recursos (5,5). Comparando com sprint 3 com o Sprint 3, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu como mostra a figura~\ref{Figura:comp_Esfoco}. Apesar da  porcentagem de esforço entregue como mostra a figura~\ref{Figura:percent_Esfoco} ter aumentado mas isso pode ser atribuído a maturidade melhorada das estimativas pelo resto da equipe. 
 
-Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos os sprint), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de "sprint review", no sprint 4 foram detectados alguns bugs que impediram a entrega de algumas historias e houve um treinamento da equipe em uma ferrameten que era sabido na "sprint panning" e não foi ajustado o esforço para isso e o recurso novo só recebeu o computador na metade do sprint. Uma medida corretiva para evitar bugs vai ser mostrado no topico~\ref{adapCiclo}. 
+Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos os sprint), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de revisão do Sprint, no sprint 4 foram detectados alguns bugs que impediram a entrega de algumas historias. Uma medida corretiva para evitar bugs vai ser mostrado no topico~\ref{adapCiclo}. Outro fato foi um treinamento da equipe em uma ferrameten que era sabido na planejamento da Sprint e não foi ajustado o esforço para isso. Alem de que o recurso novo só recebeu o computador na metade do sprint. 
 
-Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 para 3 recursos. Nesse caso, a varição de porcentagem de esforço entregue foi bem menor e o pontos de esforço entregue foi o mesmo. A produtividade se manteve mesmo perdendo um recurso, isso mostrou que o conhecimento do membro que saiu pode ser compensado por outro 3 membros da equipe desde que  todos estejam participando ativamente de alguns sprints que nesse caso foi de aproximadamente três considerando que o membro mais recente que permaneceu na equipe tinha entrado na sprint 3. Alem de mostrar que a maturidade de estimativas vem naturalmente quando a equipe tem melhor ideia da produtividade da mesma baseada na experiencia dela no projeto e no historio das sprints.       
+Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 para 3 recursos. Nesse caso, a varição de porcentagem de esforço entregue foi bem menor e o pontos de esforço entregue foi o mesmo. A produtividade se manteve mesmo perdendo um recurso, isso mostrou que o conhecimento do membro que saiu pode ser compensado por outro 3 membros da equipe. Esse fato pode ser justificado pois todos estejam participando ativamente de alguns sprints. Nesse caso, foi de aproximadamente três considerando que o membro mais recente que permaneceu na equipe tinha entrado na sprint 3. Alem de mostrar que a maturidade de estimativas vem naturalmente quando a equipe tem melhor ideia da produtividade da mesma baseada na experiencia dela no projeto e no historio das sprints.       
 
 
 
@@ -348,7 +368,7 @@ Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 pa
 Um dos objetivos da implantação do SCRUM era transferir o conhecimento de OSC para os outros membros da equipe, isso pode ser medido comparando o numero de tarefas concluídas por ele sobre esse assunto durante os sprint e quantas tarefas desse assunto foram concluídas pelo resto do time que é mostrado na tabela~\ref{tabela:transConh} .
 
 \begin{table}[htbp]
-\caption{Transferencia de Conhecimento}
+\caption{Transferência de Conhecimento}
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
@@ -409,7 +429,11 @@ O inicio e termino das sprint foram ajustados para eventos externos que poderiam
 Com essa informação, foi alterado que o inicio das sprints para o final da uma reunião quando o backlog do produto estaria atualizado com as ultimas informações desse evento externo e termino de uma sprint para o inicio dessa reunião para que os resultados da sprint pudessem ser mostrados na reunião. Com isso, o ciclo das sprint se tornou variável  entre 14 e 16 dias. Apesar de não ter a mesma quantidade de dias em cada sprint,  conciliar as datas das sprint com essas reunião externa ajudou muito a manter o backlog do produto atualizado com os objetivos dos cliente e evitou que as sprints tivessem que ser canceladas por algum fato de vinha da reunião do GERAN~\cite{GERAN2010} ou não atendessem a necessidade do cliente final .
 \section{Conclusão}
 \label{conclusao} 
-O problema levantados no inicio da implantação do SCRUM foram resolvidos de forma satisfatória com o primeiro ciclo como foi demostrado na seção~\ref{primeiro}. Isso ajudou a convencer a alta gerencia de ganhos dessa metodologia. Consequentemente outros projetos começaram a utiliza-lo também. Com o amadurecimento da equipe e com o maior conhecimento por meio de treinamento, algumas mudanças para melhorar a implementação foram sugeridos no segundo ciclo. Isso demostra que pode-se adaptar o SCRUM para a realidade da empresa desde que todos estejam conscientes como o SCRUM funciona e que essas otimizações corrigiam problemas que o time detectou nas reuniões de retrospectiva da sprint.Alem disso, o SM deve concordar com essas mudanças  e que elas não comprometam os princípios do SCRUM. 
+O problema levantados no inicio da implantação do SCRUM foram minimizados de forma satisfatória com o primeiro ciclo como foi demostrado na seção~\ref{primeiro}. A equipe teve que mostra em apresentações internas o processo para outros times para divulgar a ideia. Isso ajudou a convencer a alta gerencia de ganhos dessa metodologia. Outro ponto possito que outros projetos começaram a utiliza-lo também devido as bons resultados desse teste. Com o amadurecimento da equipe e com o maior conhecimento por meio de treinamento, algumas mudanças para melhorar a implementação foram sugeridos no segundo ciclo. Isso demostra que pode-se adaptar o SCRUM para a realidade da empresa desde que todos estejam conscientes como o SCRUM funciona e que essas otimizações corrigiam problemas que o time detectou nas reuniões de retrospectiva da sprint.Alem disso, o SM deve concordar com essas mudanças  e que elas não comprometam os princípios do SCRUM. 
+
+Apesar de ter sido analisado uma base histórica relevante de dois anos de aplicação do SCRUM contando com mais de 20 ciclos de sprint, as analises foram feitas em um único projeto. Para melhor validação do benefícios de SCRUM em uma ambiente de pesquisa, deve-se aplicar os conhecimento descritos aqui em outros projetos similares. Então verificar se os resultados são alcançados nesse projetos também.
+
+Como tópico futuro, poderia analisar com mais detalhes como definir os critérios de entregas nas tarefas de simulação e de códigos na revisão de sprint. Nesse projeto, esse critérios não foram claros e isso deve ser otimizado em um novo ciclo de optimização do processo. Outra sugestão seria analisar a separação do backlog de simulação e de código e tratar cada um deles em ciclos de vida diferentes e se isso ajudaria no SCRUM. Outro aspecto que poderia ser abordado era criar testes unitários e de regressão para o produto entregue e teste de validação das simulações e como isso deveria ser integrado ao processo SCRUM de forma a aumentar a qualidade do produto entregue em cada ciclo.
 
 
 \bibliographystyle{sbc}
