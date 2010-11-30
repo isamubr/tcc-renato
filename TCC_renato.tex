@@ -38,9 +38,9 @@ Resultados da aplicação da metodologia ágil SCRUM no desenvolvimento de novas fu
 
 \section{Introdução}
 \label{intro}
-O instituto de pesquisa Indt tem varias linhas de pesquisa e um deles é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projeto definidos  para testar o metodologia ágil SCRUM ao ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível. Importante que para esse projeto, os clientes requisitam resultados de simulação, o código para a geração desses resultados não é analisado pelo cliente. 
+O instituto de pesquisa Indt tem varias linhas de pesquisa e uma delas é um simulador dinâmico\cite{blueBook} em GSM que foi um dos projetos definidos  para testar a metodologia ágil SCRUM no ambiente de pesquisa na unidade de Brasília para avaliar se isso traria vantagens em relação a forma de desenvolvimento na época. Foram levantados os problemas para justificar e verificar se o SCRUM poderia ser uma solução possível.
 
-Esse artigo primeiro mostra a motivação na seção~\ref{motivacao} e comente um pouco sobre o simulações e suas linhas de pesquisa na seção~\ref{Sims}. Uma breve descrição de algumas metodologias e com enfase no SCRUM parece na seção~\ref{metodologias}. Detalhamentos e resultados da implantação do SCRUM no projeto é mostrado na seção~\ref{implementacao}. Por fim, uma conclusão é mostrada na seção~\ref{conclusao}
+Esse artigo primeiro comenta um pouco sobre as simulações e as linhas de pesquisa na seção~\ref{Sims} e a motivação na seção~\ref{motivacao}. Apresenta uma breve descrição de algumas metodologias e com enfase no SCRUM na seção~\ref{metodologias}. Detalhamentos e resultados da implantação do SCRUM no projeto é mostrado na seção~\ref{implementacao}. Por fim, uma conclusão é mostrada na seção~\ref{conclusao}
 
 
 \section{Detalhes do projeto e o simulador sistêmico}
@@ -49,7 +49,7 @@ O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece 
 
 \begin{itemize}
 
-\item OSC: é uma evolução nos canais de voz na GSM para que dois usuários possam usar o mesmo canal simultaneamente.Para isso é usando técnicas de dois canais ortogonais e tecnicas de eliminação de interferência.\cite{GSMevo} \cite{newBlueBook}
+\item OSC: é uma evolução nos canais de voz na rede GSM para que dois usuários possam usar o mesmo canal simultaneamente. Para isso é usado técnicas de canais ortogonais e técnicas de eliminação de interferência.\cite{GSMevo} \cite{newBlueBook}
 
 \item EGPRS2: EGPRS2 é a evolução da rede de dados na tecnologia GSM, a figura~\ref{Figura:EGPRS2} mostra um breve histórico dessa evolução e a quantidade de dados máxima que cada evolução prevê para um usuário e quais os modulações foram usadas.\cite{egprs2}
 
@@ -67,24 +67,24 @@ O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece 
 	\end{center}
 \end{figure}
 
-Os resultados dessas linhas de pesquisa são usados principalmente para os dois casos. O principal uso é na padronização que é fornecer resultados para as reuniões de padronização denominada GERAN\cite{GERAN2010} que alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas em artigos de congresso recetmen forma mostrados na conferencia VTC com\cite{GSMevo} e  \cite{DFRHR} e no ITS com \cite{egprs2} e \cite{oscITS}.
+Os resultados dessas linhas de pesquisa são usados principalmente para dois casos. O principal uso é na padronização que fornece resultados para as reuniões de padronização denominada GERAN\cite{GERAN2010}. Alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas. Recentemente, os resultados foram apresentados no congresso VTC \cite{GSMevo}   \cite{DFRHR} e no ITS  \cite{egprs2} \cite{oscITS}.
 
 Sendo assim, a principal entrega para os clientes do projeto são os resultados de simulação consequentemente o código do simulador feito em c++ e mudanças desse código para gerar novos resultados desejados tem pouca importância para o cliente final e como o simulador tem mais de 5 anos, a qualidade do código e documentação dele foi decaindo . Isso gerou algumas dificuldade nas sprints executadas e isso vai ser abordado nos seções posteriores.  
 
 \section{Motivação e objetivo}
 \label{motivacao}
-A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade. A parte do GSM que seria atualizada para a versão EGPRS2, originalmente somente um pesquisador iria ficar responsável e uma atualização do canal de voz ficaria responsável por apenas outro um pesquisador. Normalmente a equipe era formada por quatro pesquisadores e cada um ficava com uma funcionalidade.Isso gerava vários problemas:
+A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade e não havia troca de informação entre os responsáveis dos tópicos sobre sua funcionalidade. Isso gerava vários problemas:
 
 \begin{itemize}
 
-\item Quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ele se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe
+\item Quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ela se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe
 
 \item Conhecimento ficava muito centralizado pois cada tópico ficava com apenas um desenvolvedor
 
 \item Alocação de recuso muito pouco flexível
  
 \end{itemize}
-  Com base nesse pontos falhos no projeto, foi implantado o SCRUM e ele seria avaliado se ele poderia resolver esse pontos e trazer outras melhorias se possível. Na  seção~\ref{implementacao} vai ser mostrado como foi implantado e se esses problemas inicias foram sanados e como foi feito e com os artefatos do SCRUM foram usados para avaliar isso.
+  Com base nesse pontos falhos no projeto, foi implantado o SCRUM e ele seria avaliado se ele poderia resolver esse pontos e trazer outras melhorias se possível. Na  seção~\ref{implementacao} vai ser mostrado como foi implantado e como os artefatos do SCRUM foram usados para avaliar se os objetivos foram alcançados.
 
 
 \section{Metodologias Desenvolvimento} 
@@ -92,7 +92,7 @@ A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada n
 Esse tópico mostra alguns tipos de processo e suas motivações e como pode ser usados e cometários de como eles podem ser usado para o desenvolvimento de software.
 %\label{sec:firstpage}
 \subsection{Produção em Massa e Produção de um novo produto}
-Para a construção de um produto, pode-se definir um processo de linha de produção de produção em massa. Apos de construído alguns exemplares e verificar que os requisitos foram alcançados, a linha esta montada e a partir disso, a grau de incerteza para a produção de varias unidades é baixo já que o processo foi medido na implantação da linha e variação de um produto para outro deve ser minima. Mas imagine se nesse processo fosse possível que cada produto produzido tivesse varias diferenças e a linha deveria ser reconfigurada a cada nova unidade, isso ser considerado como um novo produto e os tempos e medições que foram feitas não seriam validas. A tabela~\ref{tabela:Comparativo} mostra as diferenças de uma linha de montagem estabilizada e o desenvolvimento  de um novo produto.\cite{agileBook}
+Para a construção de um produto, pode-se definir um processo de linha de produção de produção em massa. Após a construção de alguns exemplares e verificar que os requisitos foram alcançados, a linha está montada. A partir disso, o grau de incerteza para a produção de varias unidades é baixo já que o processo foi medido na implantação da linha e variação de um produto para outro deve ser minima. Mas imagine se nesse processo fosse possível que cada produto produzido tivesse varias diferenças e a linha deveria ser reconfigurada a cada nova unidade. Assim, cada unidade produzida seria considerada como um novo produto e os tempos e medições que foram feitas não seriam validos. A tabela~\ref{tabela:Comparativo} mostra as diferenças de uma linha de montagem estabilizada e o desenvolvimento  de um novo produto.\cite{agileBook}
 
 \begin{table}[htbp]
 \begin{center}
@@ -111,7 +111,7 @@ Para a construção de um produto, pode-se definir um processo de linha de produçã
 \end{center}
 \end{table}
 
-Considerando essas diferenças é difícil tentar modelar um processo de desenvolvimento de software. Existem muita incerteza como novas tenologias ou arquiteturas que dificultam mapear isso num processo de produção em massa. Outro aspecto que dificuldade que a especificação inicial dificilmente vai ser manter  ate o final do processo. Uma lista de motivos que explica esse dificuldade \cite{fakeit}
+Considerando essas diferenças é difícil tentar modelar um processo de desenvolvimento de software como uma produção em massa. Existem muita incertezas como novas tenologias ou arquiteturas que dificultam mapear isso num processo de produção em massa. Outro aspecto que dificulta é que a especificação inicial dificilmente vai ser manter até o final do processo. Uma lista de motivos que mostra essa dificuldade \cite{fakeit}
 \begin{itemize}
 
 \item Os cliente não sabem o que querem
@@ -120,19 +120,19 @@ Considerando essas diferenças é difícil tentar modelar um processo de desenvolvi
 
 \item Vários detalhes somente ficam claros no meio do processo
 
-\item Os detalhes poder ser muito complexos para as pessoas
+\item Os detalhes podem ser muito complexos para as pessoas
 
-\item Como o processo do produto, o cliente muda os requisitos
+\item Com o progresso do produto, o cliente muda os requisitos
 
 \item Fatores externos pode exigir mudanças no produto
  
 \end{itemize}
 
-Considerando como o modelo de produção em massa foi pensado e a natureza do desenvolvimento de software, todo novo produto deve ser tratado pela equipe como um novo produto. Mas isso não resolve o problema mas somente elimina uma metodologia. Com a aumento da importância do desenvolvimento de software em varias áreas, foi necessário criar um processo para esses novos produto 
+Considerando como o modelo de produção em massa foi pensado e a natureza do desenvolvimento de software, todo novo software deve ser tratado pela equipe como um novo produto. Mas isso não resolve o problema mas somente elimina uma metodologia. Com a aumento da importância do desenvolvimento de software em varias áreas, foi necessário criar um processo para isso. 
 
 \subsection{Metodologia Interativa e Adaptativa}
 
-O processo interativo é uma forma de construir software o ciclo de vida é constituindo de vários ciclo de interação. Essas interações pode ser considerados como um mini projeto que tem as atividades de analise de requisitos, design, programação e teste. Baseado em \cite{IIDbrief}, esse processo se originou na ideia,proposta em 1930 por Walter
+O processo interativo é uma forma de construir software. O ciclo de vida dele é constituindo de vários ciclos de interação. Cada interação pode ser considerada como um mini projeto que tem as atividades de analise de requisitos, design, programação e teste. Baseado em \cite{IIDbrief}, esse processo se originou na ideia,proposta em 1930 por Walter
 Shewhart\cite{shewhart1986statistical}, do PDSA(plan-do-study-act) que eram ciclos de melhoramento da qualidade. Esse ciclo é mostrado na figura~\ref{Figura:PDSA} 
 
 \begin{figure}[htbp]
@@ -148,7 +148,7 @@ Shewhart\cite{shewhart1986statistical}, do PDSA(plan-do-study-act) que eram cicl
 
 
 
-A partir dessa ideia inicial , houve uma amadurecimento através dos anos e aplicações em projetos como aviões supersônicos como  X-15 e de software. Assim, foi formalizado o  processo interativo e incremental(IID) pode ser descrito visto na figura~\ref{Figura:IID}( \cite{RUP2005}). 
+A partir dessa ideia inicial , houve uma amadurecimento através dos anos e aplicações em projetos como aviões supersônicos como  X-15 e de software. Assim, foi formalizado o  processo interativo e incremental(IID) mostrado na figura~\ref{Figura:IID}( \cite{RUP2005}). 
 
 \begin{figure}[htbp]
   
@@ -169,9 +169,9 @@ Um erro comum é considerar que interativo e incremental são sinônimos. Interativ
  
  \begin{itemize}
 
-\item IID orientado a riscos: A prioridade é feita pela tarefas mais difícil que tem maior risco pois resolver esse problemas no começo é mais vantajoso. 
+\item IID orientado a riscos: A prioridade é feita pela tarefas mais difíceis que tem maior risco. Sendo assim, resolver esse problemas no começo é mais vantajoso. 
 
-\item IID orientado ao cliente: O Cliente define a ordem de prioridade baseado no maior valor negócios da lista de tarefas.
+\item IID orientado ao cliente: O Cliente define a ordem de prioridade baseado no maior valor negócios na lista de tarefas.
  
 \end{itemize}
 
@@ -198,9 +198,19 @@ valorizamos mais os itens à esquerda.\\ \hline
 \end{center}
 \end{table}
 
-Alem disso, a Agile Alliance definiu doze princípios\cite{AgileAlliance} que de maneira resumida define que a satisfação do cliente tem a maior prioridade, 
-que as equipes de desenvolvimento , negócios e cliente deve sempre manter contato durante o  desenvolvimento, que a conversa cara a cara seria o método ideal 
-desse contato, que o produto de software deve ser entregue com frequência e que mudanças nos requisitos devam ser bem vindos. 
+Alem disso, a Agile Alliance definiu doze princípios\cite{AgileAlliance} que de maneira resumida define:
+ \begin{itemize}
+
+\item Satisfação do cliente tem a maior prioridade. 
+
+\item As equipes de desenvolvimento , negócios e cliente deve sempre manter contato durante o  desenvolvimento.
+ 
+\item A conversa cara a cara seria o método ideal de contato entre os envolvidos.
+\item O produto de software deve ser entregue com frequência.
+\item Mudanças nos requisitos devem ser bem vindos.
+\end{itemize}
+
+
 \subsection{Scrum}
 \label{SCRUMmodel}
 
@@ -217,7 +227,7 @@ Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas caracterí
 
 \end{itemize}
 
-Apesar da primeira comparação de o desenvolvimento com o jogo de rugby ser anterior a ele, o artigo~\cite{Schwaber95scrumdevelopment} comparou os métodos de desenvolvimentos disponíveis em 1995 como o waterfall, espiral e interativo e mostrou como os problemas inerentes deles poderiam ser resolvidos atrases dessa nova proposta que foi denominada SCRUM. Esse mesmo autor junto como Beele \cite{AgileScrum} criou um livro que foi um detalhamento desse método. Isso foi testado em varias empresas e esses aplicações praticas do método forma mostra em  \cite{AgileMS}. Atualmente, o SCRUM é mantido pela scrum.org. O documento oficial é o SCRUM Guide ~\cite{scrumguide} criado por Ken Schwaber e Jeff Sutherland. Existe grande interesse em divulgar o método pois esse guida esta traduzido no site deles para 15 idiomas e a explicação do SCRUM desse item é baseado nesse guia\cite{scrumguide}.
+Apesar da primeira comparação do desenvolvimento com o jogo de rugby ser anterior, o artigo~\cite{Schwaber95scrumdevelopment} comparou os métodos de desenvolvimentos disponíveis em 1995, mostrou os problemas inerentes e como poderiam ser resolvidos com a nova proposta que foi denominada SCRUM. Esse mesmo autor junto como Beele \cite{AgileScrum} criou um livro que foi um detalhamento desse método. Isso foi testado em varias empresas e esses aplicações praticas do método forma mostra em  \cite{AgileMS}. Atualmente, o SCRUM é mantido pela scrum.org. O documento oficial é o SCRUM Guide ~\cite{scrumguide} criado por Ken Schwaber e Jeff Sutherland. Existe grande interesse em divulgar o método pois esse guida esta traduzido no site deles para 15 idiomas e a explicação do SCRUM desse item é baseado nesse guia\cite{scrumguide}.
 
 \subsubsection{Papeis no SCRUM}
 Foram definidos alguns papeis e as responsabilidade de cada um deles:
