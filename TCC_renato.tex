@@ -40,16 +40,16 @@ Resultados da aplicação da metodologia ágil SCRUM no desenvolvimento de novas fu
 \label{intro}
 O instituto de pesquisa Indt tem varias linhas de pesquisa e uma delas é um simulador dinâmico\cite{blueBook} em GSM. Esse foi o  projeto definido  para testar a metodologia ágil SCRUM no ambiente de pesquisa na unidade de Brasília. Para avaliar o método, foram levantados os problemas da época e apos um tempo seria verificado se o SCRUM poderia ser uma solução possível.
 
-Esse artigo primeiro comenta um pouco sobre as simulações e as linhas de pesquisa na seção~\ref{Sims} e a motivação na seção~\ref{motivacao}. Apresenta uma breve descrição de algumas metodologias e com enfase no SCRUM na seção~\ref{metodologias}. Detalhamentos e resultados da implantação do SCRUM no projeto é mostrado na seção~\ref{implementacao}. Por fim, uma conclusão é mostrada na seção~\ref{conclusao}.
+Esse artigo primeiro comenta um pouco sobre as simulações e as linhas de pesquisa na seção~\ref{Sims} e a motivação na seção~\ref{motivacao}. Apresenta uma breve descrição de algumas metodologias e com ênfase no SCRUM na seção~\ref{metodologias}. Detalhamentos e resultados da implantação do SCRUM no projeto é mostrado na seção~\ref{implementacao}. Por fim, uma conclusão é mostrada na seção~\ref{conclusao}.
 
 
 \section{Detalhes do projeto e o simulador sistêmico}
 \label{Sims}
-O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece resultados de simulações sistêmicas de uma rede celular GSM.  Na época da aplicação do SCRUM existia duas linhas de pesquisa:
+O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece resultados de simulações sistêmicas de uma rede celular GSM.  Na época da aplicação do SCRUM existiam duas linhas de pesquisa:
 
 \begin{itemize}
 
-\item OSC: é uma evolução nos canais de voz na rede GSM para que dois usuários possam usar o mesmo canal simultaneamente. Para isso é usado técnicas de canais ortogonais e técnicas de eliminação de interferência.\cite{GSMevo} \cite{newBlueBook}
+\item OSC: é uma evolução nos canais de voz na rede GSM para que dois usuários possam usar o mesmo canal simultaneamente. Para isso são usadas técnicas de canais ortogonais e técnicas de eliminação de interferência.\cite{GSMevo} \cite{newBlueBook}
 
 \item EGPRS2: EGPRS2 é a evolução da rede de dados na tecnologia GSM, a figura~\ref{Figura:EGPRS2} mostra um breve histórico dessa evolução e a quantidade de dados máxima que cada evolução prevê para um usuário e quais as modulações foram usadas.\cite{egprs2}
 
@@ -69,22 +69,22 @@ O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece 
 
 Os resultados dessas linhas de pesquisa são usados principalmente para dois casos. O principal uso é na padronização que fornece resultados para as reuniões de padronização denominada GERAN\cite{GERAN2010}. Alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas. Recentemente, os resultados foram apresentados no congresso VTC \cite{GSMevo}   \cite{DFRHR} e no ITS  \cite{egprs2} \cite{oscITS}.
 
-Sendo assim, a principal entrega para os clientes do projeto são os resultados de simulação. O código do simulador feito em c++ tem pouca importância para o cliente final. O simulador tem mais de 5 anos e a qualidade do código e documentação dele foi decaindo com o tempo.  
+Sendo assim, os resultados de simulação, analises e artigos científicos são os artefatos entregues ao cliente. O código do simulador feito em c++ tem pouca importância para o cliente final. O simulador tem mais de 5 anos e a qualidade do código e documentação dele foi decaindo com o tempo pois não são o foco do projeto.  
 
 \section{Motivação e objetivo}
 \label{motivacao}
-A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade e não havia troca de informação entre os responsáveis dos tópicos sobre sua funcionalidade. Isso gerava vários problemas:
+Usualmente antes da implementação da metodologia SCRUM, a forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade e não havia troca de informação entre os responsáveis dos tópicos sobre sua funcionalidade. Isso gerava vários problemas:
 
 \begin{itemize}
 
-\item Quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ela se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe
+\item Quando uma pessoa da equipe saía do projeto , a funcionalidade atrelada a ela se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe
 
 \item Conhecimento ficava muito centralizado pois cada tópico ficava com apenas um desenvolvedor
 
-\item Alocação de recuso muito pouco flexível
+\item Alocação de recuso pouco flexível
  
 \end{itemize}
-  Com base nesse pontos falhos no projeto, foi implantado o SCRUM e ele seria avaliado se poderia resolver esse pontos e trazer outras melhorias se possível. Na  seção~\ref{implementacao} vai ser mostrado como foi implantado e como os artefatos do SCRUM foram usados para avaliar se os objetivos foram alcançados.
+  Com base nesse pontos falhos no projeto, foi implantado o SCRUM e ele seria avaliado se poderia resolver esses pontos e trazer outras melhorias se possível. Na  seção~\ref{implementacao} vai ser mostrado como foi implantado e como os artefatos do SCRUM foram usados para avaliar se os objetivos foram alcançados.
 
 
 \section{Metodologias Desenvolvimento} 
