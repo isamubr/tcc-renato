@@ -40,7 +40,7 @@ Resultados da aplicação da metodologia ágil SCRUM no desenvolvimento de novas fu
 \label{intro}
 O instituto Nokia de de Tecnologia tem várias linhas de pesquisas,uma delas, objeto do presente artigo, é um simulador dinâmico\cite{blueBook} em GSM, escolhido para testar a metodologia ágil SCRUM no ambiente de pesquisa na unidade de Brasília. Para avaliar o método, foi detectado os problemas do projeto no segundo semestre de 2008 e a cada semestre seria verificado se o SCRUM poderia ser uma solução possível.
 
-Este artigo apresentará, na seção~\ref{Sims}, detalhes do simulador e a motivação na seção~\ref{motivacao}. Na seção~\ref{metodologias}, apresenta uma breve descrição de algumas metodologias com ênfase no SCRUM. Na seção~\ref{implementacao}, detalhamentos e os resultados da implantação do SCRUM no projeto são mostrados. Por fim na seção~\ref{conclusao}, uma conclusão é mostrada .
+Este artigo apresentará, na seção~\ref{Sims}, detalhes do simulador e a motivação na seção~\ref{motivacao}. Na seção~\ref{metodologias}, apresenta uma breve descrição de algumas metodologias com ênfase no SCRUM. Na seção~\ref{implementacao}, detalhamentos e os resultados da implantação do SCRUM no projeto são mostrados. Por fim na seção~\ref{conclusao}, uma conclusão é mostrada.
 
 
 \section{Detalhes do projeto e o simulador sistêmico}
@@ -67,7 +67,7 @@ O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece 
 	\end{center}
 \end{figure}
 
-Os resultados dessas linhas de pesquisa são usados principalmente para dois casos. O primeiro caso é na padronização que fornece resultados para as reuniões de padronização denominada GERAN\cite{GERAN2010} e alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. O segundo caso é em publicações cientificas que os resultados foram apresentados no congresso VTC \cite{GSMevo}   \cite{DFRHR} e no ITS  \cite{egprs2} \cite{oscITS}.
+Os resultados dessas linhas de pesquisa são usados, principalmente, para dois casos. O primeiro caso é na padronização que fornece resultados para as reuniões de padronização denominada GERAN\cite{GERAN2010} e alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. O segundo caso é em publicações cientificas que os resultados foram apresentados no congresso VTC \cite{GSMevo}   \cite{DFRHR} e no ITS  \cite{egprs2} \cite{oscITS}.
 
 Sendo assim, os resultados de simulação, análises e artigos científicos são os artefatos entregues ao cliente. Porém, o código do simulador feito em c++ tem pouca importância para esse cliente. Além disso, o simulador tem mais de 5 anos e a qualidade do código e documentação dele decaiu com o tempo.  
 
@@ -84,15 +84,15 @@ Antes da implementação da metodologia SCRUM, a forma do desenvolvimento do simul
 \item A alocação de recurso ficava pouco flexível.
  
 \end{itemize}
-  Com base nesses pontos falhos no projeto, foi implantado o SCRUM para verificar se seria possível resolver tais problemas. Na  seção~\ref{implementacao} vai ser mostrado como foi implantado e como os artefatos do SCRUM foram usados para avaliar se os objetivos foram alcançados.
+  Com base nesses pontos falhos no projeto, foi implantado o SCRUM para verificar se seria possível resolver tais problemas. Na  seção~\ref{implementacao}, vai ser mostrado como foi implantado o SCRUM e como os artefatos dele foram usados para avaliar se os objetivos foram alcançados.
 
 
 \section{Metodologias Desenvolvimento} 
 \label{metodologias}
-Esse tópico mostra alguns tipos de processo e suas motivações e cometários de como eles podem ser usado para o desenvolvimento de software.
+Esse tópico mostra alguns tipos de processo e suas motivações e comentários de como eles podem ser usados para o desenvolvimento de software.
 %\label{sec:firstpage}
 \subsection{Produção em Massa e Produção de um novo produto}
-Para a construção de um produto, pode-se definir um processo de linha de produção de produção em massa. Após a construção de alguns exemplares e verificar que os requisitos foram alcançados, a linha está montada. A partir disso, o grau de incerteza para a produção de varias unidades é baixo já que o processo foi medido na implantação da linha e variação de um produto para outro deve ser minima. Mas imagine se nesse processo, fosse possível que cada produto produzido tivesse varias diferenças e a linha deveria ser reconfigurada a cada nova unidade. Assim, cada unidade produzida seria considerada como um novo produto e os tempos e medições que foram feitas não seriam validos. A tabela~\ref{tabela:Comparativo} mostra as diferenças de uma linha de montagem estabilizada e o desenvolvimento  de um novo produto.\cite{agileBook}
+Para a construção de um produto, pode-se definir um processo de linha de produção de produção em massa. Após a construção de alguns exemplares e verificar que os requisitos foram alcançados, a linha está montada. A partir disso, o grau de incerteza para a produção de várias unidades é baixo, já que o processo foi medido na implantação da linha e a variação de um produto para outro deve ser mínima. Mas imagine se nesse processo, fosse possível que cada produto produzido tivesse várias diferenças e a linha fosse reconfigurada a cada nova unidade. Assim, cada unidade produzida seria considerada como um novo produto, e os tempos e medições que foram feitos não seriam válidos. A tabela~\ref{tabela:Comparativo} mostra as diferenças de uma linha de montagem estabilizada e o desenvolvimento  de um novo produto.\cite{agileBook}
 
 \begin{table}[htbp]
 \begin{center}
@@ -111,10 +111,10 @@ Para a construção de um produto, pode-se definir um processo de linha de produçã
 \end{center}
 \end{table}
 
-Considerando essas diferenças é difícil tentar modelar um processo de desenvolvimento de software como uma produção em massa. Existem muita incertezas como novas tenologias ou arquiteturas que dificultam mapear isso num processo de produção em massa. Outro aspecto que dificulta é que a especificação inicial dificilmente vai ser manter até o final do processo. Uma lista de motivos que mostra essa dificuldade \cite{fakeit}
+Considerando essas diferenças, é difícil tentar modelar um processo de desenvolvimento de software como uma produção em massa. Existem muitas incertezas como novas tenologias ou arquiteturas que dificultam mapear isso num processo de produção em massa. Outro aspecto que dificulta é que a especificação inicial dificilmente vai ser manter até o final do processo. Abaixo, uma lista de motivos mostra essa dificuldade \cite{fakeit}
 \begin{itemize}
 
-\item Os cliente não sabem o que querem
+\item Os clientes não sabem o que querem
 
 \item Eles tem dificuldade de expressar tudo que querem
 
@@ -124,16 +124,16 @@ Considerando essas diferenças é difícil tentar modelar um processo de desenvolvi
 
 \item Com o progresso do produto, o cliente muda os requisitos
 
-\item Fatores externos pode exigir mudanças no produto
+\item Fatores externos podem exigir mudanças no produto
  
 \end{itemize}
 
-Considerando como o modelo de produção em massa foi pensado e a natureza do desenvolvimento de software, todo novo software deve ser tratado pela equipe como um novo produto. Mas isso não resolve o problema mas somente elimina uma metodologia. Com a aumento da importância do desenvolvimento de software em varias áreas, foi necessário criar um processo para isso. 
+Considerando como o modelo de produção em massa foi pensado e a natureza do desenvolvimento de software, todo novo software deve ser tratado pela equipe como um novo produto. Contudo, isso não resolve o problema mas somente elimina uma metodologia. Com a aumento da importância do desenvolvimento de software em varias áreas, foi necessário criar um processo para isso e algumas sugestões serão mostradas nos próximos itens. 
 
 \subsection{Metodologia Interativa e Adaptativa}
 
-O processo interativo é uma forma de construir software. O ciclo de vida dele é constituindo de vários ciclos de interação. Cada interação pode ser considerada como um mini projeto que tem as atividades de analise de requisitos, design, programação e teste. Baseado em \cite{IIDbrief}, esse processo se originou na ideia,proposta em 1930 por Walter
-Shewhart\cite{shewhart1986statistical}, do PDSA(plan-do-study-act) que eram ciclos de melhoramento da qualidade. Esse ciclo é mostrado na figura~\ref{Figura:PDSA} 
+O processo interativo é uma forma de construir software. O ciclo de vida dele é constituído de vários ciclos de interação. Cada interação pode ser considerada como um mini projeto que tem as atividades de análise de requisitos, design, programação e teste. Baseado em \cite{IIDbrief}, esse processo se originou na ideia proposta em 1930 por Walter
+Shewhart\cite{shewhart1986statistical}, do PDSA(plan-do-study-act), que eram ciclos de melhoramento da qualidade. Esse ciclo é mostrado na figura~\ref{Figura:PDSA} 
 
 \begin{figure}[htbp]
   
@@ -148,7 +148,7 @@ Shewhart\cite{shewhart1986statistical}, do PDSA(plan-do-study-act) que eram cicl
 
 
 
-A partir dessa ideia inicial , houve uma amadurecimento através dos anos e aplicações em projetos como aviões supersônicos como  X-15 e de software. Assim, foi formalizado o  processo interativo e incremental(IID) mostrado na figura~\ref{Figura:IID}( \cite{RUP2005}). 
+À partir dessa ideia inicial, houve uma amadurecimento através dos anos e nas aplicações em projetos, como aviões supersônicos e de software. Assim, foi formalizado o  processo interativo e incremental(IID) mostrado na figura~\ref{Figura:IID}( \cite{RUP2005}). 
 
 \begin{figure}[htbp]
   
@@ -161,10 +161,10 @@ A partir dessa ideia inicial , houve uma amadurecimento através dos anos e aplic
 	\end{center}
 \end{figure}
 
-Comparando as figuras~\ref{Figura:PDSA} e ~\ref{Figura:IID}, nota-se grande semelhança. As diferenças são que IID existe uma fase inicial mais formal e uma fase de termino do projeto mais clara também.
+Comparando as figuras~\ref{Figura:PDSA} e~\ref{Figura:IID}, nota-se grande semelhança. As diferenças são que IID existe uma fase inicial mais formal e uma fase de término do projeto mais clara também.
 
 
-Um erro comum é considerar que interativo e incremental são sinônimos. Interativo vem dos ciclos repetidos de desenvolvimento e o incremental é para definir aumento do escopo em cada ciclo. O tamanho de cada interação vai depender de projeto para projeto mas o normal atualmente são de uma a seis semanas.\cite{agileBook}. Alem disso, a priorização do IID pode ser feita :
+Um erro comum é considerar que interativo e incremental são sinônimos. Interativo vem dos ciclos repetidos de desenvolvimento e o incremental é para definir aumento do escopo em cada ciclo. O tamanho de cada interação vai depender de projeto para projeto, mas o normal, atualmente, são de uma a seis semanas.\cite{agileBook}. Além disso, a priorização do IID pode ser feita:
 
  
  \begin{itemize}
@@ -175,7 +175,7 @@ Um erro comum é considerar que interativo e incremental são sinônimos. Interativ
  
 \end{itemize}
 
-Alem disso em ambos os casos de priorização , esses lista de prioridade deve ser revista em cada interação.
+Além disso, em ambos os casos de priorização, essa lista de prioridade deve ser revista em cada interação.
 
 \subsection{Método ágil}
 
@@ -198,12 +198,12 @@ valorizamos mais os itens à esquerda.\\ \hline
 \end{center}
 \end{table}
 
-Alem disso, a Agile Alliance definiu doze princípios\cite{AgileAlliance} que de maneira resumida define:
+Além disso, a Agile Alliance definiu doze princípios\cite{AgileAlliance} que de maneira resumida define:
  \begin{itemize}
 
 \item Satisfação do cliente tem a maior prioridade. 
 
-\item As equipes de desenvolvimento , negócios e cliente deve sempre manter contato durante o  desenvolvimento.
+\item As equipes de desenvolvimento, negócios e cliente devem sempre manter contato durante o desenvolvimento.
  
 \item A conversa cara a cara seria o método ideal de contato entre os envolvidos.
 \item O produto de software deve ser entregue com frequência.
@@ -214,30 +214,30 @@ Alem disso, a Agile Alliance definiu doze princípios\cite{AgileAlliance} que de 
 \subsection{Scrum}
 \label{SCRUMmodel}
 
-Esse método tem uma grande enfase em equipe auto-organizáveis. Algumas características importantes\cite{agileBook}
+Esse método tem uma grande ênfase em equipe auto-organizáveis. Algumas características importantes\cite{agileBook}
 \begin{itemize}
 
 \item Equipe auto-gerida e auto-organizável
 
 \item Reuniões diárias entre a equipe.
 
-\item Ciclos de interação com tempo definido( normalmente 30 dias)
+\item Ciclos de interação com tempo definido(normalmente 30 dias)
 
 \item Cada interação tem o planejamento redefinido pelos interesses dos clientes
 
 \end{itemize}
 
-Apesar da primeira comparação do desenvolvimento com o jogo de rugby ser anterior, o artigo~\cite{Schwaber95scrumdevelopment} comparou os métodos de desenvolvimentos disponíveis em 1995, mostrou os problemas inerentes e como poderiam ser resolvidos com a nova proposta que foi denominada SCRUM. Esse mesmo autor junto como Beele \cite{AgileScrum} criou um livro com um detalhamento desse método. Isso foi testado em varias empresas e esses aplicações praticas do método foram mostradas em  \cite{AgileMS}. Atualmente, o SCRUM é mantido pela scrum.org. O documento oficial é o SCRUM Guide ~\cite{scrumguide} criado por Ken Schwaber e Jeff Sutherland. Existe grande interesse em divulgar o método, pois esse guia está traduzido para 15 idiomas. A explicação sobre SCRUM desse item é baseado nesse guia\cite{scrumguide}.
+Apesar da primeira comparação do desenvolvimento com o jogo de rugby ser anterior, o artigo~\cite{Schwaber95scrumdevelopment} comparou os métodos de desenvolvimentos disponíveis em 1995, mostrou os problemas inerentes e como poderiam ser resolvidos com a nova proposta que foi denominada SCRUM. Esse mesmo autor junto como Beele \cite{AgileScrum} criou um livro com um detalhamento desse método. Isso foi testado em várias empresas e essas aplicações praticas do método foram mostradas em  \cite{AgileMS}. Atualmente, o SCRUM é mantido pela scrum.org. O documento oficial é o SCRUM Guide ~\cite{scrumguide} criado por Ken Schwaber e Jeff Sutherland. Existe grande interesse em divulgar o método, pois esse guia está traduzido para 15 idiomas. A explicação sobre SCRUM desse item é baseado nesse guia\cite{scrumguide}.
 
-\subsubsection{Papeis no SCRUM}
-Foram definidos alguns papeis e as responsabilidade de cada um deles:
+\subsubsection{Papéis no SCRUM}
+Foram definidos alguns papéis e as responsabilidades de cada um deles:
 \begin{itemize}
 
 \item Scrum Master(SM): papel que garante que os valores, regras do SCRUM sejam seguidas. Responsável por optimizar junto com o time o processo e eliminar impedimentos para que o SCRUM funcione bem dentro da equipe
 
-\item Produt Owner(PO): papel responsável por gerenciar o backlog do produto. Esse papel pode ser ajudado por outras pessoas mas deve ter exercido somente por uma pessoa. Deve-se priorizar o backlog do produto e garantir que os membros da equipe estejam cientes disso. 
+\item Produt Owner(PO): papel responsável por gerenciar o backlog do produto. Esse papel pode ser ajudado por outras pessoas, mas deve ter exercido somente por uma pessoa. Deve-se priorizar o backlog do produto e garantir que os membros da equipe estejam cientes disso. 
 
-\item Time: Membros que efetivamente define como as tarefas do backlog do produto devem ser desenvolvidas. Eles se auto-organizam para isso. Responsáveis por criar o backlog da sprint. O numero recomendado é cinco a nove membros no time.
+\item Time: Membros que efetivamente define como as tarefas do backlog do produto devem ser desenvolvidas. Eles se auto-organizam para isso. Responsáveis por criar o backlog da sprint e o número recomendado é de cinco a nove membros no time.
 
 \end{itemize}
 
@@ -245,29 +245,29 @@ Foram definidos alguns papeis e as responsabilidade de cada um deles:
 \begin{itemize}
 
 \item Backlog do Produto(Product Backlog): Os requisitos do produto que o time está desenvolvendo está todo no backlog do produto. O PO é o responsável por seu conteúdo, por sua  disponibilidade e 
-por sua priorização. O Backlog do Produto evolui à medida que o produto e o ambiente em que ele será usado evoluem. O Backlog é dinâmico, no sentido de  que ele está constantemente mudando para identificar o que o produto necessita. Os itens desse backlog são chamados de historias no SCRUM. Essas historias possuem atributos de descrição, prioridade e estimativa. A prioridade é determinada por risco, valor e necessidade.  
+por sua priorização. O Backlog do Produto evolui à medida que o produto e o ambiente em que ele será usado evoluem. O Backlog é dinâmico, no sentido de  que ele está constantemente mudando para identificar o que o produto necessita. Os itens desse backlog são chamados de histórias no SCRUM. Essas histórias possuem atributos de descrição, prioridade e estimativa. A prioridade é determinada por risco, valor e necessidade.  
 
-\item Backlog da sprint(Sprint Backlog): É um subconjunto do backlog do produto que define as historias e tarefas que o time vai realizar em um ciclo de desenvolvimento(Sprint). Esse artefato é gerado no planejamento da Sprint. Somente o time pode modificar o Backlog da Sprint durante a mesma. Somente o time pode mudar o seu conteúdo ou as suas estimativas. O Backlog da Sprint é um retrato em tempo real, altamente visível do trabalho que o Time planeja efetuar durante a Sprint e ele pertence unicamente ao Time.  
+\item Backlog da sprint(Sprint Backlog): É um subconjunto do backlog do produto que define as histórias e tarefas que o time vai realizar em um ciclo de desenvolvimento(Sprint). Esse artefato é gerado no planejamento da Sprint. Somente o time pode modificar o Backlog da Sprint durante a mesma. Somente o time pode mudar o seu conteúdo ou as suas estimativas. O Backlog da Sprint é um retrato em tempo real, altamente visível do trabalho que o Time planeja efetuar durante a Sprint e ele pertence unicamente ao Time.  
 
-\item Sprint Backlog Burndown: Um gráfico da quantidade restante de trabalho do Backlog da Sprint em uma  determinada Sprint ao longo do tempo da Sprint.  
+\item Sprint Backlog Burndown: Um gráfico da quantidade restante de trabalho do Backlog da Sprint em uma  determinada Sprint ao longo do tempo da Sprint. Isso é usado pare ter um acompanhamento gráfico do estado da sprint.  
 
 \end{itemize}
 
 \subsubsection{Reuniões no SCRUM}
-As reuniões dentro do SCRUM são definidas com um tempo de duração bem definido , isso ajuda a manter o foco pois esse tempo não deve ser excedido. Exceder o tempo não pode virar rotina pois prejudica o processo. Então, o SM deve sempre controlar que o tempo das reuniões seja respeitado. As reuniões definidas pelo manual\cite{scrumguide} são:
+As reuniões dentro do SCRUM são definidas com um tempo de duração bem definido, isso ajuda a manter o foco pois esse tempo não deve ser excedido. Exceder o tempo não pode virar rotina, pois prejudica o processo. Então, o SM deve sempre controlar e respeitar o tempo das reuniões. As reuniões definidas pelo manual\cite{scrumguide} são:
 \begin{itemize}
 
 \item Planejamento Da Release: Reunião opcional para determinar planos e objetivos. Define as maiores prioridades do backlog, riscos e quais característica o o produto final vai ter ter. 
 
-\item Sprint: Um ciclo de interação completo que é composto por outras reuniões. Durante uma sprint, o SM tenta manter o objetivo e que não haja mudança durante esse tempo.O tamanho de uma sprint deve ter em torno de trinta dias. Esse tempo é considero suficiente para entregar valor ao cliente e curto para evitar que o objetivo fique obsoleto ou o projeto fique sem controle. Somente o PO tem autoridade para cancelar uma sprint antes do termino dos dias predefinidos dela. Isso acontece quando o objetivo dela fica obsoleto ou uma novo direcionamento da equipe seja necessário. Caso esse recurso for usado constantemente, demostra que o tempo de sprint é muito longo ou o escopo do projeto muda mais rápido que o tempo de sprint e esse tempo deve ser ajustado.   
+\item Sprint: Um ciclo de interação completo é composto por outras reuniões. Durante uma sprint, o SM tenta manter o objetivo e impedir qualquer mudança durante esse tempo. O tamanho de uma sprint deve ter cerca de trinta dias. Esse tempo é considerado suficiente para entregar valor ao cliente e curto para evitar que o objetivo fique obsoleto ou o projeto fique sem controle. Somente o PO tem autoridade para cancelar uma sprint antes do termino dos dias predefinidos dela. Isso acontece quando o objetivo dela fica obsoleto ou uma novo direcionamento da equipe seja necessário. Caso esse recurso for usado constantemente, demostra que o tempo de sprint é muito longo ou o escopo do projeto muda mais rápido que o tempo de sprint e esse tempo deve ser ajustado.   
 
-\subitem Planejamento da sprint(Sprint Planning): Reunião inicial dentro de uma nova sprint. O tempo usual é de oito horas para uma sprint de trinta dias. Esse planejamento pode ser dividido em duas partes. A primeira parte é para definir o que vai ser feito das historias com maior prioridade no backlog do produto. A quantidade de historias que serão inclusas no sprint é baseado nas experiencia passadas do time e eles que definem isso. As historias selecionadas pelo time para a sprint definem o objetivo da sprint.  A segunda parte é definir como vai ser implementada as historias. Durante esse planejamento, são definidas tarefas dentro de cada historia para detalhar como vai ser a implementação. Essas tarefas deve ser detalhadas ao ponto que cada uma seja concluída na máximo em um dia de trabalho. O esforço de cada tarefa pode ser votado usando o planning poker~\ref{poker}. Esse conjunto de historias e tarefas é definido como sprint backlog.
+\subitem Planejamento da sprint(Sprint Planning): Reunião inicial dentro de uma nova sprint. O tempo usual é de oito horas para uma sprint de trinta dias. Esse planejamento pode ser dividido em duas partes. A primeira é para definir o que vai ser feito das histórias com maior prioridade no backlog do produto. A quantidade de histórias que serão inclusas no sprint é baseado nas experiências passadas do time e eles que definem isso. As histórias selecionadas pelo time para a sprint definem o objetivo da sprint.  A segunda parte é definir como vai ser implementada as histórias. Durante esse planejamento, são definidas tarefas dentro de cada história para detalhar como vai ser a implementação. Essas tarefas deve ser detalhadas ao ponto que cada uma seja concluída na máximo em um dia de trabalho. O esforço de cada tarefa pode ser votado usando o planning poker~\ref{poker}. Esse conjunto de histórias e tarefas é definido como sprint backlog.
 
-\subitem Revisão da sprint(Sprint Review): Reunião realizada ao fim do ciclo de uma Sprint. É uma reunião de quatro horas para um sprint de 30 dias. Nela, o PO determina o que foi feito e o que não foi feito nos resultados apresentados pelo time. Alem disso, é discutido como foi realizado as historias e quais problemas foram encontrados. Alem de mostrar como as historias foram solucionadas e responder perguntas dos outros envolvidos. O PO apresenta e discute o backlog do produto. Todas as informações dessa reunião são uma entrada importante para o planejamento da sprint da próxima interação.
+\subitem Revisão da sprint(Sprint Review): Reunião realizada ao fim do ciclo de uma Sprint. É uma reunião de quatro horas para um sprint de 30 dias. Nela, o PO determina o que foi feito e o que não foi feito nos resultados apresentados pelo time. Discute-se como foi realizado as histórias e quais problemas foram encontrados. Além de mostrar como as histórias foram solucionadas e responder as perguntas dos outros envolvidos. O PO apresenta e discute o backlog do produto. Todas as informações dessa reunião são uma entrada importante para o planejamento da sprint da próxima interação.
 
-\subitem Retrospectiva da Sprint(Sprint Retrospective) : Reunião realizada ao fim do ciclo de uma Sprint. É uma reunião de três horas para um sprint de 30 dias. O SM pede ao time para revisar o processo SCRUM que foi efetuado nessa Sprint. O objetivo é torna-lo mais eficiente e prazeroso para a equipe. Essa reunião é muito importante pois nela que ocorre a optimização e adequação do método para as necessidades da equipe. Esse passo é fundamental para melhorar a produtividade do time.
+\subitem Retrospectiva da Sprint(Sprint Retrospective): Reunião realizada ao fim do ciclo de uma Sprint. É uma reunião de três horas para um sprint de 30 dias. O SM pede ao time para revisar o processo SCRUM que foi efetuado nessa Sprint. O objetivo é torná-lo mais eficiente e prazeroso para a equipe. Essa reunião é muito importante, pois nela é que ocorre a optimização e adequação do método para as necessidades da equipe. Esse passo é fundamental para melhorar a produtividade do time.
 
-\subitem Reunião Diária : Reunião realizada todo dia e deve durar quinze minutos e de preferencia em pé para evitar que tome muito tempo da equipe. Durante essa reunião, faz os passos: cada membro da equipe informa o que foi feito desde a ultima reunião diária, o que pretende fazer até a próxima reunião diária e quais foram os problemas encontrados.
+\subitem Reunião Diária: Reunião realizada todo dia e deve durar quinze minutos e de preferencia em pé para evitar que tome muito tempo da equipe. Durante essa reunião, faz os passos: cada membro da equipe informa o que foi feito desde a ultima reunião diária, o que pretende fazer até a próxima reunião diária e quais foram os problemas encontrados.
 
 \end{itemize}
 
@@ -286,7 +286,7 @@ A figura~\ref{Figura:cicloSCRUM}(\cite{montainGoat}) mostra o ciclo de vida de u
 
 \subsubsection{Planning Poker}
 \label{poker}
-Diferente dos métodos tradicionais, a complexidade das tarefas e historias é definido somente pelo time e isso deve ser consensual entre eles. O planning poker é um técnica nos métodos ágeis para determinar esforço entre os membros da equipe. Cada membro do time tem cartas com números (0, 1, 2, 3, 5, 8, 13, 20, 40, e 100). Esses valores podem ser mapeados em pontos de historias, dias estimados ou uma unidade definida pelo time. Importante é manter uma regularidade dentro do time como esses números devem ser entendidos para manter uma base histórica comparável entres os sprints.
+Diferente dos métodos tradicionais, a complexidade das tarefas e histórias é definido somente pelo time e isso deve ser consensual entre eles. O planning poker é um técnica nos métodos ágeis para determinar esforço entre os membros da equipe. Cada membro do time tem cartas com números (0, 1, 2, 3, 5, 8, 13, 20, 40, e 100). Esses valores podem ser mapeados em pontos de histórias, dias estimados ou uma unidade definida pelo time. Importante é manter uma regularidade dentro do time como esses números devem ser entendidos para manter uma base histórica comparável entres os sprints.
  Os passos são~\cite{poker}:
 \begin{enumerate}
 
@@ -333,7 +333,7 @@ Através de dados fornecidos pelos artefatos criados no desenvolvimento das sprin
 
 \subsubsection{Metodologia do Primeiro ciclo}
 \label{metodo1}
-A metodologia desse primeiro ciclo definia que o esforço era votado por tarefa e elas eram definidas e votadas usando o planning poker(~\ref{poker}) durante  a fase de planejamento do sprint e o esforço da historia seria a soma do esforço de todas as tarefas definidas para terminar aquela historia. Isso gera um detalhamento no gráfico de burndown mas a fase de planejamento da sprint demorava muito pois todas as tarefas eram votadas. Alem disso, isso não garantiria que novas tarefas fossem criada no meio da sprint para conclusão de uma historia. Quando uma nova tarefa tinha que ser adicionada, essa nova tarefa não tinha votação de esforço e o esforço da historia não era alterado. Se uma tarefa era cancelada, o esforço da historia era diminuindo. Foi definido que para avaliação da equipe a porcentagem de esforço entregue da sprint deveria ser maior que 90\% excluindo as historias que não puderam ser entregues por motivos externos.
+A metodologia desse primeiro ciclo definia que o esforço era votado por tarefa e elas eram definidas e votadas usando o planning poker(~\ref{poker}) durante  a fase de planejamento do sprint e o esforço da historia seria a soma do esforço de todas as tarefas definidas para terminar aquela historia. Isso gera um detalhamento no gráfico de burndown mas a fase de planejamento da sprint demorava muito pois todas as tarefas eram votadas. Alem disso, isso não garantiria que novas tarefas fossem criada no meio da sprint para conclusão de uma historia. Quando uma nova tarefa tinha que ser adicionada, essa nova tarefa não tinha votação de esforço e o esforço da historia não era alterado. Se uma tarefa era cancelada, o esforço da historia era diminuindo. Foi definido que para avaliação da equipe a porcentagem de esforço entregue da sprint deveria ser maior que 90\% excluindo as histórias que não puderam ser entregues por motivos externos.
 
 Foi definido que a primeira sprint teria 10 dias para familiarizar a equipe com o SCRUM. As outras sprint seriam de 15 dias.  A equipe definiu 15 dias como tempo ideal pois esse era um período que o escopo do projeto provavelmente não seria mudado e o backlog do produto não precisaria ser atualizado antes do próximo planejamento. 
 
@@ -366,7 +366,7 @@ Como dito no seção~\ref{metodo1}, a equipe era avaliada pela porcentagem de esfo
 
 O sprint 3 foi o ultimo que o Bernardo participou, o primeiro que Rafael participou e o sprint com a maior quantidade de recursos (5,5). Comparando ele com sprint 2, a entrada de um recuso não aumentou  na quantidade de esforço total, pelo contrario ela diminuiu como mostra a figura~\ref{Figura:comp_Esfoco}. Apesar da  porcentagem de esforço entregue ter aumentado, como mostra a figura~\ref{Figura:percent_Esfoco}, mas isso pode ser atribuído a maturidade das estimativas pelo resto da equipe. 
 
-Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos as sprints), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de revisão do sprint 4, foram detectados alguns bugs que impediram a entrega de algumas historias. Uma medida corretiva para evitar bugs vai ser mostrado no topico~\ref{adapCiclo}. Outro fato foi um treinamento da equipe em uma ferramenta e não foi ajustado o esforço para isso. Alem de que Rafael só recebeu o computador na metade do sprint. 
+Outro fato importante é a queda de esforço entregue no sprint 4 comparado com o sprint 3 e a porcentagem entregue de 36\%( pior de todos as sprints), isso demostrou que a equipe definiu metas muito altas de produtividade e achou que o impacto da saida do Bernardo seria menor. Analisando o relatorio de revisão do sprint 4, foram detectados alguns bugs que impediram a entrega de algumas histórias. Uma medida corretiva para evitar bugs vai ser mostrado no topico~\ref{adapCiclo}. Outro fato foi um treinamento da equipe em uma ferramenta e não foi ajustado o esforço para isso. Alem de que Rafael só recebeu o computador na metade do sprint. 
 
 Outro varição de recursos foi feita entre o sprint 6 e 7, a equipe foi de 4,5 para 3 recursos. Nesse caso, a varição de porcentagem de esforço entregue foi bem menor e o pontos de esforço entregue foi o mesmo. A produtividade se manteve mesmo perdendo um recurso, isso mostrou que o conhecimento do membro que saiu pode ser compensado por outros três membros da equipe. Esse fato pode ser justificado pois todos estejam participando ativamente de algumas sprints. Nesse caso, foi de aproximadamente três considerando que o membro mais recente entrou na sprint 3. Alem de mostrar que a maturidade de estimativas vem naturalmente quando a equipe tem melhor ideia da sua produtividade.       
 
@@ -431,12 +431,12 @@ O segundo ciclo teve um marco importante que foi um treinamento de Scrum Master 
 
 \subsubsection{Melhoramento da visão estratégica}
 
-Durante o primeiro ciclo mostrado na seção~\ref{primeiro}, a enfase do grupo era no backlog da sprint e o backlog do produto normalmente era curto e englobava historias para somente duas sprints.
-Isso fazia que o time tinha pouca visão do objetivo final do produto. Isso dificultava antecipar imprevistos ou desenvolvimentos baseados nos historias do backlog do produto. Isso limitava a visão estrategia de todo o projeto. A medida corretiva foi criar uma nova reunião de revisão do backlog do produto que o  PO definia e apresentava o backlog  e tentava criar o máximo de historias para o semestre. Essa reunião ocorria um pouco antes da revisão do sprint e tinha o tempo de duas horas.    
+Durante o primeiro ciclo mostrado na seção~\ref{primeiro}, a enfase do grupo era no backlog da sprint e o backlog do produto normalmente era curto e englobava histórias para somente duas sprints.
+Isso fazia que o time tinha pouca visão do objetivo final do produto. Isso dificultava antecipar imprevistos ou desenvolvimentos baseados nos histórias do backlog do produto. Isso limitava a visão estrategia de todo o projeto. A medida corretiva foi criar uma nova reunião de revisão do backlog do produto que o  PO definia e apresentava o backlog  e tentava criar o máximo de histórias para o semestre. Essa reunião ocorria um pouco antes da revisão do sprint e tinha o tempo de duas horas.    
 
 \subsubsection{Mudanças na métrica de esforço}
 
-A reunião de planejamento da Sprint estava demandando muito tempo pois todo tarefa tinha que ser discutida e votada o esforço associado. Isso criava uma reunião longa que constantemente demandava mais tempo que o predeterminado. A medida de correção foi somente votar o esforço das historias no backlog nas reuniões de planejamento de sprint e na revisão do backlog do produto. Isso tornou as reuniões mais eficientes e menos complicadas. Mas o gráfico burndown perdeu sua precisão por tarefa e somente diminuía o esforço quando uma historia inteira era completada. Isso motivou a mudança da métrica de avaliação de 90\% de esforço entrege para que uma avalição de satisfação do cliente que deveria ter uma nota acima de 1(a nota variava de 0 a 1,5). Isso trocou uma metrica de avalição que dependia da equipe para um que o cliente do produto determinava. 
+A reunião de planejamento da Sprint estava demandando muito tempo pois todo tarefa tinha que ser discutida e votada o esforço associado. Isso criava uma reunião longa que constantemente demandava mais tempo que o predeterminado. A medida de correção foi somente votar o esforço das histórias no backlog nas reuniões de planejamento de sprint e na revisão do backlog do produto. Isso tornou as reuniões mais eficientes e menos complicadas. Mas o gráfico burndown perdeu sua precisão por tarefa e somente diminuía o esforço quando uma historia inteira era completada. Isso motivou a mudança da métrica de avaliação de 90\% de esforço entrege para que uma avalição de satisfação do cliente que deveria ter uma nota acima de 1(a nota variava de 0 a 1,5). Isso trocou uma metrica de avalição que dependia da equipe para um que o cliente do produto determinava. 
 
 \subsubsection{Adaptação do tempo de sprint}
 
