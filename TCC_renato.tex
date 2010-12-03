@@ -32,26 +32,26 @@ Results of the SCRUM methodology to development of new features of a GSM system 
 \end{abstract}
      
 \begin{resumo} 
-Resultados da aplicação da metodologia ágil SCRUM no desenvolvimento de novas funcionalidade em um simulador dinâmico de GSM para tentar resolver problemas como centralização de conhecimento, processo de substituição de membros da equipe e falta de flexibilidade de alocação de recursos.
+Resultados da aplicação da metodologia ágil SCRUM no desenvolvimento de novas funcionalidades em um simulador dinâmico de GSM para tentar resolver problemas como: centralização de conhecimento, processo de substituição de membros da equipe e falta de flexibilidade de alocação de recursos.
 \end{resumo}
 
 
 \section{Introdução}
 \label{intro}
-O instituto de pesquisa Indt tem varias linhas de pesquisa e uma delas é um simulador dinâmico\cite{blueBook} em GSM. Esse foi o  projeto definido  para testar a metodologia ágil SCRUM no ambiente de pesquisa na unidade de Brasília. Para avaliar o método, foram levantados os problemas da época e apos um tempo seria verificado se o SCRUM poderia ser uma solução possível.
+O instituto Nokia de de Tecnologia tem várias linhas de pesquisas,uma delas, objeto do presente artigo, é um simulador dinâmico\cite{blueBook} em GSM, escolhido para testar a metodologia ágil SCRUM no ambiente de pesquisa na unidade de Brasília. Para avaliar o método, foi detectado os problemas do projeto no segundo semestre de 2008 e a cada semestre seria verificado se o SCRUM poderia ser uma solução possível.
 
-Esse artigo primeiro comenta um pouco sobre as simulações e as linhas de pesquisa na seção~\ref{Sims} e a motivação na seção~\ref{motivacao}. Apresenta uma breve descrição de algumas metodologias e com enfase no SCRUM na seção~\ref{metodologias}. Detalhamentos e resultados da implantação do SCRUM no projeto é mostrado na seção~\ref{implementacao}. Por fim, uma conclusão é mostrada na seção~\ref{conclusao}.
+Este artigo apresentará, na seção~\ref{Sims}, detalhes do simulador e a motivação na seção~\ref{motivacao}. Na seção~\ref{metodologias}, apresenta uma breve descrição de algumas metodologias com ênfase no SCRUM. Na seção~\ref{implementacao}, detalhamentos e os resultados da implantação do SCRUM no projeto são mostrados. Por fim na seção~\ref{conclusao}, uma conclusão é mostrada .
 
 
 \section{Detalhes do projeto e o simulador sistêmico}
 \label{Sims}
-O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece resultados de simulações sistêmicas de uma rede celular GSM.  Na época da aplicação do SCRUM existia duas linhas de pesquisa:
+O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece resultados de simulações sistêmicas de uma rede celular GSM. No segundo semestre de 2008, existiam duas linhas de pesquisa:
 
 \begin{itemize}
 
-\item OSC: é uma evolução nos canais de voz na rede GSM para que dois usuários possam usar o mesmo canal simultaneamente. Para isso é usado técnicas de canais ortogonais e técnicas de eliminação de interferência.\cite{GSMevo} \cite{newBlueBook}
+\item OSC: é uma evolução nos canais de voz na rede GSM para que dois usuários possam usar o mesmo canal simultaneamente. Para isso, são usadas técnicas de canais ortogonais e técnicas de eliminação de interferência.\cite{GSMevo} \cite{newBlueBook}
 
-\item EGPRS2: EGPRS2 é a evolução da rede de dados na tecnologia GSM, a figura~\ref{Figura:EGPRS2} mostra um breve histórico dessa evolução e a quantidade de dados máxima que cada evolução prevê para um usuário e quais as modulações foram usadas.\cite{egprs2}
+\item EGPRS2: EGPRS2 é a evolução da rede de dados na tecnologia GSM, a figura~\ref{Figura:EGPRS2} mostra um breve histórico dessa evolução e a quantidade de dados máxima que cada evolução prevê para um usuário, e quais as modulações foram usadas.\cite{egprs2}
 
  
 \end{itemize}
@@ -67,17 +67,17 @@ O estudo de caso desse artigo foi aplicado a um projeto de pesquisa que fornece 
 	\end{center}
 \end{figure}
 
-Os resultados dessas linhas de pesquisa são usados principalmente para dois casos. O principal uso é na padronização que fornece resultados para as reuniões de padronização denominada GERAN\cite{GERAN2010}. Alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. Outro uso é em publicações cientificas. Recentemente, os resultados foram apresentados no congresso VTC \cite{GSMevo}   \cite{DFRHR} e no ITS  \cite{egprs2} \cite{oscITS}.
+Os resultados dessas linhas de pesquisa são usados principalmente para dois casos. O primeiro caso é na padronização que fornece resultados para as reuniões de padronização denominada GERAN\cite{GERAN2010} e alguns exemplos podem ser vistos em \cite{MUROS-TR} e \cite{wide2-3GPP}. O segundo caso é em publicações cientificas que os resultados foram apresentados no congresso VTC \cite{GSMevo}   \cite{DFRHR} e no ITS  \cite{egprs2} \cite{oscITS}.
 
-Sendo assim, a principal entrega para os clientes do projeto são os resultados de simulação. O código do simulador feito em c++ tem pouca importância para o cliente final. O simulador tem mais de 5 anos e a qualidade do código e documentação dele foi decaindo com o tempo.  
+Sendo assim, os resultados de simulação, análises e artigos científicos são os artefatos entregues ao cliente. Porém, o código do simulador feito em c++ tem pouca importância para esse cliente. Além disso, o simulador tem mais de 5 anos e a qualidade do código e documentação dele decaiu com o tempo.  
 
 \section{Motivação e objetivo}
 \label{motivacao}
-A forma do desenvolvimento dessa ferramenta era deixar um responsável por cada nova funcionalidade e não havia troca de informação entre os responsáveis dos tópicos sobre sua funcionalidade. Isso gerava vários problemas:
+Antes da implementação da metodologia SCRUM, a forma do desenvolvimento do simulador era deixar um responsável por cada nova funcionalidade e sem troca de informação entre os responsáveis dos tópicos gerando vários problemas, tias como:
 
 \begin{itemize}
 
-\item Quando uma pessoa da equipe saia do projeto , a funcionalidade atrelada a ela se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe
+\item Na saída de uma pessoa da equipe, a funcionalidade atrelada a ela se perdia pois não havia um forma eficiente de repassar esse conhecimento entre os membros da equipe
 
 \item Conhecimento ficava muito centralizado pois cada tópico ficava com apenas um desenvolvedor
 
